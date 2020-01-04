@@ -1,0 +1,10 @@
+
+Whatsapp
+
+[19:39, 6/4/2018] Arthur: Hno actualziaron el tooltip, corrigieron el error de codigo.....
+[19:40, 6/4/2018] Arthur: siempre se espera una semana antes de actualiza para evitar estos inconvenientes.r
+[19:55, 6/4/2018] +1 (787) 929-2067: Si, lo voy a bajar y probarlo. Les dejo saber como me va
+[21:13, 6/4/2018] +593 98 916 0294: Hola hermanos, cuando alguien tenga un módulo hecho con ese nuevo tooltip me puede enviar el link para descargarlo. Es para probarlo en el Linux a ver si funciona correctamente la opción para ver la descripción del módulo, pues esto no se puede ver en el Linux con los módulos que han sido hechos y están en la Biblioteca Hispana (En Linux he logrado hacer funcionar a e-Sword instalandolo en PlayOnLinux)
+[07:51, 7/4/2018] +1 (787) 929-2067: Saludos para que pruebes, este es el Comentario biblico mundo hispano para el libro de Mateo, que acabó de pasarlo con la versión nueva de tooltip.
+[07:51, 7/4/2018] +1 (787) 929-2067: https://drive.google.com/file/d/1406fbYiZoqhdYK-bCCYb2fJvbFHrNHvB/view?usp=drivesdk
+[07:53, 7/4/2018] +1 (787) 929-2067: Lamenetablemente tuve que eliminar todos los formatos para poder hacer tooltip y numeros strong nuevamente.

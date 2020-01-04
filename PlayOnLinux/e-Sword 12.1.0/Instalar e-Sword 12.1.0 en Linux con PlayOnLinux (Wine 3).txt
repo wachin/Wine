@@ -1,0 +1,401 @@
+Instalar e-Sword 12.1.0 en Linux (Ubuntu, Linux Mint, OpenSUSE, Fedora, KDE Neon, Kubuntu, Debian, Deepin, etc) con PlayOnLinux (wine 3.0.1)
+Biblias · e-Sword · Linux
+
+1.- Descargas necesarias
+a) e-Sword, descarguelo desde:
+
+http://www.e-sword.net/downloads.html
+
+c) Modulos
+
+Instale los que yo he recopilado para fines didacticos (contiene lo mínimo necesario para poder explicar las características más importante del programa):
+
+Compilación de Módulos de Biblias, Comentarios, Diccionarios para e-Sword (WachoPack)
+https://facilitarelsoftwarelibre.blogspot.com/2018/02/biblias-para-e-sword-wachopack-2018.html
+
+o
+
+los suyos que usted tenga.
+
+2.- Instalar PlayOnLinux
+Ponga en una terminal lo siguiente:
+
+sudo apt-get install playonlinux
+
+3.- INSTALAR UNA VERSION DE WINE 3 EN PLAYONLINUX
+Nota Importante:
+
+- Sistemas Operativos Linux después del 2018 sólo pueden ejecutar correctamente en PlayOnLinux versiones de Wine desde la 2.16 (en las pruebas que yo he hecho) y con más exactitud la versión 3.0.1 en adelante
+
+- Sistemas Operativos Linux anteriores al 2018 si pueden ejecutar versiones de Wine 1.7, 1.8, 1.9, 2.0 además de las nuevas versiones 3.0, 3.15, etc hasta donde estén disponibles (las versiones más nuevas no se podrán instalar) en PlayOnLinux.
+
+Para este tutorial usaremos la versión Wine 3.0.1 porque en esta versión funciona bien e-Sword en todos (en Linux antes del 2018 y después del 2018).
+
+En PlayOnLinux en la ventana principal vaya a:
+
+Herramientas/Gestiona versiones de Wine
+
+Por cierto, si usan un Sistema Operativo Linux de 64 bits les aparecerá dos pestañas, instalen allí como por defecto les aparece. Instale la versión de wine 3.0.1:
+
+3.0.1
+
+aparecerá la siguiente ventana, clic en siguiente:
+
+empezará la descarga:
+
+debe quedar así:
+
+
+
+cerrar esa ventana.
+
+4.- INSTALAR E-SWORD
+En PlayOnLinux de clic en el + y clic en: "Instalar un programa no listado":
+
+
+
+clic Siguiente, Siguiente, Siguiente:
+
+
+
+ y en "Instalar un programa en una nueva unidad virtual":
+
+
+
+ y Siguiente, y póngale nombre sin espacios, ejemplo:
+
+eSword1210wine3
+
+
+
+elegir marcar las siguientes dos opciones:
+
+    Use otra versión de wine
+    Configurar wine
+
+
+
+
+En versión de wine escoja a la que nos referimos:
+
+
+
+Nota: Es posible que en este momento le aparezca un mensaje que dice en resumen que no se puede encontrar wine-mono:
+
+
+
+ de clic en el botón "Instalar":
+
+
+
+Si luego aparece otra ventana que dice sobre que no se encuentra wine-gecko también instalen (esto puede demorar algún tiempo)
+
+En la ventana de "Configuración de Wine" de clic en la pestaña "Gráficos" y ponga en "Resolución 120":
+
+
+
+Nota: Si más adelante cuando ya está instalado y funcionando el programa e-Sword no le gusta el tamaño de las letras si se puede cambiar a otra resolución, más abajo dejaré una explicación.
+
+Clic en Aplicar y Aceptar. Ahora de clic en el botón "Expĺorar":
+
+
+
+ y busque el instalador:
+
+
+
+ clic en "Open" y luego clic en "Siguiente":
+
+
+
+ e instálelo:
+
+
+
+ y al final cierre la ventana de fin de instalación (Finish):
+
+
+
+Y le aparecerá una nueva ventana, pero si no le aparece es posible que se haya quedado escondida abajo en la "Barra de tareas":
+
+
+
+dele clic allí para que aparezca
+
+esa ventana sirve para crear un atajo de e-Sword en PlayOnLinux. Dele clic a:
+
+e-Sword.exe
+
+
+
+clic en Siguiente y ponga nombre con la version de wine (esto es para diferenciar por si instala más aplicaciones en PlayOnLinux):
+
+e-Sword 12.1.0 (wine 3.0.1)
+
+
+
+Clic en Siguiente. Luego aparecerá otra vez la ventana y dele clic en "No quiero crear otro atajo" y Siguiente:
+
+
+
+
+5.- INSTALAR COMPONENTES DE PLAYONLINUX
+
+Para instalar este tipo de módulos, dar clic en la ventana principal de PlayOnLinux dar clic en el programa "e-Sword" que hemos instalado y de clic en la tuerca(configurar):
+
+
+
+clic en la pestaña "Instalar componentes":
+
+
+
+Nota: Si esta o alguna imagen no se ve con todo su detalle la puede abrir con clic derecho en una nueva pestaña y allí la podrá ver bien.
+
+busque e instale uno por uno estos componentes (puede ayudarse seleccionando y escribiendo en el teclado):
+
+mfc42
+msls31
+
+
+
+Cuando de clic en el botón "instalar" y espere hasta que la ventana que ha aparecido se cierre solita:
+
+
+
+
+una vez que se cerró ya se instaló.
+
+En la siguiente imagen le pongo el siguiente:
+
+
+
+
+
+6.- AÑADIR Y CONFIGURAR OLEAUT32 Y RICHED20
+Ahora hay que configurar riched20 and oleaut32 como "nativa, y luego interna"
+
+De clic en la ventana "PlayOnLinux configuración" en la pestaña "Wine":
+
+
+
+ aparecerá una ventana que se llama "Configuración de Wine", allí de clic en la pestaña "Librerías":
+
+
+
+ y allí en "Nueva sustitución de librería" en la casilla escríba "riched20" (sin comillas) y añadala (clic en el botón "Add"):
+
+
+
+en la imágen de arriba en la flecha 3 esa flechita hacia abajo si le dan clic es para que se cerciore de que la ha elegido correctamente. Luego haga lo mismo busque oleaut32 y añadala y clic en "Aplicar" y "Aceptar":
+
+
+
+
+Al hacer esto se añadirán automáticamente como "librería nativa y luego interna" que es lo que se necesita
+
+
+
+
+7.-  INSTALAR MÓDULOS DE BIBLIAS, COMENTARIOS, Y OTROS EN EJECUTABLES .EXE
+Para instalar este tipo de módulos en la ventana principal de PlayOnLinux dar clic en el programa "e-Sword . . . . ." que hemos instalado y de clic en la tuerca(Configurar):
+
+
+
+
+ y clic en la pestaña "Miscelanea" y clic en "Ejecutar un archivo .exe en esta unidad virtual"
+
+
+
+ y busque el lugar donde tenga el ejecutable de su instalador de módulo o módulos:
+
+
+
+instálelo como lo haría en Windows, en este ejemplo la compilación (Pack) mínima de módulos que he compilado con fines didácticos:
+
+
+
+Siguiente, Salir, listo
+
+Nota: En caso de que PlayOnLinux se cuelgue, cierre todas las ventanas y vuelvanlo a abrir. O reinicie el ordenador.
+
+
+8.-  INSTALAR MÓDULOS DE BIBLIAS, COMENTARIOS, Y OTROS EN CMTI, CMTX, DCTI, MAPX, REFX, ETC
+Cuando usted vaya a querer instalar módulos de Biblias, comentarios, diccionarios u otros ejemplo desde:
+
+EQUIPO BIBLIOTECA HISPANA INT
+Sitio Nuevo:
+https://www.bibliotecahispana.com/
+Sitio viejo:
+https://eswordbibliotecahispana.blogspot.com/
+
+donde últimamente ya no vienen módulos ejecutables .exe sino vienen en formatos .rar y al descomprimirlos aparecen así:
+
+02BE_Macarthur.cmti
+03BE_Macarthur.dcti
+04BE_Macarthur.mapx
+05BE_Macarthur.refx
+
+a estos archivos hay que copiarlos a la carpeta del programa, para hacerlo, en la ventana principal de PlayOnLinux (cierre todas las demás) hay que dar clic derecho encima del programa e-Sword que hemos instalado y clic en "Abrir el directorio de la aplicación":
+
+
+
+
+ y se le abrirá el Administrardor de archivos que esté usando usted, y allí debe pegar esos modulos. Yo le aconsejo que aplaste el  atajo "Ctrl + T" para que se abra una pestaña y desde allí busque los archivos de sus modulos y los pueda copiar y en la pestaña anterior los pegue:
+
+
+
+ y después de reiniciado el programa e-Sword (si lo tenía abierto cerrarlo y volverlo a abrir) ya se harán visibles en sus respectivas pestañas o boton (depende del tipo de modulo que haya instalado).
+
+Para lanzar la aplicación de clic en lanzar (Play):
+
+
+
+
+
+9. PONER EN ESPAÑOL A E-SWORD
+Clic en:
+
+"Options/Apps Language"
+
+y allí abajo está el Español:
+
+
+
+y ahora en español la interfaz:
+
+
+
+
+10. CAMBIANDO EL TAMAÑO DE LAS FUENTES DE WINE
+Si no le gusta el tamaño de las fuentes, puede cambiarlas así.
+
+En la ventana principal de PlayOnLinux clic en el programa e-Sword . . .  que hemos instalado y clic en la tuerca (Configurar):
+
+
+
+allí de clic en la pestaña "Wine" y clic en "Configurar Wine":
+
+
+
+allí en la pestaña "Gráficos" cambie la resolución:
+
+ 
+
+y clic en "Aplicar" y "Aceptar". Cierre e-Sword si lo tenía abierto y cuando lo abra otra vez al programa verá que las fuentes tienen otro tamaño.
+
+
+
+11. ¿QUÉ FUNCIONA?
+ He probado las siguientes características importantes y funcionan:
+
+- Clic en versículos no se salta:
+
+
+
+
+
+
+- Busqueda de palabras. Clic en el binocular y elegir la Biblia en el idioma que uno va a buscar una palabra y así mismo la versión, y clic en el binocular a la derecha funciona:
+
+
+
+
+
+- Búsqueda extendida en Diccionarios, clic en "Diccionario/Búsqueda Extendida":
+
+
+
+al seleccionar todos los diccionarios:
+
+
+
+
+ y poner una palabra a buscar (ejemplos: pan, aceite, pescado) y dar clic en el binocular:
+
+
+si aparecen todos los diccionarios que uno ha seleccionado (en este caso todos), como se ven en la imágen de arriba se ven los diccionarios PDT y Certeza (los demás están más abajo)
+
+
+- Busqueda en libros Hebreo y Griego.- Elejir una Biblia que use números Strong como la LXX+ (Strong's Hebrew and Greek Dictionaries):
+
+
+ y clic en "Biblia/Búsqueda" al escribir por ejemplo G2316 y dar clic en el binocular funciona:
+
+
+
+- Búsqueda de palabras de las Biblias en los Diccionarios.- Esto es dándole doble clic a alguna palabra importante en el visor de las Biblias y debe aparecer abajo en Diccionarios unas "i" de información, allí uno le da clic a la pestaña que tenga para ver que dice funciona:
+
+
+
+- Reference Library.- Clic en "Herramientas/Reference Library..." funciona:
+
+
+
+- Devocionales Diarios.- Clic en "Herramientas/Devocionales Diarios..." funciona:
+
+
+
+- Visor de Gráficas.- Clic en "Herramientas/Visor de Gráficas"... funciona:
+
+
+
+- Descargar módulos de Biblias.- Desde el mismo programa:
+
+
+
+12. ¿QUÉ NO FUNCIONA?
+No funciona el cambio de temas de la aplicación
+
+
+
+13. PREGUNTAS FRECUENTES
+¿Si uso Ubuntu 16.04 puedo instalar Wine 1.7 en PlayOnLinux e instalar e-Sword 12.1.0?
+Teóricamente si se puede, pero no lo he testeado, pero si puede hágalo y nos avisa
+
+¿Puedo instalar e-Sword en Wine sin necesidad de usar PlayOnLinux?
+Si, si se puede y usar winetricks para instalar los componentes(librerías), el problema es que si después usted instala más programas es muy posible que el registro se mezcle y luego ya no le funcione e-Sword. Por tal motivo es que hicieron PlayOnLinux para evitar ese problema ya que uno puede instalar cada aplicación en una diferente unidad virtual e incluso con una versión de Wine específica así no se mezclan los registros y no se le dañará la aplicación
+
+¿En el punto "5" puedo mejor instalar los componentes en el punto 4 ya que allí también está la opción para instalar componentes?
+No puede hacer esto debido a que e-Sword registra sus propios componentes primero y si los componentes los instala antes que e-Sword registre sus componentes al luego instalar los componentes indicados aquí en este tutorial no le funcionará bien la e-Sword, mejor siga las instrucciones 
+
+¿Qué hago si ya tenía instalada una aplicación con Wine 3.0.1?
+Desinstale esa aplicación e instale e-Sword pues la versión de Wine 3.0.1 es la mejor que he encontrado para que funcione. Pero si quiere experimentar puede hacerlo
+
+¿e-Sword es Software Libre?
+Si, si lo es. Si usted da clic en "Ayuda/Acerca de e-Sword . . . ":
+
+
+
+allí dice:
+
+
+
+la traducción de esa sección es:
+
+"e-Sword es software libre. Esta licencia está diseñada para no restringir su libertad, excepto en la medida en que sea necesario para garantizar que el programa siga siendo gratuito para todos. Si quiere hacer algo que esté en contra de esta licencia, pero dentro del espíritu del software libre, hablemos de ello.
+1. El programa puede ser utilizado de forma gratuita por cualquier persona u organización a la que esté disponible, siempre que esa persona acepte las condiciones de esta licencia.
+2. Puede hacer copias para usted y sus amigos, siempre que cualquier distribución también sea gratuita. No puede cobrar por el programa en sí, ni puede cobrar por ningún tipo de costos de duplicación, franqueo, etc. No debe hacer nada para sugerirle a la persona a la que se distribuye que e-Sword no es software libre.
+3. Ni el programa e-Sword, ni los módulos asociados, pueden venderse o revenderse, distribuirse como parte de un paquete comercial, o usarse o distribuirse para respaldar cualquier tipo de actividad generadora de ganancias, incluso si se distribuye libremente.
+4. No puede vender ni alojar archivos de e-Sword, ni el programa en sí ni los módulos asociados, en ningún sitio web o servidor en Internet.
+5. No puede desmontar ni realizar ingeniería inversa a e-Sword, ni a ninguno de sus módulos asociados.
+6. No se ofrece ninguna garantía de ningún tipo, expresa o implícita, en relación con el programa, incluidas, entre otras, las garantías implícitas de comerciabilidad o idoneidad para un propósito particular. Cualquier costo, pérdida o daño de cualquier tipo incurrido debido al mal funcionamiento o mal uso del programa o la inexactitud de la documentación o relacionado con el programa de cualquier otra manera es responsabilidad exclusiva de la persona que incurrió en el costo, pérdida o daño . Además, cualquier uso ilegal del programa es responsabilidad exclusiva de la persona que comete el acto ilegal. Al usar este programa, usted acepta estas responsabilidades y renuncia a cualquier derecho de reclamar daños y perjuicios contra Rick Meyers en relación con este programa.
+7. Yo, Rick Meyers, me reservo el derecho de hacer excepciones a cualquiera de estas condiciones, o alterar estas condiciones, en cualquier momento."
+
+
+14. Agradecimientos
+A Dios por haberme guiado a aprender todas las cosas necesarias para poder hacerlo funcionar a e-Sword y también para poder enseñar a otras personas cómo instalarlo en Linux.
+Agradezco también a Arthur Goicochea Admin de Biblioteca Hispana Int.  https://www.bibliotecahispana.com/ o https://eswordbibliotecahispana.blogspot.com/ (donde soy colaborador) porque me ha motivado a tener al día el tutorial para Linux
+
+
+15. Herramientas usadas
+Este tutorial ha sido hecho usando las siguientes herramientas:
+
+Ksnip 1.5.0 de 32 bits.- Captura de pantalla
+SimpleScreenRecorder.- Grabador de escritorio
+ezgif.com.- Convertidor de video a Gif online
+antiX 9.- Sistema Operativo basado en Debian 10 Buster (la versión de 32 bits)
+Florence.- Teclado Virtual
+
+Por: Washington Indacochea Delgado (Wachín)
+wachin.id@gmail.com
+2019-12-05

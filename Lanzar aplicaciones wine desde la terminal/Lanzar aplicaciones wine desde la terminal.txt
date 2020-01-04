@@ -1,0 +1,21 @@
+
+Lanzar aplicaciones wine desde la terminal
+
+http://askubuntu.com/questions/437555/creating-wine-shortcuts
+
+wine "c:\program files\internet explorer\iexplore.exe"
+
+
+La siguiente ruta la saqué con el programa CubicExplorer
+
+wine "C:\Program Files\MediaInfo\mediainfo.exe"
+
+
+o
+
+env WINEPREFIX="/home/wachin/.wine" wine "C:\PDFV_Portable\PDFXCview.exe"
+
+env WINEPREFIX="/home/wachin/.wine" wine "C:\Program Files\MediaInfo\mediainfo.exe"
+
+http://www.thierryb.net/site/PDF-XChange-nautilus-scripts-Wine.html?lang=fr
+

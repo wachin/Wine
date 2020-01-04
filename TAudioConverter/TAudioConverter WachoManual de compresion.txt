@@ -1,0 +1,17 @@
+
+
+
+Para comprimir un archivo mp3 con TAudioConverter y que ocupe poco espacio, en el botón "Codec Options" poner en "Encoding mode" "CBR" y en "Bibrate" "24", en "Algorithm Quality" dejar en "3" como estaba, en "Channels" poner "Mono" 
+
+Nota: Esto lo hago yo para predicas, para música no es conveniente pues se pierde la calidad del sonido de algunos instrumentos. En un predica lo que importa es la voz del que predica, a esta configuración no se pierde la calidad ni la nitidez. 
+
+Att: Washington Indacochea Delgado
+
+
+
+
+*******************************************************************************+
+
+Información para ponerle el TAG del mp3 en Puddletag o mp3tag:
+
+Predica comprimida con http://sourceforge.net/projects/taudioconverter/ con la sig config: En "Codec Options" poner en "Encoding mode" "CBR" y en "Bibrate" "24", en "Algorithm Quality" dejar en "3" como estaba, en "Channels" poner "Mono". Por: Washington Indacochea Delgado

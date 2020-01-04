@@ -1,0 +1,31 @@
+
+Mejorando la apariencia de e-Sword en Wine Staging
+
+Nota: Asegurese de poner las fuentes indicadas aquí
+
+
+Tamaño de Textos, Configuracion de Wine
+
+En Pestaña integración de escritorio, en "Elemento":
+
+
+Texto de barra de título activa
+Fuente: Arial o Droid Sans Tamaño: 9
+o Arial Unicode MS: 12
+
+Texto del cuadro de dialogo
+Fuente: Arial o Droid Sans Tamaño: 9
+o Arial Unicode MS: 12
+
+Texto del consejo
+Fuente: Arial o Droid Sans Tamaño: 9
+o Arial Unicode MS: 12
+
+Texto del menú (este un numero menos que el resto)
+Fuente: Arial o Droid Sans, Tamaño: 8
+o Arial Unicode MS: 12
+
+
+Y también allí en la pestaña "Integración del escritorio" en "Tamaño", poner: "Fuentes Grandes"
+
+Por: Washington Indacochea Delgado 

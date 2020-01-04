@@ -1,0 +1,32 @@
+
+Mp3tag - Supported software - PlayOnLinux - Run your Windows applications on Linux easily!
+https://www.playonlinux.com/en/source-714-Mp3tag.html
+
+
+#!/bin/bash
+[ "$PLAYONLINUX" = "" ] && exit 0
+source "$PLAYONLINUX/lib/sources"
+  
+TITLE="Mp3tag"
+PREFIX="mp3tag"
+FILE="mp3tagv273setup.exe"
+MD5="c71a6de7265bbfc32d8ad0e1c77c2365"
+ 
+POL_SetupWindow_Init
+POL_SetupWindow_SetID 714
+POL_Debug_Init
+POL_SetupWindow_presentation "$TITLE" "$TITLE" "http://www.mp3tag.de/" "Tinou" "$PREFIX"
+ 
+POL_Wine_SelectPrefix "$PREFIX"
+POL_Wine_PrefixCreate 1.7.25
+Set_OS winxp
+POL_Download "http://download.mp3tag.de/$FILE" "$MD5"
+ 
+POL_Call POL_Install_LunaTheme
+ 
+POL_Wine_WaitBefore "$TITLE"
+POL_Wine "$FILE"
+ 
+POL_Shortcut "mp3tag.exe" "$TITLE"
+POL_SetupWindow_Close
+exit

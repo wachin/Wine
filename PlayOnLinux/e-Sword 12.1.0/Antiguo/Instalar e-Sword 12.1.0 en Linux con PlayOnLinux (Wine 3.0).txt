@@ -1,0 +1,200 @@
+
+Instalar e-Sword 11.2.2 en Linux (Ubuntu, Linux Mint, Debian, OpenSUSE, Fedora, Deepin, etc) con PlayOnLinux (wine 3)
+
+Nota: No se salte los pasos, aquí el orden de los factores si afecta al producto. Si se salta los pasos no le funcionará bien e-Sword.
+
+************************
+0.- Descargas necesarias
+************************
+
+a) e-Sword 11.2.2
+Descarguelo desde:
+
+http://www.e-sword.net/downloads.html
+
+o:
+
+descarga alternativa (también para después cuando Rick Meyers lo actualice y ya no se pueda descargar esta versión 11.2.2 desde la pagina oficial):
+
+
+https://drive.google.com/file/d/1jqAV29jc6VbMZ4gPo0LXsBXoJP5DqyKk/view?usp=sharing
+
+b) e-Sword 11.2.2 Extraido
+Este ejecutable yo lo he empaquetado y lo he subido a mi cuenta de Google Drive (es el mismo e-Sword solo que extraido todo su contenido y puesto en una solo carpeta) descarguelo de:
+
+https://drive.google.com/file/d/17RyRnu3gXAaxF-qXzgoakNZCPZBDjs-c/view?usp=sharing
+
+c) Modulos
+Instale los que yo he recopilado para fines didacticos:
+
+Biblias para e-Sword (WachoPack)
+https://facilitarelsoftwarelibre.blogspot.com/2018/02/biblias-para-e-sword-wachopack-2018.html
+
+o
+
+los suyos que usted tenga.
+
+************************
+1.- Instalar PlayOnLinux
+************************
+
+Ponga en una terminal lo siguiente:
+
+sudo apt-get install playonlinux mousepad unrar rar gnome-exe-thumbnailer
+
+Nota: Este comando es para Ubuntu y derivados de Debian.
+
+
+***********************************
+2.- INSTALAR UNA VERSION DE WINE 3
+***********************************
+Nota: Wine a tenido un gran cambio de tal manera que versiones modernas de Sistemas Operativos Linux después del 2018 ya no pueden ejecutar versiones de Wine 1.7, 1.8, 1.9, 2.0. Estas versiones modernas de Linux sólo  pueden ejecutar las versiones de Wine que traen en sus repositorios, desde la 3.0 en adelante.
+
+En PlayOnLinux:
+
+Herramientas/Gestiona versiones de Wine
+
+instale la versión de wine:
+
+3.0
+
+Nota 1: Le pido que instale esta versión pues el programa funciona bien aquí
+
+Nota 2: Si desea puede instalar e-Sword en una de las versiones 3 superiores pues también funciona, pero he notado errores de instalación ejemplo en 3.20 aunque si funciona allí.
+
+********************
+3.- INSTALAR E-SWORD 
+********************
+En PlayOnLinux de clic en el + y clic en: "Instalar un programa no listado", Siguiente, Siguiente y en "Instalar un programa en una nueva unidad virtual" y Siguiente, y pongale nombre ejemplo:
+
+eSword1210wine30
+
+elegir:
+
+-Use otra versión de wine
+-Configurar wine
+
+En version de wine escoja 3.0 (También puede escoger si así lo desea alguna versión superior, pero eso sería si quiere experimentar)
+
+en la ventana de "Configuración de Wine" de clic en la pestaña "Graficos" y ponga en "Resolución 120 (o la mejor para su monitor), y clic en Aplicar y Aceptar
+
+de clic en el botón "Expĺorar" y busque el instalador setup1122.exe clic en "Siguiente" e instálelo y al final cierre la ventanan de fin de instalación.
+
+Y le aparecerá una nueva ventana la cual sirve para que cree un atajo de e-Sword en PlayOnLinux(POL). Dele clic a:
+
+e-Sword.exe
+
+Siguiente y ponga nombre con la version de wine que haya escojido, ejemplo en este caso:
+
+e-Sword 12.1.0 (wine 3.0)
+
+Nota: Puede copiar este nombre y pegarlo allá.
+
+Clic en Siguiente. Luego aparecerá otra vez la ventana y dele clic en "No quiero crear otro atajo" y Siguiente.
+
+Ahora para el siguiente paso dele clic al atajo que se ha creado en PlayOnLinux del programa e-Sword, dele clic encima  y siga el punto 4.-
+
+*****************************
+4.- INSTALAR E-SWORD EXTRAIDO
+*****************************
+De clic en la tuerca(configurar) y clic en la pestaña "Miscelanea" y clic en "Ejecutar un archivo .exe en esta unidad virtual" y busque el lugar donde descargó:
+
+e-Sword 11.2.2 Extraido.exe
+
+Nota: Esto es necesario para que funcione la opción de descargar módulos de Biblias, Comentarios, y otras descargas desde el mismo programa 
+
+******************************************************
+8.-  INSTALAR MÓDULOS DE BIBLIAS, COMENTARIOS, Y OTROS
+******************************************************
+Ahí mismo en la penstaña "Miscelanea", así mismo instale el paquete de módulos que yo le facilito o los suyos
+
+cerrar, listo
+
+Descargar más módulos de:
+
+EQUIPO BIBLIOTECA HISPANA INT
+https://eswordbibliotecahispana.blogspot.com/
+
+pero allí ultimamente ya no vienen modulos ejecutables .exe sino vienen en formatos .rar y al descomprimirlos aparecen así:
+
+02BE_Macarthur.cmti
+03BE_Macarthur.dcti
+04BE_Macarthur.mapx
+05BE_Macarthur.refx
+
+a estos archivos hay que copiarlos a la carpeta del programa, para hacerlo, en la ventana principal de PlayOnLinux (cierre todas las demás) hay que dar clic derecho encima del programa e-Sword que hemos instalado y clic en "Abrir el directorio de la aplicación" y se le abrirá el Administrardor de archivos que usted use, allí debe pegar esos modulos. Yo le aconsejo que aplaste el  atajo "Ctrl + T" para que se abra una pestaña y desde allí busque los archivos de sus modulos y los pueda copiar y en la pestaña anterior los pegue y después de reiniciado el programa (cerrarlo y volverlo a abrir) ya se harán visibles en sus respectivas pestañas o boton (depende del tipo de modulo que haya instalado)
+
+Nota: En caso de que PlayOnLinux se cuelgue, cierrenlo y vuelvanlo a abrir. O reinicie el ordenador.
+
+***************************************
+5.- INSTALAR COMPONENTES DE PLAYONLINUX
+***************************************
+En 
+
+"PlayOnLinux configuración/Instalar componentes"
+
+instale:
+
+msls31
+mfc42
+vbrun6
+
+Nota: Instalar esto es necesario para que funcione la búsqueda en las Biblias. Esa opción está en: "Biblia/Búsqueda" y "Biblia/Búsqueda Extendida"
+
+
+*******************************************
+7.- AÑADIR Y CONFIGURAR OLEAUT32 Y RICHED20
+*******************************************
+En 
+
+"PlayOnLinux configuración/Wine"
+
+y clic en "Configurar Wine"
+
+allí vaya a la pestaña "Librerías" y allí en "Nueva sustitución de librería"
+
+búsque riched20 y añadala
+busque oleaut32 y añadala
+
+ "Aplicar" y "Aceptar"
+
+Se añadirá automáticamente como "librería nativa y luego interna"
+
+Aplicar y Aceptar.
+
+*************************
+9.- Instalar el tema Luna
+*************************
+Opcional para que se vea más bonito e-Sword
+
+En la ventana principal de POL (PlayOnLinux) de un clic a "e-Sword...." y clic en la Tuerca
+
+Y allí clic en la pestaña: "Instalar componentes"
+
+Instale allí busque: 
+
+LunaTheme
+
+Instalar, cerrar ventana, y allí si puede abrir el programa y funcionará
+
+Nota: Si la ventana dice que hay un error (esto me pasó en la versión 3.20), cierrela y vuelva a instalar.
+
+***********************************
+Al abrir e-Sword pongalo en español
+***********************************
+
+Clic en:
+
+"Options/Language"
+
+allí abajo está español
+
+
+****************
+Dios les bendiga
+****************
+
+Atentamente: Washington Indacochea Delgado
+wachin.id@gmail.com
+
+

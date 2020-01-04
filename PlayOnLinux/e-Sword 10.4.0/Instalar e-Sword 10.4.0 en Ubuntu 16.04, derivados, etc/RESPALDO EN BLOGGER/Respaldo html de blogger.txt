@@ -1,0 +1,269 @@
+
+
+<b></b><br />
+<b><a href="http://4.bp.blogspot.com/-FM0f_ZGvlH4/V3lNFtJmxqI/AAAAAAAADPw/MnjBlvSLiFwsGV7zkGOHj9zSm8W8xy2JACK4B/s1600/01%2Be-Sword%2B10.4.0%2Ben%2BUbuntu%2B16.04%2528POL%2Bwine%2B1.7%2529.png" imageanchor="1"><img border="0" height="384" src="https://4.bp.blogspot.com/-FM0f_ZGvlH4/V3lNFtJmxqI/AAAAAAAADPw/MnjBlvSLiFwsGV7zkGOHj9zSm8W8xy2JACK4B/s640/01%2Be-Sword%2B10.4.0%2Ben%2BUbuntu%2B16.04%2528POL%2Bwine%2B1.7%2529.png" width="640" /></a></b>
+<b><br /></b>
+<b>RESUMEN:</b><br />
+Si usted usa e-Sword en Windows y quiere usar Linux (por ejemplo Ubuntu o derivados) si lo instala en Wine funcionará pero muy defectuosamente. Con este tutorial ahora puedo usarlo en mi Linux UbuntuStudio<br />
+<br />
+<b>ANTE TODO</b><br />
+No se salte los pasos, aquí el orden de los factores si afecta el producto <br />
+<b><br /></b>
+<b>¿QUÉ FUNCIONA?</b><br />
+Todo, al 100%<br />
+<b><br /></b>
+<b>PROBADO EN:</b><br />
+Ubuntu 14.04 (32bits, en una PC de Escritorio, Clon), UbuntuStudio 14.04 y 15.10 (32bits en mi laptop Dell Inspiron 1750), Linux Mint Rebecca (64bits en una laptop ASUS)<br />
+<br />
+<b>APLICABLE A:</b><br />
+e-Sword 10.4.0 ( a esta fecha 2016-01-28 es la versión que hay). Y teóricamente debería poder funcionar en cualquier Linux donde se pueda instalar PlayOnLinux con Wine 1.7 <br />
+<br />
+<b>TUTORIAL HECHO EN SISTEMA OPERATIVO:</b><br />
+UbuntuStudio 15.10 (32bits)<br />
+<br />
+<br />
+<br />
+<i><b>DESCARGUE LO SIGUIENTE NECESARIO:</b></i><br />
+<br />
+<b>a).-</b> El programa e-Sword <a href="http://www.e-sword.net/">http://www.e-sword.net/</a><br />
+&nbsp; &nbsp; &nbsp;Alternativo e-Sword 10.4.0&nbsp;<a href="https://drive.google.com/open?id=0B7dT-0960K49c3p5RmFmdE40V28">https://drive.google.com/open?id=0B7dT-0960K49c3p5RmFmdE40V28</a>&nbsp;(lo añado por si el autor del programa lo actualiza, pues este tutorial solo es valido para esta versión)<br />
+<br />
+<b>b).-</b> Descargue el instalador de los "Componentes de e-Sword 10.4.0" que yo hice, desde Google Drive:<br />
+<br />
+<a href="https://drive.google.com/open?id=0B7dT-0960K49bVl3UEZnRTdlWHM">https://drive.google.com/open?id=0B7dT-0960K49bVl3UEZnRTdlWHM</a><br />
+<br />
+<b>c).-</b> Usted necesita tener Modulos de Biblias, comentarios, etc para instalar. Puede descargar un <a href="http://facilitarelsoftwarelibre.blogspot.com/2016/01/biblias-para-e-sword-wachopack.html" target="_blank">Pack</a> de módulos que yo empaqueté, o puede usted buscar en Google los que usted necesite, generalmente los va a encontrar en .exe<br />
+<br />
+<b>d).- </b>Descarga el RESUMEN&nbsp;en texto.- Descarga el
+ resúmen en .txt Es necesario para cuando hayas leido y visto todas las imagenes de este blog y estes familiarizado y cuando lo vaya a instalar otra vez o en otra máquina sólo con este resumen lo pueda hacer(teniendolo abierto al lado con mousepad):<br />
+<br />
+<a href="https://drive.google.com/open?id=0B7dT-0960K49ODUtVEdzd0xBcmM">https://drive.google.com/open?id=0B7dT-0960K49ODUtVEdzd0xBcmM</a><br />
+<br />
+<br />
+<b>INSTRUCCIONES&nbsp;</b><br />
+Este tutorial tiene varias explicaciones para poder entender bien, es muy<br />
+complejo<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/_6EmKf1ueU0/0.jpg" frameborder="0" height="450" src="https://www.youtube.com/embed/_6EmKf1ueU0?feature=player_embedded" width="650"></iframe></div>
+<br />
+<br />
+<b><br />
+1.-&nbsp;Instalar PlayOnLinux.</b> Instalelo con el programa para instalar programas en su distribución linux. En LinuxMint te pedirá después de haber instalado PlayOnLinux instalar: "ttf-mscorefonts-installer" instalelo y acepte la licencia(este nombre podría variar algo en otras distribuciones) . En Ubuntu y derivados este paquete se instala sin ningun problema cuando instalas PlayOnLinux, acepte la licencia y siga, listo)<br />
+<br />
+<b>2.- Instalar una versión de Wine 1.7.-</b>&nbsp;(he testeado estas versiones y funciona bien) En PlayOnLinux dar clic en "Herramientas" en "Gestionar versiones de Wine", esperar un ratito:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-L_kx2YrdN0U/VpJwY4jvSdI/AAAAAAAABIA/Txn5vD7Aeus/s1600/01%2BIr%2Ba%2BGestionar%2Bversiones%2Bde%2BWine.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-L_kx2YrdN0U/VpJwY4jvSdI/AAAAAAAABIA/Txn5vD7Aeus/s1600/01%2BIr%2Ba%2BGestionar%2Bversiones%2Bde%2BWine.png" /></a><br />
+<br />
+<b>Nota:</b> Como este tuturial está hecho en UbuntuStudio de 32 bits, aparece solo con una pestaña que dice "Versiones de Wine (x86)":<br />
+<br />
+<a href="http://2.bp.blogspot.com/-hxRiceT-1Po/VpJ8rKAZiVI/AAAAAAAABIc/bZ858ZqlO7U/s1600/02%2BPesta%25C3%25B1a%2Bde%2Bversiones%2Bde%2BWine.png" imageanchor="1"><img border="0" height="364" src="https://2.bp.blogspot.com/-hxRiceT-1Po/VpJ8rKAZiVI/AAAAAAAABIc/bZ858ZqlO7U/s640/02%2BPesta%25C3%25B1a%2Bde%2Bversiones%2Bde%2BWine.png" width="640" /></a><br />
+<br />
+Si fuera su computadora una maquina con un sistema operativo linux de 64 bits aparecerá otra pestaña, lastimosamente no tengo una captura de pantalla para poder explicarlo, pero pondré esta imagen modificada con Inkscape para que usted lo pueda entender:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-cAOqijzwGJM/VpJ98vMuyiI/AAAAAAAABIo/qBNRwzFILe8/s1600/02%2BPesta%25C3%25B1a%2Bde%2Bversiones%2Bde%2BWine%2B%2528pesta%25C3%25B1a%2Bx64%2529.png" imageanchor="1"><img border="0" height="110" src="https://1.bp.blogspot.com/-cAOqijzwGJM/VpJ98vMuyiI/AAAAAAAABIo/qBNRwzFILe8/s640/02%2BPesta%25C3%25B1a%2Bde%2Bversiones%2Bde%2BWine%2B%2528pesta%25C3%25B1a%2Bx64%2529.png" width="640" /></a><br />
+<br />
+Sea el caso igual usted debe usar la primera (x86).<br />
+<br />
+Cuando en el lado izquierdo aparezcan las versiones disponibles elija cualquiera desde la 1.7.25&nbsp; pero que tengan los números puros (sin stagin, etc), ejemplo:<br />
+<br />
+1.7.25<br />
+1.7.53<br />
+1.7.54<br />
+<br />
+<i><span style="font-family: &quot;trebuchet ms&quot; , sans-serif;"><b>Nota:</b> no he testeado bien las mas avanzadas, ejemplo 1.8, 1.9. Recomiendo solo usar las 1.7.25 en adelante. </span></i><br />
+<br />
+<br />
+En la sig imagen señalo las correctas:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-dGddiBSS80s/VpKAAiKiIZI/AAAAAAAABI0/VzSM2JVPMDI/s1600/04%2BSeleccionar%2Blas%2Bversiones%2Bde%2Bwine%2Bnumeros%2Bpuros.png" imageanchor="1"><img border="0" height="364" src="https://1.bp.blogspot.com/-dGddiBSS80s/VpKAAiKiIZI/AAAAAAAABI0/VzSM2JVPMDI/s640/04%2BSeleccionar%2Blas%2Bversiones%2Bde%2Bwine%2Bnumeros%2Bpuros.png" width="640" /></a><br />
+<br />
+Como usted se dará cuenta en esa imagen pues yo ya tengo instalda la versión 1.7.55 (por eso ya no está en la parte de la izquierda sino en la derecha).<br />
+<br />
+<br />
+<b>Instalación de una versión de Wine.</b>- Para instalarla usted debe dar clic a la versión (1) y luego en la flecha a la derecha(2), como muestra la figura:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-55IBdfqFC6I/VpKCbFnHaaI/AAAAAAAABJA/317ZLAxsDRE/s1600/05%2Bejemplo%2Bde%2Binstalaci%25C3%25B3n%2Bwine%2B1.7.55.png" imageanchor="1"><img border="0" height="292" src="https://4.bp.blogspot.com/-55IBdfqFC6I/VpKCbFnHaaI/AAAAAAAABJA/317ZLAxsDRE/s640/05%2Bejemplo%2Bde%2Binstalaci%25C3%25B3n%2Bwine%2B1.7.55.png" width="640" /></a><br />
+<br />
+Debe esperar un buen rato pues como ve en la ventana está descargando wine pero luego descargará wine mono, espere que se instalen (dependiendo de su computadora si es muy lenta o no, y de su internet)<br />
+<br />
+<b>Nota:</b> En este tutorial yo tengo instalado en PlayOnLinux un programa que se llama Mp3tag y al instalarlo instaló automáticamente la versión de Wine 1.7.25 por este motivo <b>no la cogeré pues ya está ocupada</b>(explicar porqué es complicado, digamos que es para que no interfiera)<b>. </b>Pero si es la primera vez que usted usa PlayOnLinux le aparecerá sin nada, por eso si usted ha instalado algo debe darse cuenta de no usar una versión ocupada. Aquí le dejo una imagen para que separa como verlo:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-GdgBBnieSHw/VpKFILBF9HI/AAAAAAAABJM/NmQcR5E0nwc/s1600/06%2BComo%2Bdarse%2Bcuenta%2Bde%2Bla%2Bversion%2Bde%2Bwine%2Bde%2Bun%2Bprograma.png" imageanchor="1"><img border="0" height="211" src="https://2.bp.blogspot.com/-GdgBBnieSHw/VpKFILBF9HI/AAAAAAAABJM/NmQcR5E0nwc/s640/06%2BComo%2Bdarse%2Bcuenta%2Bde%2Bla%2Bversion%2Bde%2Bwine%2Bde%2Bun%2Bprograma.png" width="640" /></a><br />
+<br />
+<b>3.- Instalar e-Sword.-</b> Ahora en PlayOnlinux de clic en "Instalar" y aparecerá una ventana grande y espere a que actualize, puede demorar bastante:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-Y4k6eDgswlw/VpKGR6mhk-I/AAAAAAAABJY/WfBPWwYNx9A/s1600/07%2BInstalar%2Bun%2Bprograma.png" imageanchor="1"><img border="0" height="352" src="https://1.bp.blogspot.com/-Y4k6eDgswlw/VpKGR6mhk-I/AAAAAAAABJY/WfBPWwYNx9A/s640/07%2BInstalar%2Bun%2Bprograma.png" width="640" /></a><br />
+<br />
+y de clic abajo donde dice. "Instalar un programa no-listado"<br />
+<br />
+<a href="http://4.bp.blogspot.com/-DVrBXpesdg0/VpKGy6-MLXI/AAAAAAAABJk/I_PiKTgwbOE/s1600/08%2Binstalar%2Bprograma%2Bno%2Blistado.png" imageanchor="1"><img border="0" src="https://4.bp.blogspot.com/-DVrBXpesdg0/VpKGy6-MLXI/AAAAAAAABJk/I_PiKTgwbOE/s1600/08%2Binstalar%2Bprograma%2Bno%2Blistado.png" /></a><br />
+<br />
+<br />
+la a abrir, de clic allí hasta que le aparezca la ventana de "Instalación manual":<br />
+<br />
+<a href="http://2.bp.blogspot.com/-kNizUCuvE58/VpKHQJz9_rI/AAAAAAAABJw/fZAjAzEc-eg/s1600/09%2Binstalaci%25C3%25B3n%2Bmanual.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-kNizUCuvE58/VpKHQJz9_rI/AAAAAAAABJw/fZAjAzEc-eg/s1600/09%2Binstalaci%25C3%25B3n%2Bmanual.png" /></a><br />
+<br />
+clic en Siguiente y por defecto aparecerá la opción: "Instalar un programa en una nueva unidad virtual" de clic en siguiente:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-66o5plEjs-g/VpKHr_M_mAI/AAAAAAAABJ8/LN3Qb5TLggQ/s1600/10%2Binstalar%2Bun%2Bprograma%2Ben%2Buna%2Bnueva%2Bunidad%2Bvirtual.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-66o5plEjs-g/VpKHr_M_mAI/AAAAAAAABJ8/LN3Qb5TLggQ/s1600/10%2Binstalar%2Bun%2Bprograma%2Ben%2Buna%2Bnueva%2Bunidad%2Bvirtual.png" /></a><br />
+<br />
+&nbsp;y pongale un nombre como este(sin espacios):<br />
+<br />
+e-Sword1040wine1755<br />
+<br />
+es para tener bien claro lo que hemos hecho:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-OuuDv5WLtpI/VpKIGuuwpOI/AAAAAAAABKI/QnVKPtxuM1Y/s1600/11%2Bpongale%2Bnombre%2Ba%2Bla%2Bunidad.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-OuuDv5WLtpI/VpKIGuuwpOI/AAAAAAAABKI/QnVKPtxuM1Y/s1600/11%2Bpongale%2Bnombre%2Ba%2Bla%2Bunidad.png" /></a><br />
+<br />
+luego marque las opciones:<br />
+<br />
+-Use otra versión de wine<br />
+-Configurar wine<br />
+<div>
+<br /></div>
+<a href="http://4.bp.blogspot.com/-1vv6ivIQuB4/VpKIbdRiyKI/AAAAAAAABKU/-_qHwLhTe3Q/s1600/12%2Bmarque%2Blas%2Bdos%2B1ras.%2Bopciones%2Bde%2Bwine.png" imageanchor="1"><img border="0" src="https://4.bp.blogspot.com/-1vv6ivIQuB4/VpKIbdRiyKI/AAAAAAAABKU/-_qHwLhTe3Q/s1600/12%2Bmarque%2Blas%2Bdos%2B1ras.%2Bopciones%2Bde%2Bwine.png" /></a><br />
+<br />
+Clic siguiente y seleccione en este caso la versión de wine 1.7.55:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-o5bZQ7f8ScE/VpKI23mkBPI/AAAAAAAABKg/4XGT4oQpQEI/s1600/13%2Bseleccione%2Bla%2Bversion%2Bde%2Bwine%2Bpara%2Bla%2Bunidad%2Bvirtual.png" imageanchor="1"><img border="0" src="https://4.bp.blogspot.com/-o5bZQ7f8ScE/VpKI23mkBPI/AAAAAAAABKg/4XGT4oQpQEI/s1600/13%2Bseleccione%2Bla%2Bversion%2Bde%2Bwine%2Bpara%2Bla%2Bunidad%2Bvirtual.png" /></a><br />
+<br />
+de clic en siguiente y escoja esa versión de wine, luego espere(puede que demore alguito) y le saldrá la ventana de configuración de wine, de clic en la pestaña<b>&nbsp;Gráficos</b> y pongale una resolución para que se vean mejor las letras, ejemplo yo le pongo 120:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-lSl2v2KOWo0/VpKJsm2G9uI/AAAAAAAABKs/a6Pqx_6dwnc/s1600/14%2BPesta%25C3%25B1a%2BGraficos%2Bde%2BWine%2Bponer%2Bresoluci%25C3%25B3n%2B120.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-lSl2v2KOWo0/VpKJsm2G9uI/AAAAAAAABKs/a6Pqx_6dwnc/s1600/14%2BPesta%25C3%25B1a%2BGraficos%2Bde%2BWine%2Bponer%2Bresoluci%25C3%25B3n%2B120.png" /></a><br />
+<br />
+Ahora le aparecerá una ventana que donde en medio dice "Explorar" de clic:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-GUN3IqTiawU/VpKKHhNL0EI/AAAAAAAABK4/GoeTSG8Haz8/s1600/15%2Bexplorar.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-GUN3IqTiawU/VpKKHhNL0EI/AAAAAAAABK4/GoeTSG8Haz8/s1600/15%2Bexplorar.png" /></a><br />
+<br />
+búsque el instalador de e-Sword 10.4.0 que usted debe haber descargado de:<br />
+<br />
+<a href="http://www.e-sword.net/">http://www.e-sword.net/</a><br />
+<br />
+y de clic en siguiente, siga normalmente las instrucciones del instalador:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-hd_xZUUcoaE/VpKLBT7HXrI/AAAAAAAABLE/Ffn_ELrSu_w/s1600/16%2Binstalador%2Bde%2Be-Sword%2B10.40.png" imageanchor="1"><img border="0" height="477" src="https://1.bp.blogspot.com/-hd_xZUUcoaE/VpKLBT7HXrI/AAAAAAAABLE/Ffn_ELrSu_w/s640/16%2Binstalador%2Bde%2Be-Sword%2B10.40.png" width="640" /></a><br />
+<br />
+al finalizar le aparecerá una ventana con una lista de nombres, seleccione:<br />
+<br />
+e-Sword.exe<br />
+<br />
+y luego de clic en "Siguiente", así:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-X9jRtHZeskk/VpKLso0_CTI/AAAAAAAABLQ/aY4yqd4100Q/s1600/17%2Bseleccione%2Bel%2Bshortcut%2Be-Sword.exe.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-X9jRtHZeskk/VpKLso0_CTI/AAAAAAAABLQ/aY4yqd4100Q/s1600/17%2Bseleccione%2Bel%2Bshortcut%2Be-Sword.exe.png" /></a><br />
+<br />
+ahora debe ponerle un nombre al programa(ahora si puede usar espacios), pongale así:<br />
+<br />
+e-Sword 10.4.0 (wine 1.7.55)<br />
+<br />
+<br />
+<a href="http://3.bp.blogspot.com/-BJJd2kxKmk8/VpQKFRA_IlI/AAAAAAAABO8/TPkVF2CAAxE/s1600/18%2Bpongale%2Bnombre%2Bal%2Bprograma.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-BJJd2kxKmk8/VpQKFRA_IlI/AAAAAAAABO8/TPkVF2CAAxE/s1600/18%2Bpongale%2Bnombre%2Bal%2Bprograma.png" /></a><br />
+<br />
+y luego de clic en siguiente. Luego aparecerá otra vez la misma ventana y de clic en la opción "<b>No quiero crear otro atajo</b>" y clic en siguiente:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-bH8Vb4-7zU8/VpKMugsAgSI/AAAAAAAABLo/Rq2z7xI-1p8/s1600/19%2Bclic%2Bno%2Bquiero%2Botro%2Batajo.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-bH8Vb4-7zU8/VpKMugsAgSI/AAAAAAAABLo/Rq2z7xI-1p8/s1600/19%2Bclic%2Bno%2Bquiero%2Botro%2Batajo.png" /></a><br />
+<br />
+<b>Nota: </b>No se olvide de dar clic en Siguiente sino tendrá que volver a hacer todo desde el principio(si le pasa eso me avisa).<br />
+<br />
+<b>4.- Cierre la ventana de PlayOnLinux</b> (es necesario hacer esto para asegurarse a que se cierren todas las aplicaciones que puedan estar abiertas)<br />
+<br />
+<a href="http://3.bp.blogspot.com/-ok4FKZvj_rk/VpKNZGgWx0I/AAAAAAAABMA/EkdH1BpdN0Q/s1600/20%2Bcerrar%2Btodas%2Blas%2Bventanas%2Bde%2Bplayonlinux.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-ok4FKZvj_rk/VpKNZGgWx0I/AAAAAAAABMA/EkdH1BpdN0Q/s1600/20%2Bcerrar%2Btodas%2Blas%2Bventanas%2Bde%2Bplayonlinux.png" /></a><br />
+<br />
+<b>5.- Tenga listo el instalador</b> de los&nbsp;<b>componentes de e-Sword 10.4.0</b> que usted ya debe haber descargado de Google Drive:<br />
+<br />
+<a href="https://drive.google.com/open?id=0B7dT-0960K49bVl3UEZnRTdlWHM">https://drive.google.com/open?id=0B7dT-0960K49bVl3UEZnRTdlWHM</a><br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<i>Nota: Si usted se pregunta ¿qué contiene ese instalador? pues es el mismo e-Sword 10.4.0 solo que extraido con el programa&nbsp;<a href="http://legroom.net/software/uniextract" target="_blank">Universal Extractor</a>,&nbsp;esto hice para que todos los componentes con sus dependencias queden en la misma carpeta del programa pues tal parece e-Sword en Wine no reconoce algunas pues se instalan en otros directorios.</i><br />
+<br />
+<b>6.- Ahora vuelva a abrir PlayOnLinux</b> y de clic en el programa que hemos instalado (e-Sword 10.4.0 y de clic en la tuerca<b>(Configurar)</b> y clic en la pestaña <b>"Miscelaneo"</b> y de clic en el botón <b>"Ejecutar un archivo .exe en esta unidad virtual"</b>:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-v-axhljQ5Ow/VpQLrRghm0I/AAAAAAAABPI/cCG42CQUduc/s1600/21%2Bclic%2Ben%2Bconfigurar%2By%2Bmiscelaneo.png" imageanchor="1"><img border="0" height="278" src="https://1.bp.blogspot.com/-v-axhljQ5Ow/VpQLrRghm0I/AAAAAAAABPI/cCG42CQUduc/s640/21%2Bclic%2Ben%2Bconfigurar%2By%2Bmiscelaneo.png" width="640" /></a><br />
+<br />
+Desde allí busque el instalador descargado e instalelo, siga las instrucciones:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-ix7mLqKY_bs/VpQVuwQUQMI/AAAAAAAABPk/9wyjLaFt-3M/s1600/23%2Binstalando%2Blos%2Bcomponentes.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-ix7mLqKY_bs/VpQVuwQUQMI/AAAAAAAABPk/9wyjLaFt-3M/s1600/23%2Binstalando%2Blos%2Bcomponentes.png" /></a><br />
+<br />
+<b>6.- Luego de clic en PlayOninux en la pestaña "Instalar componentes"</b>, busque e instale uno por uno los siguientes:<br />
+<br />
+msls31<br />
+mfc42<br />
+<br />
+<a href="http://3.bp.blogspot.com/-B3364me6Ci0/VpKRgfpJ-zI/AAAAAAAABNE/hNVSfatgQOE/s1600/24%2Binstalar%2Bcomponente%2Bmsls31.png" imageanchor="1"><img border="0" height="385" src="https://3.bp.blogspot.com/-B3364me6Ci0/VpKRgfpJ-zI/AAAAAAAABNE/hNVSfatgQOE/s640/24%2Binstalar%2Bcomponente%2Bmsls31.png" width="640" /></a><br />
+<br />
+<br />
+<a href="http://3.bp.blogspot.com/-_HPVccBttWg/VpKRv-MnTMI/AAAAAAAABNQ/WLDyfLVgGkY/s1600/25%2Binstalar%2Bcomponente%2Bmfc42.png" imageanchor="1"><img border="0" height="385" src="https://3.bp.blogspot.com/-_HPVccBttWg/VpKRv-MnTMI/AAAAAAAABNQ/WLDyfLVgGkY/s640/25%2Binstalar%2Bcomponente%2Bmfc42.png" width="640" /></a><br />
+<br />
+<b>Nota: </b>Después que lo ha seleccionado y dado clic en el botón "Instalar", espere hasta que la ventana se cierre, una vez que se cerró ya se instaló.<br />
+<br />
+<b>7.- Añadir y configurar oleaut32 y&nbsp;</b><b>riched20&nbsp;</b><b>como "nativa, interna".- </b>De clic en la pestaña "Wine" y en "Configurar Wine":<br />
+<br />
+<a href="http://3.bp.blogspot.com/-uRvg8S1xSqo/VpQaRT6PI2I/AAAAAAAABPw/zMO4O65hZlQ/s1600/26%2BConfigurar%2Briched20%2Band%2Boleaut32%2Bcomo%2Bnativa%252C%2By%2Bluego%2Binterna.png" imageanchor="1"><img border="0" height="385" src="https://3.bp.blogspot.com/-uRvg8S1xSqo/VpQaRT6PI2I/AAAAAAAABPw/zMO4O65hZlQ/s640/26%2BConfigurar%2Briched20%2Band%2Boleaut32%2Bcomo%2Bnativa%252C%2By%2Bluego%2Binterna.png" width="640" /></a><br />
+<br />
+se abrirá el configurador de Wine, de clic en la pestaña "Librerías" allí añadalas buscandolas en la lista y escribiendo su nombre:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-JDIc6FHRXh0/VpQb9NyoZlI/AAAAAAAABQU/w7NRdsQc0EU/s1600/27%2BConfiguraci%25C3%25B3n%2Bde%2BWine_015.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-JDIc6FHRXh0/VpQb9NyoZlI/AAAAAAAABQU/w7NRdsQc0EU/s1600/27%2BConfiguraci%25C3%25B3n%2Bde%2BWine_015.png" /></a><br />
+<br />
+Buscando y añadiendo oleaut32 (yo en el punto 2 de la imágen me ayudo con el teclado escribiendo el nombre y allí es más rápido):<br />
+<br />
+<a href="http://2.bp.blogspot.com/-qtthEJiNw5E/VpQbtVoSK6I/AAAAAAAABQI/GXVA8hS9hRo/s1600/28%2BBuscando%2By%2Ba%25C3%25B1adiendo%2Boleaut32.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-qtthEJiNw5E/VpQbtVoSK6I/AAAAAAAABQI/GXVA8hS9hRo/s1600/28%2BBuscando%2By%2Ba%25C3%25B1adiendo%2Boleaut32.png" /></a><br />
+<br />
+así debe de quedar:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-Qspeit-J9s0/VpQcXsj6OVI/AAAAAAAABQg/bRb2eAh5ymE/s1600/29%2BAs%25C3%25AD%2Bdebe%2Bde%2Bquedar.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-Qspeit-J9s0/VpQcXsj6OVI/AAAAAAAABQg/bRb2eAh5ymE/s1600/29%2BAs%25C3%25AD%2Bdebe%2Bde%2Bquedar.png" /></a><br />
+<br />
+ahora la ultima, riched20 y clic en Aplicar y Aceptar:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-aXSVBc1pt1M/VpQdPEleXAI/AAAAAAAABQw/mACkYZkrvv0/s1600/30%2Ba%25C3%25B1adiendo%2Brichedit20.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-aXSVBc1pt1M/VpQdPEleXAI/AAAAAAAABQw/mACkYZkrvv0/s1600/30%2Ba%25C3%25B1adiendo%2Brichedit20.png" /></a><br />
+<br />
+Listo desde allí la podrá utilizar. Quedará un lanzador en el escritorio y también desde el mismo PlayOnLinux la puede abrir seleccionando al programa y dando clic en el botón de Play<br />
+<br />
+<b>8.- Instalar módulos de Biblias, Comentarios, y otros.-&nbsp;</b>Siembre debe instalarlos así: Clic en el programa instalado en este caso el e-Sword, luego clic en el botón Configurar (tuerca) luego Clic en&nbsp;la pestaña "<b>Miscelaneo"</b>&nbsp;y en clic en el botón&nbsp;<b>"Ejecutar un archivo .exe en esta unidad virtual"</b><br />
+<br />
+<a href="http://1.bp.blogspot.com/-AdS9_7yg-q0/VpQfb9Q_8SI/AAAAAAAABQ8/UFPw9rg7Q24/s1600/31%2BC%25C3%25B3mo%2Binstalar%2BBiblias%2By%2Botros%2Bm%25C3%25B3dulos%2Bde%2Be-Sword%2Ben%2BPlayOnLinux.png" imageanchor="1"><img border="0" height="212" src="https://1.bp.blogspot.com/-AdS9_7yg-q0/VpQfb9Q_8SI/AAAAAAAABQ8/UFPw9rg7Q24/s640/31%2BC%25C3%25B3mo%2Binstalar%2BBiblias%2By%2Botros%2Bm%25C3%25B3dulos%2Bde%2Be-Sword%2Ben%2BPlayOnLinux.png" width="640" /></a><br />
+<br />
+y desde allí puede instalar módulos para e-Sword que puede descargarlos de:<br />
+<br />
+<a href="http://esword-espanol.blogspot.com/">http://esword-espanol.blogspot.com/</a><br />
+<br />
+<a href="http://palabradevida.net.ve/biblia_e-Sword-03.htm">http://palabradevida.net.ve/biblia_e-Sword-03.htm</a><br />
+<br />
+<a href="https://sites.google.com/site/iglesiadecristoentonala/e-sword-10">https://sites.google.com/site/iglesiadecristoentonala/e-sword-10</a><br />
+<br />
+<br />
+o usted puede usar el instalador que yo he hecho que tiene los módulos que yo uso:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-lRJQUCaz-qg/VpKS5mfX6ZI/AAAAAAAABNc/ty0KxhLMieM/s1600/26%2Binstale%2Bmis%2Bmodulos%2Bde%2Blas%2BBiblias.png" imageanchor="1"><img border="0" height="314" src="https://2.bp.blogspot.com/-lRJQUCaz-qg/VpKS5mfX6ZI/AAAAAAAABNc/ty0KxhLMieM/s640/26%2Binstale%2Bmis%2Bmodulos%2Bde%2Blas%2BBiblias.png" width="640" /></a><br />
+<br />
+<a href="http://4.bp.blogspot.com/-6sNgxvcf960/VpKXePGnRYI/AAAAAAAABOI/RWbbl4A7QGc/s1600/27%2BInstalador%2Bde%2BModulos%2Bde%2BBiblias%2By%2B%252B%2B%2Bque%2Byo%2Bhice.png" imageanchor="1"><img border="0" height="279" src="https://4.bp.blogspot.com/-6sNgxvcf960/VpKXePGnRYI/AAAAAAAABOI/RWbbl4A7QGc/s640/27%2BInstalador%2Bde%2BModulos%2Bde%2BBiblias%2By%2B%252B%2B%2Bque%2Byo%2Bhice.png" width="640" /></a><br />
+<br />
+descarguelo de:<br />
+<a href="http://facilitarelsoftwarelibre.blogspot.com/2016/01/biblias-para-e-sword-wachopack.html">http://facilitarelsoftwarelibre.blogspot.com/2016/01/biblias-para-e-sword-wachopack.html</a><br />
+<div>
+<br />
+<b>Nota: </b>El lugar donde se han instalado los módulos se puede abrir en PlayOnLinux dando clic derecho al programa instalado y clic en "Abre el&nbsp; directorio de aplicación"</div>
+<br />
+<br />
+<b><br /></b>
+<b><span style="font-size: large;">¿Cómo logré que funcione?</span></b><br />
+<b><span style="font-size: large;"><br /></span></b>
+<b>1.- Gracias al instalador de los "Componentes e-Sword 10.4.0 (PlayOnLinux).exe".-</b> se soluciona un problema grabe en e-Sword en Linux, antes si uno buscaba en la ventana de las Biblias un versículo y si uno le daba un clic al que uno quería éste se movía hasta abajo con todo y uno quedaba casi al final, eso era motivo de ni querer usar e-Sword, gracias a Dios esta es la solución.<br />
+Sucedió que desde hace años, años atrás me ha gustado abrir los instaladores de Windows y ver qué tenían dentro(he usado programas como VMware ThinApp, Dependency Viewer y Resource Hacker) y también con eso he tratado de hacer programas portables y había leído muchos manuales, así que se me ocurrió que tal vez en Linux en Wine (PlayOnLinux es un script que usa Wine) el programa e-Sword no reconozca/cargue correctamente el lugar donde están instaladas sus dependencias(dll, etc), pero, si se las pusiera en la raíz donde está el programa tal vez si, y así fue. Ah, logré extraer todos los componentes del instalador de e-Sword 10.4.0 con el programa "Universal Extractor" pero en Windows, si no no se puede(y hay que realizar 3 extracciones porque está como en capas). Saben llegó un momento en mi vida que me pregunté ¿y de qué sirve todo lo que aprendí?(me había leído un manual grandisimo de VMware ThinApp y otros programas, sobre el registro de Windows y como se cargaban las dll etc), no sabía qué utilidad tendría ese conocimiento pero creo que para esta hora ha llegado <a href="https://www.youtube.com/watch?v=vj9dWwT2MGk" target="_blank">Ester 4:14</a><br />
+<br />
+<br />
+<b>2.- ¿Cómo hice funcionar las <a href="http://4.bp.blogspot.com/-D4a9_DTiZnQ/VpQosEOTNmI/AAAAAAAABRg/Ip_In6CKCaU/s1600/03%2BVentana%2Bemergente%2Bde%2Bn%25C3%25BAmeros%2BStrong.png" target="_blank">ventanas</a> emergentes de los <a href="http://4.bp.blogspot.com/-OyC1Pj3T4S0/VpQpe-l4ehI/AAAAAAAABRw/gnpZo3rq47Y/s1600/04%2BVentana%2Bemergente%2Ben%2Bvers%25C3%25ADculos.png" target="_blank">versículos</a> Biblicos?.-</b> En: <a href="http://ubuntuforums.org/showthread.php?t=404042">http://ubuntuforums.org/showthread.php?t=404042</a> Aquí menciona estos dos archivos sumamente importantes: msls31(el cual sirve para ver los números strong), y mfc42 (que no se para que sirve pero ahí va lo he visto en muchos otros tutoriales)<br />
+<br />
+<b>3.- ¿Cómo hice que funcione la <a href="http://1.bp.blogspot.com/-PQA7Vgm41x8/VpQ0CaScSNI/AAAAAAAABSY/smJa2-a64hg/s1600/01%2BBusqueda%2Bde%2Bn%25C3%25BAmeros%2BStrong%2Ben%2BBiblias%2BHebreo%2By%2BGriego.png" target="_blank">búsqueda</a> de los números <a href="http://1.bp.blogspot.com/-_PDE09i2tME/VpQ0CIgusRI/AAAAAAAABSc/JHh8ug5TotQ/s1600/02%2BBusqueda%2Bde%2Bn%25C3%25BAmeros%2BStrong%2Ben%2BBiblias%2BHebreo%2By%2BGriego.png" target="_blank">Strong</a> en las Biblias Hebreo y Griego?.- </b>Cuando yo había hecho funcionar esta versión 10.4.0 le dije a mi primo Paco el cual usa LinuxMint y en Alemania aprendió muchas cosas del uso de e-Sword y el me preguntó si funcionaba la búsqueda de los módulos Hebreo y Griego que uno puede descargar en el mismo programa, y yo le dijo que no sabía, y recordé que en el foro de "Ubuntu Christian Edition" el script de instalación de e-Sword para en ese entonces estaba la versión e-Sword 0.9.6 y si funcionaba, y allí está eso de que que hay que añadir a oleaut32 y riched20, a mi me funciono añadiendolas, pero así como se añaden automaticamente como "nativa, interna", visto en:<br />
+<br />
+How To Install E-sword with wine<br />
+<a href="http://ubuntuforums.org/showthread.php?t=404042">http://ubuntuforums.org/showthread.php?t=404042</a><br />
+<br />
+<b>4.- ¿Porqué PlayOnLinux?.-</b> Lo trataré de explicar con mis palabras, PlayOnLinux mantiene separada cada aplicación en una especie de baúl, es decir que todas sus configuraciónes, el registro de windows y todas sus dependencias(componentes) siempre estarán en un solo lugar para que no se puedan modificar. Yo no hago un tutorial de como instalar e-Sword en Wine puesto que no se qué otros programas ustedes instalarán allí, y hay programas que pueden modificar el registro de windows o los componentes y hay mucho riesgo a que se dañe la configuración del programa e-Sword y ya no les funcione, no habría garantías de que siempre funcione en ese caso.<br />
+<br />
+<b>Nota:</b> Esta técnica de extraer todo el contenido de un instalador y ponerlo en el mismo programa instalado podría ser util para hacer funcionar algún otro programa de windows difícil de hacer funcionar en Linux en Wine con PlayOnLinux<br />
+<br />
+<br />
+Dios les bendiga 

@@ -1,0 +1,184 @@
+
+Nota: No se salte los pasos, aquí el orden de los factores si afecta el producto
+
+******************************************
+0.0- DESCARGUE Y TENGA A MANO LO NECESARIO:
+******************************************
+
+---------------------------
+0.1.- e-Sword 11.1.0 desde:
+---------------------------
+
+http://www.e-sword.net/downloads.html
+
+o:
+
+descarga alternativa (también para después cuando Rick Meyeres lo actualice y ya no se pueda descargar esta versión desde la pagina oficial):
+https://drive.google.com/file/d/1lx8nNyukc8CzbLn5ptFNSFELlupFnI-q/view?usp=sharing
+
+--------------------------
+0.2.- e-Sword 11.1.0 Extraido
+--------------------------
+Este ejecutable yo lo he empaquetado y lo he subido a mi cuenta de Google Drive (es el mismo e-Sword solo que extraido todo su contenido y puesto en una solo carpeta) descarguelo de:
+https://drive.google.com/file/d/1JlcH6FfHxh4gbznZFr3r5Ve5QAbaN4kk/view?usp=sharing
+
+-------------
+0.3.- Modulos
+-------------
+Instale los que yo he recopilado para fines didacticos: 
+
+Biblias para e-Sword (WachoPack)
+https://facilitarelsoftwarelibre.blogspot.com/2018/02/biblias-para-e-sword-wachopack-2018.html
+
+o 
+
+los suyos que usted tenga.
+
+-----------------------
+0.4) RESUMEN (este mismo)
+-----------------------
+
+
+
+************************
+1.- INSTALAR PLAYONLINUX
+************************
+sudo apt-get install playonlinux mousepad gnome-exe-thumbnailer
+
+Cuando vaya a finalizar la instalación hay una parte que le pedirá que acepte una licencia, aceptela
+
+
+************************************
+2.- INSTALAR UNA VERSION DE WINE 1.7
+************************************
+En PlayOnLinux dar clic en "Herramientas" en "Gestiona versiones de Wine", se abrirá una ventana llamada "administrador de versiones PlayOnLinux", esperar un momento, cuando en el lado izquierdo aparezcan las "Versiones de Wine disponibles" elija cualquiera de las 1.7 en adelante (que no esté siendo usada) pero que tenga los cuatro numeros puros, ejemplo:
+
+1.7.25
+1.7.30
+1.7.50
+
+(Nota: Si usa Ubuntu de 64 bits aparecerá una ventana, escoja de 32 bits y clic en siguiente)
+
+Para elejirla dele clic y de allí clic en el botón de la flecha a la derecha para que se instale 
+
+(Nota: Aquí podría ademas de la descarga de wine, aparecer seguido la descarga de wine_gecko y wine-mono, si fuera así dejelos que se instalen, sino más adelante le saldrá que usted los instale.)
+
+, y cuando ya esté instalada la verá en la sección "Versiones de Wine instaladas", ahora cierre la ventana
+
+***************************
+3.- INSTALAR E-SWORD en POL
+***************************
+En PlayOnlinux de clic en el botón + que dice "Instalar" y abajo de la ventana que se abrió de clic en: "Instalar un programa no listado" de clic en "Siguiente" hasta (puede que se demore)que le aparezca la ventana con sub-título "Instalación manual", clic en siguiente y clic en la primer opción:"Instalar un programa en una nueva unidad virtual" y pongale un nombre como este(sin espacios):
+
+e-Sword1110wine1730
+
+(si no se acuerda la versión de wine puede revisarla otra vez)
+
+luego marque las opciones:
+
+-Use otra versión de wine
+-Configurar wine
+
+de clic en siguiente y escoja esa versión de wine que usted haya escojido
+
+Nota: En este momento puede que le salga una ventana de instalar un paquete llamado "Mono" y luego además "Gecko"; si es así instálelos uno por uno (puede que se demore bastante mientras se descargan e instalan)
+
+Luego espere y le saldrá la ventana de configuración de wine, de clic en la pestaña "Gráficos" y pongale una resolución para que se vean mejor las letras, ejemplo yo le pongo 120 y clic en "Aplicar" y "Aceptar"
+
+Nota: El instalador de e-Sword debe tenerlo en alguna carpeta de HOME, no en particiones externas o pendrives, pues si fuera así le saldría error.
+
+Ahora en la ventana para instalar el programa de clic en "seleccione otro archivo" y clic en "Siguiente", luego en el botón "explorar" y buscar el instalador 
+
+..al seleccionar el instalador y aceptar le aparecerá el instalador de e-Sword, siga las instrucciones e instalelo (al final le abrirá la página web, cierrela). 
+
+Luego en la ventana de PlayOnLinux le saldrá una ventana con algunos archivos de e-Sword, dos de estos son:
+
+e-Sword.exe
+e-Sword.lnk
+
+dele clic a e-Sword.exe y clic "Siguiente" y cambiele el nombre de e-Sword a por ejemplo:
+
+e-Sword 11.1.0 (wine 1.7.25)
+
+(Ese es el nombre de la versión de wine que yo escogí. Usted ponga su versión)
+
+y clic en siguiente. 
+Luego aparecerá otra vez la ventana y de clic en la opción: 
+
+"No quiero crear otro atajo" 
+
+y clic en siguiente, y listo está instalado.
+
+Nota: Ahora cierre la ventana principal de PlayOnLinux (es necesario hacer esto para asegurarse a que se cierren todas las aplicaciones que puedan estar abiertas)
+
+*****************************
+4.- INSTALAR E-SWORD EXTRAIDO
+*****************************
+Abra PlayOnLinux y de clic siguiendo este orden:
+
+- Clic en la ventana de PlayOnLinux en el programa e-Sword que hemos instalado, y
+- clic en la tuerca(configurar) y clic en la pestaña "Miscelanea" y de clic en el botón "Ejecutar un archivo .exe en esta unidad virtual" y busque el instalador que hice:
+
+e-Sword 11.1.0 Extraido.exe
+
+instalelo, luego cierre ese instalador.
+
+***************************************
+5.- INSTALAR COMPONENTES DE PLAYONLINUX
+***************************************
+Ahora allí mismo en la ventana "PlayOnLinux configuración" (que es la que habíamos abierto) de clic en la pestaña "Instalar componentes", busque e instale uno por uno estos componentes (puede ayudarse seleccionando y escribiendo en el teclado): 
+
+msls31
+mfc42
+
+Nota: Cuando lo seleccione de clic en el botón "instalar" y espere hasta que la ventana se cierre, una vez que se cerró ya se instaló. Haga esto con cada uno. 
+
+*******************************************
+7.- AÑADIR Y CONFIGURAR OLEAUT32 Y RICHED20
+*******************************************
+Ahora hay que configurar riched20 and oleaut32 como "nativa, y luego interna" 
+
+De clic en la ventana "PlayOnLinux configuración" en la pestaña "Wine" y luego en el botón "Configurar Wine", allí en la ventana que se abrirá de clic en la pestaña "Librerías" y en la flechita abajo de "Nueva sustitución de librería" búsque riched20 y añadala, y luego busque oleaut32 y añadala, luego clic en los botones "Aplicar" y "Aceptar", listo (atomáticamente se añadirán como "nativa, y luego interna)
+
+*********************************
+8.-  INSTALAR MÓDULOS DE BIBLIAS, COMENTARIOS, Y OTROS
+********************************
+Si usted tiene instaladores de modulos de e-Sword y desea instalarlos, siembre debe instalarlos así: 
+- En la ventana abierta de PlayOnLinux clic en el programa e-Sword, luego clic en el botón Configurar (tuerca) luego Clic en la pestaña "Miscelaneo" y en clic en el botón "Ejecutar un archivo .exe en esta unidad virtual, allí lo busca.
+
+**********************************
+Direccion de descarga de módulos
+**********************************
+
+Equipo Biblioteca Hispana Internacional
+https://eswordbibliotecahispana.blogspot.com/
+
+e-Sword en español
+https://esword-espanol.blogspot.com/
+
+Biblia Electrónica: e-Sword
+http://palabradevida.net.ve/biblia_e-Sword-03.htm
+
+E-Sword 10 - Iglesia de Cristo en Tonalá
+https://sites.google.com/site/iglesiadecristoentonala/e-sword-10
+
+
+
+************************************
+OPCIONAL, INSTALAR UN TEMA EN PLAYONLINUX
+************************************
+De clic en la ventana "PlayOnLinux configuración" y de clic en la pestaña "Instalar componentes" y allí busque 
+
+luna 
+
+le saldrá "LunaTheme"
+
+esto le dará una bonita apariencia al programa e-Sword para que no se vea tan simple
+
+--------------------------------------
+
+Por: Washington Indacochea Delgado (Wachín)
+2018-02-02
+
+
+

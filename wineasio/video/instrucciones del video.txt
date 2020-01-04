@@ -1,0 +1,35 @@
+Publicado el 7 feb. 2015
+
+THIS VIDEO IS OUTDATED!
+Jack2 does not work with WineASIO anymore, you need to use jack1 instead. I will try to make a updated video soon.
+
+Some people asked for this tutorial, so i made one. Hopefully it's helpful.
+
+Commands used to install packages:
+sudo add-apt-repository ppa:kxstudio-debian/kxstudio
+sudo apt-get update
+sudo apt-get install kxstudio-repos
+sudo apt-get update
+sudo apt-get install libjack-jackd2-0
+sudo apt-get install jackd2
+sudo apt-get install qjackctl
+sudo apt-get install wineasio:i386
+
+Commands to add your user to audio and disk groups:
+sudo adduser $(whoami) audio
+sudo adduser $(whoami) disk
+
+wineasio.dll.so location:
+/usr/lib/i386-linux-gnu/wine/
+
+Command for registrering wineasio.dll in PlayOnLinux:
+regsvr32 wineasio.dll
+
+THIS VIDEO IS OUTDATED!
+Jack2 does not work with wineasio any more, you need to use jack1 instead. I will try to make a updated video soon.
+
+If you have any issues starting up jack then there are a lot of tutorials about it on the web.
+
+Music used in this video:
+FritzyBeat - Heceta (tweaked a bit by me)
+http://youtu.be/fJpHjNzww7s 

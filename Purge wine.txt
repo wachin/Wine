@@ -1,0 +1,22 @@
+ Eliminar/Borrar Wine Completamente - Solucion - Linux en Taringa!
+https://www.taringa.net/+linux/eliminar-borrar-wine-completamente-solucion_12xq0r
+
+
+rm -rf $HOME/.wine
+rm -f $HOME/.config/menus/applications-merged/wine*
+rm -rf $HOME/.local/share/applications/wine
+rm -f $HOME/.local/share/desktop-directories/wine*
+rm -f $HOME/.local/share/icons/????_*.xpm
+
+
+
+despues de eliminar wine con:
+
+sudo apt-get --purge remove wine
+
+si queda una carpeta de wine aun ejecuta lo riguiente:
+
+cd .local/share/applications/
+rm -rf wine
+
+

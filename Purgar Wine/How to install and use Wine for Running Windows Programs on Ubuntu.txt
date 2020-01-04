@@ -1,0 +1,13 @@
+
+How to install and use Wine for Running Windows Programs on Ubuntu
+https://vitux.com/how-to-install-and-use-wine-for-running-windows-programs-on-ubuntu/
+
+ sudo apt-get purge winehq-stable
+You will also need to run the following commands to completely remove the installation and relevant folders:
+
+1. rm ~/.config/wine/ -rf
+2. rm -rf $HOME/.wine
+3. rm -f $HOME/.config/menus/applications-merged/wine*
+4. rm -rf $HOME/.local/share/applications/wine
+5. rm -f $HOME/.local/share/desktop-directories/wine*
+6. rm -f $HOME/.local/share/icons/????_*.xpm

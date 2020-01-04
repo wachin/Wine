@@ -1,0 +1,288 @@
+
+
+How To Install E-sword with wine
+http://ubuntuforums.org/showthread.php?t=404042
+
+david_kt
+April 8th, 2007
+
+WARNING: DO NOT run below installer with sudo or as root
+
+Installation
+1. Install Wine
+First, use wine stable (1.0.1) as some users reported latest wine is not compatible with e-Sword 9.6.0. You could upgrade wine after installation is completed.
+
+2. Install cabextract
+Code:
+sudo apt-get install cabextract
+3. Download e-Sword_installer_301011.tar.gz and then extract it. Double click on e-Sword_installer extracted to run it.
+
+If it fail to execute, make sure it is executable (right click on the extracted file (e-Sword_installer) >> click properties >> click permision tab >> and then tick on the execute (allow executing file as program).
+
+4. Install other addon 
+If the addon you want to install is not in the installer, please download from windows file first. After that, run the e-Sword_installer and tick manual option (no. 4 from the top). It will open a browser for you to locate your addon, select that file and click ok to install.
+
+5. Font Smoothing
+As fedback and tested by David Devonshire, I added font smoothing script.
+Download font_smoothing_050409.tar.gz and extract it.
+Double click on the extracted file (font_smoothing) and choose RUN IN TERMINAL.
+Select option 2, 3, or 4 and then <ok>.
+Launch e-Sword and see the different.
+Play with option 2,3, or 4 until you like it best
+
+
+That's it, very simple. You do not have to read further, unless you want to install e-Sword Portable, refine your installation, or study the script.
+================================================== =========================
+e-Sword Portable
+I have added e-sword portable. After you install e-sword using this instruction or installer, and you have satisfied with the result, you could make e-sword portable:
+1. Download e-sword_portable251008.tar.gz.
+2. Extract it and you will have 3 scripts.
+3. Copy those 3 scripts to root folder of any usb.
+4. double click "create_e-Sword_Wine_portable" on the usb and choose "run in terminal", it will open menu. You could choose to create e-Sword portable only, but now there is a choice to create wine-1.0 portable to your usb.
+
+================================================== =====================
+WARNING:
+1. You have to run "sudo apt-get build-dep wine" before you could install wine-1.0 portable.
+2. Creating wine-1.0 portable takes about 45 minutes, depending on your computer speed.
+3. Wine-1.0 portable is not required for e-Sword portable, it is just an option.
+================================================== ======================
+Now you have two launcher:
+1. "e-Sword_portable_launcher", for host with wine installed, and
+2. "e-Sword_portable_wine_launcher",for host without wine installed.
+
+To run e-sword on any linux desktop, run "e-Sword_portable_launcher" on the root folder of your usb. If it complains there is no wine, you could try to run "e-Sword_portable_wine_launcher" utilizing wine-1.0 on your usb. If wine-1.0 dependencies are satisfied on that computer, it would run without wine installed.
+
+It has been tested using host computer with wine 0.59 and wine 1.0. It should be able to run on any wine version above 0.59. 
+The portable wine has been tested with wine removed (but dependencies not removed).
+
+================================================== ======================================
+
+Changelog:
+- Add option to choose stable or release candidate e-sword ( 30/10/11 )
+- Add back manual install for executable ( 30/08/11 )
+- Bug fixed for search function ( 18/05/11 )
+- Has to include www for wget, otherwise it fails to download ( 29/04/11 )
+- Change layout of download page for addons ( 26/02/11 )
+- Change layout of download page in e-Sword ( 03/01/11 )
+- Now will download latest version of e-Sword, not hard-coded to any version ( 10/10/10 )
+- Update to e-Sword 9.6.0 ( 24/04/10 )
+- Include support for other languages OS and ensure there is desktop launcher ( 12/11/09 )
+- Update to e-Sword 9.5.1 ( 11/09/09 )
+- Enable multiple manual and added addons ( 13/08/09 ) 
+- Update to e-Sword 9.0.3, bug fixed to upgrade from old e-Sword but almost all modules could NOT be converted, update wine to wine 1.1.23. ( 07/06/09 )
+- Bug fixed for manual option to execute from directory name with space in it ( 12/05/09 )
+- Add Day-By-Day By Grace (Bob Hoekstra) ( 11/05/09 )
+- Change main program to e-Sword 9.0.1 ( 07/05/09 )
+- bug fixed for download progress bar and add font smoothing ( 05/04/09 )
+- Add Treasury of Scripture Knowledge (TSK) ( 12/01/09 )
+- Change main program and updater to e-Sword 8.0.6. Add Indonesian and Vietnamese Bible. ( 02/01/09 )
+- Check for wine 1.1.7 and offer a choice to terminate program or to continue if find other wine version. ( 23/11/08 ) 
+- Change main program to e-Sword 8.0.5, add updater to update from old e-Sword, and add new feature "localizer". Separate "add desktop launcher" script as recent wines could create desktop launcher. So, this script might not required by some of you. (21/11/08 )
+- added gui progress bar for wine-1.0 portable installer and bug fixed to run on puppy linux live cd
+- added uninstaller and progress bar GUI for e-Sword installer, remove beta version as it disappears from the web. ( 12/10/08 )
+- wine-10 portable to accompany e-Sword portable. (10/10/08 )
+- automatic backup and restore is available on installer. (06/10/08 )
+================================================== ===========================
+
+Explanation of the Installation Script
+
+Lukeelliot reported that addons would only show blue screen ON KUBUNTU/KDE (and I can confirm that), but what you have to do is just press enter until it completes installation. If you run it in terminal, it will inform that the installation of addon completed. Anyhow, it is still working as normal in ubuntu/gnome.
+
+Ng Oon-Ee reported that on Intrepid RC he experience blue screen problem as well (not confirmed by me yet as I am still runnning hardy). But it could be solved by just press enter until it complete installation or disable compiz to make the addons installer run as normal.
+
+The installer attached would do the following:
+1. Download and install latest e-Sword 
+2. Copy riched20 to correct location
+3. Download msls31.dll from Microsoft website
+4. Set dlloverrides for riched20 and oleaut32
+5. Download mfc42.dll from Microsoft website
+6. Install additional bibles and classical bible map, of your choice
+7. Install other addon already downloaded (tick manual option), it will open a browser for you to locate your addon, select that exe file and click ok to install. It also could be used to run e-Sword update, if e-sword installed using below instruction or using this installer.
+
+All are done in special prefix (.wine_Esword).
+
+You have to install cabextract for this installer to work:
+
+Code:
+sudo apt-get install cabextract
+After that, download Esword_installer.tar.gz and then extract it.
+Double click on Esword_installer to run it. If it fail to execute, make sure it is executable (right click on the extracted file (Esword_installer) >> click properties >> click permision tab >> and then tick on the execute (allow executing file as program).
+
+To install other addons, tick/select manual on the menu pop up when you run esword_installer and navigate to the downloaded addon. If you want your favourite addon to be included for automatic installation, please let me know.
+
+You could use this instruction and installer theoretically in any distro running wine, not just ubuntu. Some users have tried it successfully on Mepis and Puppy linux as well.
+
+After successfully install e-Sword and addons, you should continue reading "Change icon on installer" section onward on manual instruction below to learn how to get full benefits of e-sword running on wine.
+
+================================================== =============
+
+Alternative installation (manual installation)
+(you could choose to install it automatically by downloading and running the attached installer. Below instruction is only needed if you want to do it manually and you can skip to "Change icon on installer" section and please read further to learn how to get a full benefit of e-sword running on wine)
+
+
+You could download the program and other addons here:
+
+http://www.e-sword.net/downloads.html
+
+Create "wineprefix" for Esword (for newer wine you could skip this step):
+
+Code:
+wineprefixcreate --prefix .wine_Esword
+Install the program:
+
+Make sure the setup951.exe is in you home folder. Otherwise, you should cd to the location first, for example "cd Desktop" if the setup903.exe is on your Desktop.
+
+Code:
+ env WINEPREFIX=~/.wine_Esword wine setup951.exe
+Download msls31.dll to your ~/.wine_Esword/drive_c/windows/system32 from here:
+
+http://www.dlldump.com
+
+(Search msls31.dll and download it. If you download it somewhere else, you need to copy it to ~/.wine_Esword/drive_c/windows/system32)
+
+Note: the automatic installer download msls31.dll from microsoft, which is much safer.
+
+
+Copy riched20.dll from ~/.wine_Esword/drive_c/Program Files/e-Sword to ~/.wine_Esword/drive_c/windows/system32
+
+
+Code:
+ cp ~/.wine_Esword/drive_c/Program\ Files/e-Sword/riched20.dll ~/.wine_Esword/drive_c/windows/system32
+Make sure all the above dlls in lower case. If they are in upper case, rename them to lower case.
+
+In winecfg set riched20.dll and oleaut32.dll to native. IMPORTANT: Do not run winecfg from menu, as it would run default winecfg. Please use terminal to run winecfg for this bottle:
+
+Code:
+env WINEPREFIX=~/.wine_Esword winecfg
+Press the Libraries tab > type riched20.dll > press add > press edit > choose Native (windows).
+Do the same for oleaut32.dll.
+
+Use winetricks to install mfc42, otherwise, e-Sword 951 would not run.
+
+Type: 
+
+Code:
+ env WINEPREFIX=~/.wine_Esword wine "C:\Program Files\e-Sword\e-Sword.exe"
+to run it. Or, you could use the launcher (if successfully created) on desktop.
+
+To install addons, run in terminal:
+
+Make sure the bbe.exe is in you home folder. Otherwise, you should cd to the location first, for example "cd Desktop" if the bbe.exe is on your Desktop.
+
+Code:
+ env WINEPREFIX=~/.wine_Esword wine bbe.exe
+If it shows only blue screen, press [alt+tab] to switch to installation windows. You may need to press [alt+tab] again every time after you press next. In KDE, it might show only blue screen, just press enter and enter until it is completed.
+
+The above example is to install bbe.exe. You could install other addons using above overrides, just replace bbe.exe.
+
+
+Change Icon on Launcher.
+The launcher created already use e-Sword icon. But if you want to use other icon, follow below step:
+Right click the launcher and choose properties.
+After that click on the wine icon, it will open a windows.
+Navigates to the icon file you want.
+If the icon you want did not appear in the navigation windows, change the extension to png.
+You could download and use attached 2 icons as well (original e-sword icons) if you like.
+
+
+Add more fonts
+To add more fonts, copy whatever fonts you have to ~/.wine_Esword/drive_c/windows/Fonts or ~/.wine_Esword/drive_c/windows/fonts.
+
+(Please check whether the fonts directory is with capital F or lower case f(i.e. ~/.wine_Esword/drive_c/windows/Fonts or ~/.wine_Esword/drive_c/windows/fonts. Some version of wine use Fonts and some use fonts, not sure which is which).
+
+If it still not appear in e-sword, it might be due to file permission problem. What you have to do is to open terminal (application>accesories>terminal), and then issue below command:
+
+Code:
+chmod 777 -R ~/.wine_Esword/drive_c/windows/Fonts or
+chmod 777 -R ~/.wine_Esword/drive_c/windows/fonts
+
+The fonts should now available for E-sword to use.
+
+Increase font size for E-sword menu
+If you find e-Sword application font itself (ie. the font for "menu, edit, format, etc") is too small, what you can do is:
+
+Open terminal (Application>Accesories>Terminal)
+Open wine configuration editor from terminal:
+
+Code:
+ env WINEPREFIX=~/.wine_Esword winecfg
+Click graphics tab.
+
+At below, there is a screen resolution slider, the default is 96 dpi. Slide the slider to higher dpi. Be carefull though to use too big value as GlennW reported the winecfg become to big to fit to the screen when he use maximum value (120 dpi). Click apply and then ok. 
+
+Open your e-sword, if it is too big, you could repeat the above steps, adjusting the slider to whatever number (between 96 to 120).
+
+Troubleshooting
+If you encounter a weird problem, possibly there are some wine processes in the memory. To get rid of these processes, you could
+1. reboot your computer,
+or
+2. kill wine related processes using system monitor:
+From menu: system >> Sytem monitor >> click "processes" tab.
+Kill all processes related to wine, including all exe processes.
+or
+3. Open terminal, and run below command (one at a time):
+Code:
+killall wine
+killall wineserver
+killall wine-preloader
+If there is no launcher in the desktop:
+
+1. Normally it is still avialable from the menu. Go to menu:
+
+Application> Wine> Program > e-Sword > e-Sword (right click on this menu and select "add this launcher to desktop"
+
+2. Add manually. One way to make the launcher work is to use absolute path in the command:
+Code:
+env WINEPREFIX="/home/Your_User_Name/.wine_Esword" wine "C:\Program Files\e-Sword\e-Sword.exe"
+Replace Your_User_Name with actual user name you are using.
+And after that you could use the icon attached.
+
+3. Use attached "Create_Desktop_Launhcer" sript, the easiest way.
+
+Backup and restore E-sword
+
+Note: The installer could do below job automatically for you.
+
+This instruction is to backup your e-Sword installation in case your box crashed or you want to reinstall your operating system. By following this instruction, it would save you the hassle of re-installing e-Sword and you would not lose your setting or whatever work you have done on e-sword. It could also be done to replicate your e-Sword from one box to another, without the need to manually install it.
+
+What you need to do is just copy the files and folder in the .wine_Esword folder, EXCEPT DOSDEVICES folder. i.e. you need to copy:
+Code:
+drive_c folder
+user.reg
+userdef.reg
+system.reg
+You also need to copy e-sword folder in your home directory:
+
+Code:
+~/username/e-sword
+In addition to that, you could copy the Desktop Launcher as well.
+
+To restore/install in new computer, what you have to do is:
+
+Install wine (sudo apt-get install wine)
+
+Create special bottle:
+
+Code:
+wineprefixcreate --prefix .wine_Esword
+and then copy:
+
+Code:
+drive_c folder
+user.reg
+userdef.reg
+system.reg
+to .wine_Esword directory.
+
+After that you need to create/copy the launcher. If you copy the launcher, please make sure you edit the path.
+
+Please let me know if this instruction does not work for you.
+
+DK
+Attached Images Attached Images
+File Type: png icon_esword128x128.png (16.9 KB, 421 views)
+Attached Files Attached Files
+File Type: gz e-Sword_portable251008.tar.gz (4.0 KB, 330 views)
+File Type: gz font_smoothing_050409.tar.gz (909 Bytes, 1681 views)
+File Type: gz e-sword-installer_301011.tar.gz (6.8 KB, 741 views)
+Last edited by david_kt; October 30th, 2011 at 02:58 PM. Reason: add choice to install release candidate

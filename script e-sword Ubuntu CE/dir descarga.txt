@@ -1,0 +1,2 @@
+How To Install E-sword with wine
+http://ubuntuforums.org/showthread.php?t=404042 

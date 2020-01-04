@@ -1,0 +1,11 @@
+
+
+Help: Remove icons from "Show Applications" menu |Ubuntu 18.04| : Ubuntu
+https://www.reddit.com/r/Ubuntu/comments/8qm53t/help_remove_icons_from_show_applications_menu/
+·
+7 months ago
+Sounds like there are .desktop files left in ~/.local/share/applications from that Wine software. Deleting them would remove the icons form the launcher. But there might be other stuff left as well.
+
+7 months ago
+This worked. Thank you very much!
+

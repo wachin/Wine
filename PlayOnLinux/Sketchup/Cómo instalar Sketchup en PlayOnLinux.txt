@@ -1,0 +1,25 @@
+
+1.- Instalar una versión de wine 3
+
+2.- Descargar Sketchup Make:
+
+Downloading older versions | SketchUp Help
+https://help.sketchup.com/pl/node/1806
+
+Nota: Las versiones de 32 bits solo hay hasta SketchUp Make 2015, SketchUp Make 2016
+
+3.- Instala el componente:
+
+vcrun2010
+
+este hace que funcionen los atajos de teclado en Sketchup 2016 en POL con wine 3.1
+
+
+
+CONSULTAS:
+WineHQ - SketchUp 2015: winetricks vcrun2010
+https://appdb.winehq.org/objectManager.php?sClass=version&iId=31190
+
+How to install Google SketchUp Make 2016 on Ubuntu 16.04: add ‘riched20’ as a new library
+https://sysads.co.uk/2016/08/05/install-google-sketchup-make-2016-ubuntu-16-04/
+

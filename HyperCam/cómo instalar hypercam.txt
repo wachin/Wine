@@ -1,0 +1,12 @@
+
+How to Install HyperCam2 for Ubuntu 11.04
+http://www.wikivideo.eu/es/youtube.php?id=yHm3id_QkbQ 
+
+
+is a quick video on how to install Hypercam2 for ubuntu or any linux os. 
+
+1. Download hypercam2 from http://www.hyperionics.com/ and save to desktop 
+2. Install Wine In the terminal sudo add-apt-repository ppa:ubuntu-wine/ppa sudo apt-get update sudo apt-get install wine1.3 3. Open configure Wine(Applications, other) 
+4. Under Applications tab, click add application, file HC2Setup.exe, and select open. Click Apply, then OK. 
+5. HyperCam 2 should be on your desktop. 
+6. Open HyperCam 2, under AVI file tab, find video compressor and select Full Frames. Under the Screen Area, click Select Window and now you can Start Recording.

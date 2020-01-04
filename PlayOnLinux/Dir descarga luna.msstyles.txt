@@ -1,0 +1,7 @@
+
+Descargar tema luna para Interfaz grafica de Wine Ubuntu
+
+wget -c http://repository.playonlinux.com/divers/luna.msstyles 
+
+
+ 

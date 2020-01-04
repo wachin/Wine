@@ -1,0 +1,7 @@
+	How can every line of a text file be converted to a separate audio file?
+http://www.cross-plus-a.com/bfaq.htm
+
+	You may add two empty lines after every line with text in the document. Open the file in Balabolka, choose the main menu item "Edit | Replace", type ^p in the Find what box and ^p^p^p in the Replace with box, click the Replace all button. Choose the main menu item "File | Split and Convert to Audio Files"; choose the split method "by two empty lines in succession" and click the Split and Convert button.
+ 
+	Can I use the first line of text as the name of the audio file (for example, "01 Chapter One.mp3", "02 Chapter Two.mp3")?
+	Type %FirstLine% in the "Base Output Filename" box in the window "Split and Convert to Audio Files". The application will replace this variable by the first line of each text part. To change the position of the sequence number inside the filename, use the %Number% variable.

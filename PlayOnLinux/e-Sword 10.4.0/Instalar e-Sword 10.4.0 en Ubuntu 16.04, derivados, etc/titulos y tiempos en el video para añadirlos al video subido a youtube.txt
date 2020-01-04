@@ -1,0 +1,10 @@
+
+00:00 Preparación, Explicaciones, Instalación de e-Sword en PlayOnLinux (Wine 1.7)
+34:02 Testeando e-Sword en Linux con Wine 1.7 en PlayOnLinux
+38:00 Busqueda de significado de palabras en los Diccionarios con doble clic
+40:55 Búsqueda de palabra o palabras en las Biblias
+44:05 Búsqueda de citas Biblicas
+45:46 Búsqueda de números Strong en Biblias en Hebreo o Griego
+01:02:30 Tip: Si tiene una PC con bajos recursos no instale muchos módulos
+
+

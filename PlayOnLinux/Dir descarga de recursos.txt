@@ -1,0 +1,11 @@
+
+
+http://repository.playonlinux.com/
+
+http://repository.playonlinux.com/divers/
+
+http://repository.playonlinux.com/divers/luna.msstyles 
+
+https://www.playonlinux.com/wine/
+
+https://www.playonlinux.com/wine/binaries/

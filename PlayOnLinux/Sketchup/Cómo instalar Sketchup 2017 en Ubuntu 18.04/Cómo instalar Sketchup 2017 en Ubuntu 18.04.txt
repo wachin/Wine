@@ -1,0 +1,143 @@
+
+
+Cómo instalar Sketchup 2017 en Ubuntu 18.04
+Jorge Rodolfo Maidana 
+https://www.youtube.com/user/graceteamo
+
+Muy buena explicación, amigo. Yo ya vengo usando la versión de  Sketchup 2016 habitualmente, pero me resultó imposible poder instalar la 2017 y la 2018, y por lo que pude ver de información en la red no parece que sea demasiado sencillo de lograr. Si conoces algún método o alguna explicación adicional para hacerlo te agradecería mucho si lo puedes publicar. Muchísimas gracias y para más datos estoy usando Ubuntu 18.04﻿
+Responder  · 1 
+		
+ ▼ 
+Cómo instalar Sketchup 2015, 2016 de 32 y 64 bits en Ubuntu 16.04, 18.04 con PlayOnLinux
+ 
+Washington Indacochea Delgado Hace 16 horas
+Jorge Rodolfo Maidana Lo siento, no tengo como testear esas versiones 2017 y 2018 porque son de 64 bits. Pregunto si siguió los mismos pasos que yo. Pregunto en qué versión de wine lo instaló, y si instaló vcrun2010, dígame los pasos que siguió﻿
+Responder  · 
+		
+ ▼
+ 
+Jorge Rodolfo Maidana Hace 16 horas
+Sí, seguí aproximadamente los mismos pasos que vos, que eran los mismos pasos con los que instalé las versiones 2014, 2015 y 2016 en diferentes versiones de Ubuntu (17.10, 17.04, 16.10, y también en Debian 8 y 9). Era un procedimiento conocido y eficiente para instalar sin problemas. Pero parece que a partir de Sketchup 2017 cambiaron bastante las cosas y ya no encontré la manera. Con respecto a los pasos que seguí, ya no me los acuerdo exactamente porque fueron diversos métodos que fui encontrando en internet, y algunas versiones de Wine que probé fueron 2.1, 2.17, 1.9 y algunas más.
+Será cuestión de seguir buscando nomás o esperar si alguna vez Trimble se decide a sacar una versión para Linux.
+Saludos.﻿
+Mostrar menos
+Responder  · 
+		
+ ▼
+ 
+Washington Indacochea Delgado Hace 1 segundo
+Aquí dice que funciona bien con estas instrucciones: https://appdb.winehq.org/objectManager.php?sClass=version&iId=34500﻿
+Responder  · 
+		
+ ▼
+ 
+Washington Indacochea Delgado Hace 1 segundo
+pero use PlayOnLinux para que el registro de Windows esté limpio, y use wine 3 en adelante que son los únicos que funciona en Ubuntu 18.04 (si usa versiones anteriores de wine núnca le va a funcionar)
+Para instalar sketchup 2017 de 64 bits debe hacer así como yo instalé el 2016 pero debe usar la pestaña de 64 bits en wine, además en los componentes debe instalar esto: vcrun2015, corefonts
+Y allí pruebe a ver si funciona, en caso que no funcione allí instale el .NET https://www.microsoft.com/en-us/download/details.aspx?id=42642 Me avisa que pasó﻿
+Responder  · 
+		
+ ▼
+ 
+Washington Indacochea Delgado Hace 1 segundo
+el .NET debe instalarlo en "Miscelaneo" en "Ejecutar un archivo .exe en esta unidad virtual"﻿
+Responder  · 
+		
+ ▼
+ 
+Washington Indacochea Delgado Hace 1 segundo
+y si por un caso así no funciona, encontré en una página estos pasos
+
+
+ - Dele clic en playonlinux en el sketchup instalado y clic en "Configurar Wine" allí 
+- Ir a la pestaña "Aplicaciones" , en version a imitar desplegable, "Windows 8.1"
+- Ve a la pestaña "Librería" y añadir la biblioteca "mfc140u.dll" (creo que esta librería o biblioteca solo aparecerá después de instalar vcrun2015) . Para hacerlo , ingrese el nombre de la librería(o biblioteca) "mfc140u.dll" en el campo "Nuevo sustitucion de biblioteca " y cuando aparezca haga clic en "Agregar" . 
+- Haz clic en Aceptar 
+- Haz clic en Aceptar
+
+
+Allí pruebe y me avisa
+
+
+Visto en:
+https://medium.com/@smkdesign/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-sketchup-2017-2018-pro-%D0%BD%D0%B0-ubuntu-16-17-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-wine-93dddc47b5e8﻿
+Mostrar menos
+
+
+
+
+
+
+https://medium.com/@smkdesign/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-sketchup-2017-2018-pro-%D0%BD%D0%B0-ubuntu-16-17-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-wine-93dddc47b5e8
+
+
+
+
+
+Instalando SketchUp 2017, 2018 Pro en Ubuntu 16/17 a través del vino
+Ya me mudé a Ubuntu durante mucho tiempo y no pienso volver a Windows todavía. De vez en cuando hay algún tipo de acertijo con el lanzamiento de aplicaciones Win, aunque en su mayor parte intento usar servicios en la nube.
+
+Hoy, instale SketchUp 2018 Pro o Make. Desde hace un par de años, SketchUp requiere un sistema de 64 bits, que causa matices durante la instalación y agrega un dolor de cabeza. La instalación me llevó unas 6 horas, así que escribo este artículo en parte para mí, incluso, no quiero recordarlo en medio año y matar un par de horas más.
+
+Comencemos:
+
+Lo instalaremos a través de Wine. Abra la terminal y luego siga los pasos:
+
+Incluye soporte para arquitectura x86
+sudo dpkg --add-architecture i386
+2. Agregue el Wine repository e instálelo
+
+sudo add-apt-repository ppa: wine / wine-builds
+sudo apt-get update
+sudo apt-get install --install-recomienda winehq-staging
+3. Para instalar, necesitamos 64 bit Wine, para esto agregamos / cambiamos la línea en el archivo "~ / .profile" en la carpeta de nuestro usuario.
+
+En la terminal: 
+gedit ~ / .profile
+En el archivo abierto agregamos una línea:
+
+exportar WINEARCH = "win64"
+Guarde y cierre.
+
+4. Descargue la última versión de WineTricks, agregue el derecho de ejecutar y ejecutar.
+
+wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+chmod + x winetricks
+./winetricks
+5. Cuando la ventana se abrió Winetricks hacer lo siguiente: 
+- Seleccione la opción " Seleccionar el wineprefix predeterminado" , haga clic en OK 
+- Seleccione " Instalar el archivo DLL de Windows o un componente" , haga clic en Aceptar 
+- poner un tilde " vcrun2015" , haga clic en Aceptar 
+- Esperar a que vcrun2015 establecida 
+
+
+- Seleccione " winecfg" , haga clic en Aceptar, se abre el cuadro de diálogo de configuración.
+
+En la ventana que se abre: 
+- Ir a la pestaña "Aplicaciones" , establecer la versión en el cuadro desplegable, "Windows 8.1"
+- Ve a la pestaña "Bibliotecas" y añadir la biblioteca "mfc140u.dll" para anular. Para hacerlo , ingrese el nombre de la biblioteca "mfc140u.dll" en el campo "Nuevo reemplazo para la biblioteca " y haga clic en "Agregar" . 
+- Haz clic en Aceptar 
+- Haz clic en Aceptar
+
+Salga de WineTricks cerrando la ventana o haciendo clic en "Cancelar"
+
+6. Descargue e instale Microsoft .NET Framework 4.5.2 (instalador sin conexión) . 
+- Descargar el instalador por el enlace de arriba 
+- Lo instalamos llamando al siguiente comando en la terminal
+
+inicio de vino / unix ~ / Descargas / NDP452-KB2901907-x86-x64-AllOS-ENU.ex
+¡La ubicación del archivo descargado puede ser diferente!
+
+6. Descargue SketchUp 2017 o 2018, Pro o Make de su elección.
+
+7. Instala p7zip para desempacar
+
+sudo apt-get install p7zip-full
+8. Encontramos en el administrador de archivos el archivo descargado de SketchUp, donde lo descargamos, haga clic en el botón derecho y seleccione "Extraer aquí" , después de lo cual se desempaquetará al contador.
+
+9. Ejecute el Wine Explorer a través de la terminal
+
+explorador del vino
+Encontramos en los archivos desempaquetados SketchUp2018-x64.msi u otros similares con la extensión *. Msi , ejecutarlo para su instalación.
+
+10. Pasamos el procedimiento de instalación estándar y usamos el nuevo SketchUp en Ubuntu.

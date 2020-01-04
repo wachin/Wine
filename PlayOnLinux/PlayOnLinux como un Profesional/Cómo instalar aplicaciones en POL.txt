@@ -1,0 +1,14 @@
+ 
+
+
+Explicar que este video es base para el resto, sólo de cambiarle la versión de e-Sword
+
+Explicar cómo se extrae e-Sword
+
+Explicar porqué escribir la versión de wine en POL
+
+Explicar que se pueden instalar varias versiones de una aplicación en el mismo botle
+
+Explicar Crear un nuevo acceso directo en esta unidad virtual
+
+

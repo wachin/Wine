@@ -1,0 +1,185 @@
+
+WineHQ - SketchUp 2015
+https://appdb.winehq.org/objectManager.php?sClass=version&iId=31190
+by lubosz on Thursday February 4th 2016, 16:10
+
+mfc100u.dll can be aquired with winetricks: 
+
+winetricks vcrun2010
+
+Nota: Soy Wachín, éste arregla los atajos de teclado en Sketchup 2016 
+
+(8) How to install SketchUp2017 in Ubuntu - YouTube
+https://www.youtube.com/watch?v=SpTzOXy07y0
+esto linkea a esto:
+WineHQ - SketchUp 2017
+https://appdb.winehq.org/objectManager.php?sClass=version&iId=34500
+
+$ export WINEARCH=win64
+$ winetricks vcrun2015 corefonts
+$ winetricks win7
+- Download .NET Framework 4.5.2 (offline version) and install it with the command:
+$ wine start /unix NDP452-KB2901907-x86-x64-AllOS-ENU.exe
+- Then run the actual SketchUp installer:
+$ wine SketchUpMake-it-x64.exe (or the Pro version, either works)
+- Follow the installation steps
+- Run SketchUp (you can run it just fine from the .desktop created by WINE itself)
+
+un comentario dice:
+
+@Oliver: 
+It seems that you miss the64-bit version of mfc140u.dll in the wine windows/system32 folder.
+Try to download it from a reliable URL and simply copy it over.
+
+We have to beware that the 32bits mfc140u.dll has to be put in the syswow64 directory, and the 64bits in the 32bits one. 
+I did the mistake and it didn't work, it worked fine when I inverse.
+
+https://www.dll-files.com/mfc140u.dll.html
+
+
+
+
+script beta Sketchup 2016 de playonlinux dice:
+https://www.playonlinux.com/es/topic-13800-Script_SketchUp_2016.html
+
+POL_Call POL_Install_ie8
+
+
+
+Script oficial de Google Sketchup dice:
+https://www.playonlinux.com/es/app-117-Google_SketchUp.html
+
+cat << EOF > "$POL_System_TmpDir/RegModif.reg"
+[HKEY_CURRENT_USER\Software\Google\SketchUp8\GLConfig\Display]
+"HW_OK"="1"
+EOF
+POL_Wine regedit "$POL_System_TmpDir/RegModif.reg"
+
+
+
+
+Install Google SketchUp Make 2014 in Ubuntu 14.04 | UbuntuHandbook
+http://ubuntuhandbook.org/index.php/2014/06/install-google-sketchup-ubuntu1404/
+
+Once wine is installed, config it by running:
+
+winecfg
+
+In “Wine Configuration” window, you may:
+
+Change Windows Version to Windows 7 in the bottom of the Applications tab.
+Under Libraries tab, select ‘Riched20’ library from the drop-down list and add it
+wine-configuration
+
+1. On my 64 bit Ubuntu 14.04, SketchUp 2014 hangs after choosing a template. This has been reported as a bug and seemed to be fixed in Wine 1.7.19. However, I still get this error.
+
+The workaround is disable Ruby API by launching SketchUp via:
+
+wine "C:\Program Files (x86)\SketchUp\SketchUp 2014\SketchUp.exe" "/DisableRubyAPI"
+Or, in the Properties window of the desktop shortcut, add /DisableRubyAPI to the end of command area:
+
+disablerubyapi
+
+2. If sketch up doesn’t work because of a problem with a graphics card
+
+1. Run below command to bring up Registry Editor:
+
+wine regedit
+2. Navigate to HKEY_CURRENT_USER -> Software -> Google -> SketchUp version -> GLConfig -> Display
+
+3. Change the value of HW_OK to 1 (so that it shows up as 0×00000001 (1)
+
+
+
+How to install Google SketchUp Make 2016 on Ubuntu 16.04 · Sysads Gazette
+https://sysads.co.uk/2016/08/05/install-google-sketchup-make-2016-ubuntu-16-04/
+
+Step 1: Install Wine 1.9.x
+
+sudo add-apt-repository ppa:wine/wine-builds
+
+sudo apt-get update
+sudo apt-get install --install-recommends wine-staging
+sudo apt-get install winehq-staging
+
+Configure Wine for SketchUp by installing additional packages if prompted
+winecfg
+First change the Windows Version to Windows 7
+
+Under Wine Configuration menu, click on Libraries and add ‘riched20’ as a new library. Apply changes
+
+Download Windows version of SketchUp Make 2016
+Right-click on the exe and click ‘Open with Wine Windows Program Loader‘
+
+Follow the installation wizard to complete the installation
+
+Open Sketch 2016 properties menu, under command, add ‘/DisableRubyAPI’ at the end
+
+Download the “mfc100u.dll” library frome here, and copy it in system32 wine folder. You can enable hidden folders under Nautilus with following key combination “ctrl+H”. In home folder, navigate to .wine/drive_c/windows/system32/ and copy it there.
+
+Launch SketchUp Make 2016
+
+
+WineHQ - SketchUp 2016
+https://appdb.winehq.org/objectManager.php?sClass=version&iId=33102
+
+Here is how I make it work (32bit ONLY): 
+This will work: Dialog of extensions, Dynamic components, 2D grafics export .... just about everything will work. 
+Not working: Direct import from 3D Warehouse and Extension Warehouse, but download from a browser and install/import manually will work. 
+
+Fedora 23 with wine 1.9.5 Stagging (Fedora installs wine stagging by default, don't know if its needed). 
+You must have winetricks installed. 
+
+
+- Make a new and clean 32 bit prefix. 
+
+export WINEPREFIX=~/.sketchup 
+export WINEARCH=win32 
+wineboot 
+
+
+- Install ie8 AND ie7 
+
+winetricks ie8 
+winetricks ie7 
+
+
+- open winetricks in terminal: 
+
+winetricks 
+
+Make sure these DLL/components are installed: 
+comctl32ocx 
+gdiplus 
+gdiplus_winxp 
+msls31 
+msxml3 
+pngfilt 
+wininet 
+wsh56vb 
+xmllite 
+
+
+
+- Open Wine Configuration in terminal: 
+
+winecfg 
+Change OS to Windows 7 (from the default XP) 
+
+
+
+- Install Sketchup 2016 32bit (assuming you have the Sketchup installer in Home): 
+
+wine "sup_2016_en_x32.exe" 
+
+
+
+---- IMPORTANT NOTES 
+
+Do everything from the same terminal session, to make sure all changes are made to the new .sketchup prefix. If you start winetricks or wine configuration from your distro's menu system. changes will be made to the default .wine prefix - NOT what you want. 
+
+Trying to use Theme options in Wine Configuration will likely break Sketchup dialogs. 
+
+Hope this works for you too.
+ Comment
+

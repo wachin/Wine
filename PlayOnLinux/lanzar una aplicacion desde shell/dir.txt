@@ -1,0 +1,1 @@
+https://unix.stackexchange.com/questions/284127/how-to-run-a-program-installed-with-playonlinux-from-linux-commandline 

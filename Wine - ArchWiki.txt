@@ -1,0 +1,11 @@
+
+
+Wine - ArchWiki
+https://wiki.archlinux.org/index.php/wine#Fonts
+Fonts
+If Wine applications are not showing easily readable fonts, you may not have Microsoft's Truetype fonts installed. See MS Fonts. If this does not help, try running winetricks corefonts first, then winetricks allfonts as a last resort.
+After running such programs, kill all Wine servers and run winecfg. Fonts should be legible now.
+If the fonts look somehow smeared, import the following text file into the Wine registry with regedit:
+[HKEY_CURRENT_USER\Software\Wine\X11 Driver]
+"ClientSideWithRender"="N"
+See also Font configuration#Applications without fontconfig support.

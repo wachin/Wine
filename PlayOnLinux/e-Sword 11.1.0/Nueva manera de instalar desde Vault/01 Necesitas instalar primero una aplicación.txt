@@ -1,0 +1,30 @@
+
+
+
+Si es la primera vez que usas PlayOnLinux y no tienes instalado nada y usas Ubuntu 18.04 necesitaras instalar primero una aplicación que se instale automáticamente en PlayOnLinux y que use wine 3 como puede ser:
+
+Probados:
+
+Notepad Plus Plus
+https://www.playonlinux.com/en/app-69-Notepad_Plus_Plus.html
+
+7-Zip 
+https://www.playonlinux.com/en/app-373-7Zip.html
+
+Foobar2000
+https://www.playonlinux.com/en/app-2011-Foobar2000.html
+
+No probados:
+
+Subnautica
+https://www.playonlinux.com/en/app-3299-Subnautica.html
+
+Star Trek Online
+https://www.playonlinux.com/en/app-2491-Star_Trek_Online.html
+
+
+
+
+Estan se instalarán con la versión de wine del sistema la cual será la versión 3 la cual es la única que funciona en Ubuntu 18.04, es decir de allí para arriba funcionan
+
+Al instalar una aplicacion se activará el Vaul de PlayOnLinux y allí si se puede cargar e-Sword Vault

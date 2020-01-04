@@ -1,0 +1,103 @@
+<br />
+<a href="http://3.bp.blogspot.com/-3v22bTgAWwA/W6J2qJ2COSI/AAAAAAAAJNc/IE_aKw9DRbk9cNMPnFrZ4GsYzkbuMzZ_QCK4BGAYYCw/s1600/01%2Be-Sword%2B11.1.0%2Ben%2BUbuntu%2B%2528POL%2Bwine%2B3%2529.png" imageanchor="1"><img border="0" height="384" src="https://3.bp.blogspot.com/-3v22bTgAWwA/W6J2qJ2COSI/AAAAAAAAJNc/IE_aKw9DRbk9cNMPnFrZ4GsYzkbuMzZ_QCK4BGAYYCw/s640/01%2Be-Sword%2B11.1.0%2Ben%2BUbuntu%2B%2528POL%2Bwine%2B3%2529.png" width="640" /></a><br />
+<br />
+e-Sword es una CompuBiblia, este programa es nativo de Windows pero encontré la manera de poder instalarlo en Linux y que funcione<br />
+<br />
+<b>¿QUÉ FUNCIONA?</b><br />
+Todo, al 100%<br />
+<br />
+<b>APLICABLE A ESTA VERSIÓN:</b><br />
+e-Sword 11.1.0<br />
+<br />
+<span style="font-family: inherit;"><b>TUTORIAL APLICABLE A:</b></span><br />
+-&nbsp;<a href="https://distrowatch.com/table.php?distribution=ubuntu" target="_blank">Ubuntu</a>&nbsp;y todos sus&nbsp;<a href="https://www.ubuntu.com/about/about-ubuntu/flavours" target="_blank">derivados oficiales</a>:&nbsp;<a href="http://lubuntu.me/" target="_blank">Lubuntu</a>,&nbsp;<a href="http://www.mythbuntu.org/" target="_blank">Mythbuntu</a>,&nbsp;<a href="https://ubuntubudgie.org/" target="_blank">Ubuntu Budgie</a>,&nbsp;<a href="http://ubuntugnome.org/" target="_blank">Ubuntu GNOME</a>,&nbsp;<a href="http://www.ubuntukylin.com/" target="_blank">Ubuntu Kylin</a>,&nbsp;<a href="https://ubuntu-mate.org/" target="_blank">Ubuntu MATE</a>,&nbsp;<a href="http://ubuntustudio.org/" target="_blank">Ubuntu Studio</a>,&nbsp;<a href="https://xubuntu.org/" target="_blank">Xubuntu</a><br />
+- Otros Linux que también usan la administración de paquetes&nbsp;<a href="https://es.wikipedia.org/wiki/Deb" target="_blank">DEB</a>&nbsp;como:&nbsp;<a href="https://distrowatch.com/table.php?distribution=mint" target="_blank">Linux Mint</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=trisquel" target="_blank">Trisquel</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=elementary" target="_blank">Elementary OS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=zorin" target="_blank">Zorin OS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=bodhi" target="_blank">Bodhi</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=deepin" target="_blank">Deepin Linux</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=mx" target="_blank">MX Linux</a>, etc<br />
+<b>y debería de funcionar(teóricamente) en:</b><br />
+distribuciones que usan la administración de paquetes&nbsp;<a href="https://es.wikipedia.org/wiki/RPM_Package_Manager" target="_blank">RPM</a>&nbsp;como&nbsp;<a href="https://distrowatch.com/table.php?distribution=fedora" target="_blank">Fedora</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=redhat" target="_blank">Red Hat</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=opensuse" target="_blank">OpenSUSE</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=centos" target="_blank">CentOS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=scientific" target="_blank">Scientific</a>, etc<br />
+- Otros Linux basados en&nbsp;<a href="https://distrowatch.com/table.php?distribution=arch" target="_blank">Arch Linux</a>&nbsp;como:&nbsp;<a href="https://distrowatch.com/table.php?distribution=antergos" target="_blank">Antergos</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=manjaro" target="_blank">Manjaro</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=archbang" target="_blank">ArchBang</a><br />
+<span style="font-family: inherit;">- y otras distribuciones independientes de Linux como:&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=gentoo" target="_blank">Gentoo</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=mageia" target="_blank">Mageia</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=quirky" target="_blank">Quirky</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=solus" target="_blank">Solus</a>, etc.&nbsp;<b><i>Pero allí se usan otros comandos de instalación los cuales usted deberá de buscar.</i></b><br />
+<br />
+<b>REQUERIMIENTOS:</b><br />
+<br />
+<b>1.1.- e-Sword 11.1.0&nbsp;</b><br />
+Descarguelo desde:<br />
+<br />
+<a href="http://www.e-sword.net/downloads.html">http://www.e-sword.net/downloads.html</a><br />
+<br />
+o:<br />
+<br />
+descarga alternativa (también para después cuando Rick Meyeres lo actualice y ya no se pueda descargar esta versión desde la pagina oficial):<br />
+<br />
+<a href="https://drive.google.com/file/d/1lx8nNyukc8CzbLn5ptFNSFELlupFnI-q/view?usp=sharing">https://drive.google.com/file/d/1lx8nNyukc8CzbLn5ptFNSFELlupFnI-q/view?usp=sharing</a><br />
+<br />
+<br />
+<b>1.2.- e-Sword 11.1.0 Extraido</b><br />
+Este ejecutable yo lo he empaquetado y lo he subido a mi cuenta de Google Drive (es el mismo e-Sword solo que extraido todo su contenido y puesto en una solo carpeta) descarguelo de:<br />
+<br />
+<a href="https://drive.google.com/file/d/1JlcH6FfHxh4gbznZFr3r5Ve5QAbaN4kk/view?usp=sharing">https://drive.google.com/file/d/1JlcH6FfHxh4gbznZFr3r5Ve5QAbaN4kk/view?usp=sharing</a><br />
+<br />
+<br />
+<b>1.3.- Modulos</b><br />
+Instale los que yo he recopilado para fines didacticos:<br />
+<br />
+Biblias para e-Sword (WachoPack)<br />
+<a href="https://facilitarelsoftwarelibre.blogspot.com/2018/02/biblias-para-e-sword-wachopack-2018.html">https://facilitarelsoftwarelibre.blogspot.com/2018/02/biblias-para-e-sword-wachopack-2018.html</a><br />
+<br />
+o<br />
+<br />
+los suyos que usted tenga.<br />
+<br />
+<b>1.4.- Resumen</b><br />
+Es un archivo de texto necesario para seguir los pasos:<br />
+<br />
+<a href="https://drive.google.com/file/d/1phIPtRo2pRuWfXX9otJGbE3x0a4i7k_x/view?usp=sharing">https://drive.google.com/file/d/1phIPtRo2pRuWfXX9otJGbE3x0a4i7k_x/view?usp=sharing</a><br />
+<br />
+<br />
+<b>2.- Instalar PlayOnLinux</b><br />
+Ponga en una terminal lo siguiente (Comando para Ubuntu, Debian y otros basados en DEB):<br />
+<pre class="linux-code" style="background: url(&quot;https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif&quot;) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; line-height: 22.4px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><span style="color: #373434; font-size: medium;">sudo apt-get install playonlinux mousepad gnome-exe-thumbnailer</span></pre>
+<b>Nota:</b>&nbsp;Con Ubuntu 18.04 y otros nuevos Linux del 2018 debe de usar una versión de wine 3 en adelante, cualquiera de ellas, si no lo hace no funcionará. Así como muestra la sig imagen está bien:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-e7pKWEuhLf4/W6JeuaeyDRI/AAAAAAAAJNQ/oZRxIW_YGR88Kf2SZUr955E_gVyyFwYPACK4BGAYYCw/s1600/01%2Bsolo%2Bwine%2B3.1%2Ben%2Badelante.png" imageanchor="1"><img border="0" height="258" src="https://4.bp.blogspot.com/-e7pKWEuhLf4/W6JeuaeyDRI/AAAAAAAAJNQ/oZRxIW_YGR88Kf2SZUr955E_gVyyFwYPACK4BGAYYCw/s640/01%2Bsolo%2Bwine%2B3.1%2Ben%2Badelante.png" width="640" /></a><br />
+<br />
+<b>Video de instalación de POL:</b><br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/Pj7svgP9Rjs/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/Pj7svgP9Rjs?feature=player_embedded" width="320"></iframe></div>
+<br />
+<b>3.- Instrucciones de instalación e-Sword en POL</b><br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/gpHBER0iPfQ/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/gpHBER0iPfQ?feature=player_embedded" width="320"></iframe></div>
+<br />
+<b>Nota:</b> POL es la abreviación de PlayOnLinux<br />
+<br />
+<br />
+<b>4.- Lista de verificación</b><br />
+El siguiente video de la lista de pruebas donde confirmo que las opciones de e-Sword funcionan correctamente en Linux:<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/7GP5DRK1Klg/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/7GP5DRK1Klg?feature=player_embedded" width="320"></iframe></div>
+<br />
+<br />
+<b>5.- Cómo instalar modulos .exe de Biblias, Comentarios, Diccionarios, Devocionales en POL</b><br />
+El siguiente vídeo es de cómo instalar los modulos de e-Sword en PlayOnLinux que usted encuentre en la Web:<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/audA6WVzVtA/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/audA6WVzVtA?feature=player_embedded" width="320"></iframe></div>
+<br />
+<br />
+<b>Otros vídeos para revisar</b><br />
+Estos ultimos dos videos tienen&nbsp; una versión antigua de e-Sword, lo que pasa es que no es necesario hacer esos videos para cada nueva versión, el procedimiento es lo que importa. Son videos de cómo logré que funcione e-Sword en POL:<br />
+<br />
+Extrayendo e-Sword 10.0.6 con Universal Extractor<br />
+<a href="https://www.youtube.com/watch?v=F5NeYJDi0oM">https://www.youtube.com/watch?v=F5NeYJDi0oM</a><br />
+<br />
+Creando el instalador para e-Sword 11.0.6 Extraído.exe - YouTube<br />
+<a href="https://www.youtube.com/watch?v=UL_zRbr8Aio">https://www.youtube.com/watch?v=UL_zRbr8Aio</a><br />
+<br />
+<br />
+Agradezco a Arthur Goicochea Admin de Biblioteca Hispana Int. <a href="https://eswordbibliotecahispana.blogspot.com/">https://eswordbibliotecahispana.blogspot.com/</a> (donde también soy miembro) porque me ha motivado a seguirle dando soporte a esta solución para Linux, y así este tutorial también está disponible en <a href="https://esword-espanol.blogspot.com.ar/2008/06/como-instalar-e-sword-bajo-linux.html">https://esword-espanol.blogspot.com.ar/2008/06/como-instalar-e-sword-bajo-linux.html</a><br />
+<br />
+Dios les bendiga<br />
+<br />

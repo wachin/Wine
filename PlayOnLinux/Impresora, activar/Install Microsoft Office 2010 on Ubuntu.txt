@@ -1,0 +1,22 @@
+
+Install Microsoft Office 2010 on Ubuntu
+https://gist.github.com/raelgc/4ccc023830bfd12c0227
+
+2. Printers
+
+If you have a printer properly configured under Ubuntu, probably it'll be automatically available to MSOffice under wine.
+
+If not, we can make it available. Basically, your printer must be installed using cups. No problem if the printer is installed using other softwares/drivers, but to get it available for wine, it must be installed under cups too.
+
+If cups package is not installed, install it:
+
+sudo apt-get install cups
+Then, open http://localhost:631/ and add your printer.
+
+After configure it, print a test page using the related printer in Printers from System Settings.
+
+Now, make sure you have this file: /etc/printcap. If it's not present, create it this way:
+
+ln -sf /var/run/cups/printcap /etc/printcap
+
+Reboot wine: open PlayOnLinux, click Configure, select Office2010, click on Wine tab and click on Windows reboot button.

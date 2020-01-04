@@ -1,0 +1,3 @@
+
+
+e-Sword,números strong,español,Biblias,Hebreo,Griego,búsqueda,versículos,citas biblicas,diccionarios,devocionales,comentarios biblicos,mapas,cristiano,predicas,estudio,herramienta,Biblioteca Digital,Logos,Linux,Ubuntu,Fedora,Linux Mint,Mageia,Debian,Elementary OS,openSUSE,deepin,Zorin,Solus,CentOS,PCLinuxOS,Arch,TrueOS,Kali Linux,LXDE,Kubuntu,UbuntuStudio,XFCE,GNOME,KNOPPIX,harmonías,Instalar,install,Wine,PlayOnLinux,Compu Biblia 

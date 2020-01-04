@@ -1,0 +1,232 @@
+
+Text to Speech with Balabolka and IVONA Voices
+This is a tutorial on how to install Ivona voices on Linux
+
+
+
+INSTRUCTIONS:
+
+************************
+1.- Install PlayOnLinux
+************************
+
+Put the following in a terminal:
+
+sudo apt-get install playonlinux leafpad
+
+Note: This command is for Ubuntu and Debian derivatives.
+
+open leafpad and open that tutorial and click on:
+
+Options / Word Wrap
+
+and arrange in a column to the program so that they put it aside from playonlinux and can read the instructions well.
+
+
+*************************************
+2.- INSTALL A WINE VERSION 2.17
+*************************************
+
+Install in WineOnLinux the version of Wine 2.17 which is the last one in which SAPI 5 can be operated. In PlayOnLinux click on:
+
+Tools / Manage versions of Wine
+
+install the wine version:
+
+2.17
+
+If you have a 32-bit operating system, only one tab will appear that says:
+
+"Wine Versions (x86)"
+
+but if you had a 64-bit operating system you will see two tabs, on the right side one that says: "Wine Versions (x64)" If that is the case, always do this installation in the 32-bit tab, because the version of IVONA that we are going to install is only for 32 bits, but do not worry that will be responsible for emulating your operating system if it was 64 bits for Windows executables within Wine.
+
+
+
+**********************
+3.- INSTALL BALABOLKA
+**********************
+Download the program from:
+
+http://www.cross-plus-a.com/es/balabolka.htm
+
+unzip it
+
+In PlayOnLinux click on the + and click on: "Install an non-listed program", Next, Next, Next and on "Install a program on a new virtual drive" and Next, and give it an example name:
+
+balabolkaivona
+
+to choose:
+
+-Use another version of wine
+-Configure wine
+
+In wine version choose 2.17
+
+In the "Wine Configuration" window by default it will appear in the "Applications" tab below in "Version to imitate" choose "Windows ME" and Configurations "Graphics" tab and set to "Resolution 110 (or the best for your monitor), and click Apply and Ok
+
+And click on the "Explore" button and look for the installer of Balabolka setup.exe click on "Next" follow the instructions and install it
+
+At one of these points it is possible to see a window that is missing to install Wine Gecko or Wine Mono, install if requested.
+
+And at the end of the installation there is a message that says:
+
+"Launch Balabolka now"
+
+Uncheck that box and click "Finish"
+
+
+Note: If you did not uncheck the box and click on "Finish" Balabolka will run and if you close it it will not close but will remain in the notification area that is on the right in the Taskbar which will not allow it to appear the following window and you will not be able to continue with this tutorial, for that reason if it were the case there in the notification area of ​​right click to the Balabolka icon and close to the program.
+
+
+and a new window will appear which serves to create a shortcut in PlayOnLinux (POL). Click to:
+
+balabolka.exe
+
+and click Next and name the version of wine you have chosen, example in this case:
+
+Balabolka (wine 2.17)
+
+Note: You can copy this name and paste it there.
+
+Click on Next. Wait a moment and the window will appear again and click on "I don't want to create another shortcut" and Next.
+
+
+**************************
+4.- INSTALL VOICES IVONA
+**************************
+
+From a web browser, download the voices of Ivona following the instructions from:
+
+DOWNLOAD AND INSTALL VOCES IVONA 3.0 FOR TEXTALOUD (WITHOUT BALABOLKA) 2019
+https://youtu.be/OUurpd9oYZc
+
+Once you have downloaded the file:
+
+TEU - Voces Ivona Español.exe
+
+Now you have to install the voices (well I'm going to try them all), to do it in the main PlayOnLinux window click on the program "Balabolka (Wine 2.17)", click on it and click on the nut (Configure) and click in the "Miscellaneous" tab and click on "Run an .exe file in this virtual drive" and look for the installer click and wait for it to run, and a window will open with some options, there it says: "1.- first install a voice then open ivona_sapi5_voice_v1.6.60, do that, install the voices you want and then click on:
+
+ivona_sapi5_voice_v1.6.60
+
+and a Windows file manager emulator will open, right click on the file that appears there and copy, but, here comes the difficult thing, do the following, there in that window of the file manager emulator on the left go to the root:
+
+/
+
+there look for the folder:
+
+home
+
+and there look for your user, in my case "wachin" in yours yours, and there look for the folder:
+
+PlayOnLinux's virtual drives
+
+Enter there in the virtual unit that we have created, we named it:
+
+balabolkaivona
+
+and there enter:
+
+drive_c
+
+and there enter:
+
+Program Files
+
+and there enter:
+
+IVONA / IVONA 2 Voice / x86
+
+Right click and paste, a window should appear asking if you want to "Confirm file overwrite", put yes, and close the window.
+
+Confirm if it was pasted.- To do this, click on the file manager emulator for windows, right click on "Update" and observe "Modified", the date must be changed to the one for the new file, and close the window.
+
+Note: Assuming that they took a long time doing these steps and could no longer paste the file there because the confirmation window did not appear to overwrite the file, repeat the process.
+
+Now close the installation window of balabolka voices
+
+
+
+***************************************
+5.- INSTALL THE SAPI REPAIR 5
+***************************************
+
+You must enter the following page and download the zip:
+
+"SAPI5 Repairing Tools"
+http://dimiodati.altervista.org/zip/SAPI%20Repairing%20Tools.html
+
+The name of the file is:
+
+SAPI Repairing Tools.zip
+
+To this zip we must unzip it and inside the folder is the executable (remember where you put it):
+
+FixRegistry.exe
+
+in PlayOnLinux click on the icon of the program that we have installed: "Balabolka (Wine 2.17)", click on it and click on the nut (configure) and click on the "Miscellaneous" tab and click on "Execute an .exe file in this virtual drive "and find the installer the executable:
+
+FixRegistry.exe
+
+The program window will open, and below there is a button, that if you do not see it, click on the slider until the button appears: "Check Registry" and click and a message will appear that in summary everything was done well.
+
+
+***************************************
+5.- INSTALL PLAYONLINUX COMPONENTS
+***************************************
+
+in PlayOnLinux click on the icon of the program that we have installed: "Balabolka (Wine 2.17)", click on it and click on the nut (configure) and click on the "Components" tab and install:
+
+msxml3
+msls31
+
+a window will appear, wait until it disappears by itself and it will be installed.
+
+
+*********************************
+Important in the use of Balabolka
+*********************************
+
+To close it correctly, click on the program interface at:
+
+File / close
+
+That's way to close it. Or if it failed, it will be in the notification area of ​​the taskbar.
+
+
+***************************************
+5.- HOW TO OPEN BALABOLKA
+***************************************
+
+in PlayOnLinux click on the icon of the program that we have installed: "Balabolka (Wine 2.17)", click on it and click on the "Play" button
+
+
+
+*******************************
+ABOUT THE NEW VOICES OF IVONA
+*******************************
+
+This tutorial only works for the IVONA voices that we download which use SAPI 5, now there are new voices:
+
+Support - Downloads - Voices (TRIAL 30 DAYS)
+http://visionaid.com/phpincludes/en/support/voices/voices.php
+
+For these voices I don't know if this tutorial works.
+
+
+***
+FINISH
+***
+
+By the way, I was able to make this program work thanks to these two entries:
+
+QUERY:
+
+text to speach, sapi on linux (ubuntu 10.10) | solved!
+http://ubuntu-answers.blogspot.com/2010/12/text-to-speach-sapi-on-linux-ubuntu.html
+
+My Text to Speech (TTS) solution. wine + Microsoft Speech Platform v11: linux
+https://www.reddit.com/r/linux/comments/6z41qb/my_text_to_speech_tts_solution_wine_microsoft/
+
+How to Fix OLE Error 8004013F on Linux - Appuals.com
+https://appuals.com/fix

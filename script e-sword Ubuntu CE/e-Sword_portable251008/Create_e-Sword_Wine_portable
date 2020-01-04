@@ -1,0 +1,323 @@
+#!/bin/sh
+# Below codes was copied and edited from winetricks by david_kt
+#
+# Important: Please launch this script from the root directory from your usb !!!
+#
+# This scipt will create e-Sword portable on your usb.
+# You have to have a working e-Sword install using e-Sword_installer.
+# Put this script on your root folder of your usb drive.
+# To launch e-Sword portable, you must use e-Sword_portable_launcher launcher script.
+# This script will also help you to install wine portable on your usb, to use it with e-Sword portable
+# To launch e-Sword portable using wine portable, you must use e-Sword_portable_wine_launcher script
+
+
+case "$1" in
+-V|--version) 
+  echo "Portable Wine Installer version beta.  (C) david_kt. GPL."
+  exit 0
+  ;;
+esac
+
+die() {
+  echo "$@"
+
+  case x"$GUI" in
+  x1) xmessage -center "               Portable Wine Installer error: $@                 " ;;
+  *) ;;
+  esac
+
+  exit 1
+}
+
+# Internal variables; these locations are not too important
+MW_CACHE=$HOME/mwcache
+# Default to hiding the directory, by popular demand
+test -d "$MW_CACHE" || MW_CACHE=$HOME/.mwcache
+mkdir -p "$MW_CACHE"
+MW_TMP="$MW_CACHE"/mwtmp
+mkdir -p "$MW_TMP"
+
+# Define present working directory, the root of usb drive
+pwd > $MW_TMP/usb
+read USB_DRIVE < $MW_TMP/usb
+
+#-----  Helpers  ------------------------------------------------
+
+
+# Execute with error checking
+try() {
+    # "VAR=foo try cmd" fails to put VAR in the environment
+    # with some versions of bash if try is a shell function?!
+    # Adding this explicit export works around it.
+    echo Executing "$@"
+    "$@"
+    status=$? 
+    if test $status -ne 0
+    then
+        die "Note: command '$@' returned status $status.  Aborting."
+    fi
+}
+
+# verify an sha1sum
+verify_sha1sum() {
+    wantsum=$1
+    file=$2
+   
+    gotsum=`$SHA1SUM < $file | sed 's/ .*//'`
+    if [ "$gotsum"x != "$wantsum"x ]
+    then
+       die "sha1sum mismatch!  Rename $file and try again."
+    fi
+}
+
+
+# Download a file
+# Usage: package url [sha1sum [filename]]
+# Caches downloads in mw/$package
+download() {
+    if [ "$4"x != ""x ]
+    then
+        file="$4"
+    else
+        file=`basename "$2"`
+    fi
+    cache="$MW_CACHE/$1"
+    mkdir -p "$cache"
+    if ! test -f "$cache/$file"
+    then
+        cd "$cache"
+        # Mac folks tend to have curl rather than wget
+        # On Mac, 'which' doesn't return good exit status
+        # Need to jam in --header "Accept-Encoding: gzip,deflate" else
+        # redhat.com decompresses liberation-fonts.tar.gz!
+        if [ -x "`which wget`" ]
+        then
+           # Use -nd to insulate ourselves from people who set -x in WGETRC
+           # [*] --retry-connrefused works around the broken sf.net mirroring
+           # system when downloading corefonts
+           # [*] --read-timeout is useful on the adobe server that doesn't
+           # close the connection unless you tell it to (control-C or closing
+           # the socket)
+           try wget -nd -c --read-timeout=300 --retry-connrefused --header "Accept-Encoding: gzip,deflate" "$2" 2>&1 | sed -u 's/.*\ \([0-9]\+%\)\ \+\([0-9.]\+\ [KMB\/s]\+\)$/\1\n# Downloading \2/' | zenity --progress --auto-close --title="Downloading wine..."
+        else
+           # curl doesn't get filename from the location given by the server!
+           # fortunately, we know it
+           try curl -L -o $file -C - --header "Accept-Encoding: gzip,deflate" "$2" 2>&1 | sed -u 's/.*\ \([0-9]\+%\)\ \+\([0-9.]\+\ [KMB\/s]\+\)$/\1\n# Downloading \2/' | zenity --progress --auto-close --title="Downloading wine..."
+        fi
+        cd "$olddir"
+    fi
+    if [ "$3"x != ""x ]
+    then
+	verify_sha1sum $3  "$cache/$file"
+    fi
+}
+
+
+
+#----------------------------------------------------------------
+usage() {
+    set +x
+    echo "Usage: $0 [options] package [package] ..."
+    echo "This script is to install multiple wine in user home directory"
+    echo "Packages:"    
+    echo " e-Sword_portable     Create e-Sword portable"
+    echo " wine-1.0             Install portable wine-1.0 version"
+    echo " remove_wine-1.0      Remove portable wine-1.0 version"
+}
+
+
+#----------------------------------------------------------------
+# Trivial GUI just to handle case where user tries running without commandline
+
+# Checks for known desktop environments
+# set variable DE to the desktop environments name, lowercase
+
+detectDE() {
+    if [ x"$KDE_FULL_SESSION" = x"true" ]
+    then 
+        DE=kde
+    elif [ x"$GNOME_DESKTOP_SESSION_ID" != x"" ]
+    then
+        DE=gnome
+    elif [ x"$DISPLAY" != x"" ]
+    then
+        DE=x
+    else 
+        DE=none
+    fi
+}
+
+kde_showmenu() {
+    title="$1"
+    shift
+    text="$1"
+    shift
+    col1name="$1"
+    shift
+    col2name="$1"
+    shift
+    while test $# -gt 0
+    do
+        args="$args $1 $1 off"
+        shift
+    done
+    kdialog --title "$title" --separate-output --checklist "$text" $args
+}
+
+x_showmenu() {
+    title="$1"
+    shift
+    text="$1"
+    shift
+    col1name="$1"
+    shift
+    col2name="$1"
+    shift
+    if test $# -gt 0
+    then
+        args="$1"
+        shift
+    fi
+    while test $# -gt 0
+    do
+        args="$args,$1"
+        shift
+    done
+    (echo "$title"; echo ""; echo "$text") > /tmp/x_showmenu.txt 
+    xmessage -print -file /tmp/x_showmenu.txt -buttons "Cancel,$args" | sed 's/Cancel//'
+}
+
+showmenu()
+{
+    detectDE
+    case $DE in
+    kde) kde_showmenu "$@" ;;
+    #gnome) gnome_showmenu "$@" ;;
+    x) x_showmenu "$@" ;;
+    none) usage 1>&2; exit 1;;
+    esac
+}
+ 
+dogui()
+{
+  detectDE
+  if [ $DE = gnome ]
+  then
+    echo "zenity --title 'Select a package to install' --text 'Install?' --list --checklist --column '' --column Package --column Description --height 440 --width 600 \\" > $MW_TMP/zenity.sh
+    usage | grep '^ [a-z]' | sed 's/^ \([^ ]*\) *\(.*\)/FALSE "\1" '"'\2'/" | sed 's/$/ \\/' >> $MW_TMP/zenity.sh
+    export todo="`sh $MW_TMP/zenity.sh | tr '|' ' '`"
+  else
+    packages=`usage | awk '/^ [a-z]/ {print $1}'`
+    export todo="`showmenu "wineESWORD" "Select a package to install" "Install?" "Package" $packages`"
+  fi
+
+  if test "$todo"x = x
+  then
+     exit 0
+  fi
+}
+
+#----------------------------------------------------------------
+
+
+GUI=0
+case x"$1" in
+x) GUI=1; dogui ; set $todo ;;
+x-h|x--help|xhelp) usage ; exit 1 ;;
+esac
+test -d "$MW_CACHE" || $WINE cmd /c echo yes > /dev/null 2>&1
+mkdir -p "$MW_CACHE"
+olddir=`pwd`
+# Clean up after failed runs, if needed
+rm -rf "$MW_TMP"/*
+
+# Mac folks tend to not have sha1sum, but we can make do with openssl
+if [ -x "`which sha1sum`" ]
+then
+   SHA1SUM="sha1sum"
+else
+   SHA1SUM="openssl dgst -sha1"
+fi
+
+#--------------------------------------------------------------------------------
+
+load_eSword() { 
+mkdir eSword_portable
+cp -R  $HOME/.wine_Esword/drive_c eSword_portable
+cp $HOME/.wine_Esword/system.reg eSword_portable
+cp $HOME/.wine_Esword/user.reg eSword_portable
+cp $HOME/.wine_Esword/userdef.reg eSword_portable
+mv temp temp.ori
+logname > temp
+read user < temp
+mkdir 'eSword_portable/drive_c/windows/profiles/'$user'/My Documents'
+cp -R $HOME/e-Sword 'eSword_portable/drive_c/windows/profiles/'$user'/My Documents'
+rm temp
+mv temp.ori temp
+}
+
+#--------------------------------------------------------------------------------
+
+load_wine10() { 
+    download . http://nchc.dl.sourceforge.net/sourceforge/wine/wine-1.0.tar.bz2
+    cd $HOME/.mwcache
+    try tar -xf wine-1.0.tar.bz2 2>&1 | zenity --progress --title "Extracting wine..." --text="Please wait...." --pulsate --auto-close --width=350
+    cd wine-1.0
+    try ./configure --prefix=$MW_TMP/wine-1.0 2>&1 | zenity --progress --title="Configuring wine..." --text="Please wait...." --pulsate --auto-close --width=350
+    try make depend 2>&1 | zenity --progress  --title="'Making depend' wine..." --text="Please wait...." --pulsate --auto-close --width=350
+    try make 2>&1 | zenity --progress  --title="Making wine..." --text="Please wait...." --pulsate --auto-close --width=350
+    try make install  2>&1 | zenity --progress --title="Installing wine..." --text="Please wait...." --pulsate --auto-close --width=350
+    mv $MW_TMP/wine-1.0 $USB_DRIVE
+    mv $USB_DRIVE/wine-1.0/bin/wine $USB_DRIVE/wine-1.0/bin/wine-1.0 
+    cp $USB_DRIVE/wine-1.0/bin/winegcc $USB_DRIVE/wine-1.0/bin/wineg++
+    cp $USB_DRIVE/wine-1.0/bin/winegcc $USB_DRIVE/wine-1.0/bin/winecpp
+    cp $USB_DRIVE/wine-1.0/lib/libwine.so.1.0 $USB_DRIVE/wine-1.0/lib/libwine.so.1
+    cp $USB_DRIVE/wine-1.0/lib/libwine.so.1.0 $USB_DRIVE/wine-1.0/lib/libwine.so
+    chmod -R 555 $USB_DRIVE/wine-1.0
+    rm -rf $HOME/.mwcache/wine-1.0
+}
+
+#-------------------------------------------------------------------------
+
+load_remove_wine10() { 
+zenity --question --text="Are you sure you want to remove portable wine-1.0?"
+rc=$?
+if [ "${rc}" = "1" ]; then
+echo "Program terminated."
+exit 1
+fi
+    chmod -R 777 $USB_DRIVE/wine-1.0
+    rm -rf $USB_DRIVE/wine-1.0
+}
+
+
+#-------------------------------------------------------------------------
+
+while test "$1" != ""
+do
+    PACKAGE=$1
+    case $1 in
+    -q) MW_QUIET="/q"
+        MW_UNIXQUIET="-q"
+        MW_SILENT="/silent"
+        MW_S="/S"                 # for NSIS installers
+        ;;
+    -v) set -x;;
+    e-Sword_portable) load_eSword;;
+    wine-1.0) load_wine10;; 
+    remove_wine-1.0) load_remove_wine10;;
+    *) echo Unknown arg $1; usage ; exit 1;;
+    esac
+    # Provide a bit of feedback
+    test "$MW_QUIET" = "" && case $1 in 
+    -q) echo Setting quiet mode;;
+    -v) echo Setting verbose mode;;
+    *) echo "Process of $1 done";;
+    esac
+    shift
+done
+
+# cleanup
+rm -rf "$MW_TMP"/*
+
+test "$MW_QUIET" = "" && echo Multiple Wine Installer done. && zenity --info --title="Job complete" --text="Multiple Wine Installer done."|| true

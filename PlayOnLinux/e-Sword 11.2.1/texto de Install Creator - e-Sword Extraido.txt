@@ -1,0 +1,21 @@
+
+<b><fontsize=12>¡Hola! soy Wachín, Dios te ama</font></b>.
+ 
+<fontsize=9>Estos componentes resultan de extraer el contenido del instalador de e-Sword 11.2.1 con el programa Universal Extractor. 
+
+Con esto funciona bien el programa e-Sword en PlayOnLinux en Ubuntu y otros Linux
+
+Fecha de compilación: 2018-11-20
+
+por: Washington Indacochea Delgado
+wachin.id@gmail.com
+
+Jipijapa/Manabí/Ecuador
+
+https://facilitarelsoftwarelibre.blogspot.com/2018/09/e-sword.html
+
+http://facebook.com/multimediaparacristo</font>
+
+
+
+

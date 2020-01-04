@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Mp3tag 2.73 (wine1.7.25)
+GenericName=Music Player
+Comment=Listen to music
+Type=Application
+Exec=/usr/share/playonlinux/playonlinux --run "Mp3tag 2.73 (wine1.7.25)" %F
+Icon=/home/wachin/.PlayOnLinux//icones/full_size/Mp3tag 2.73 (wine1.7.25)
+Name[fr_FR]=Mp3tag 2.73 (wine1.7.25)
+StartupWMClass=Mp3tag.exe
+Categories=AudioVideo;Audio;Player;GTK;
+MimeType=application/ogg;application/x-cue;application/x-ogg;application/xspf+xml;audio/midi;audio/mp3;audio/mp4;audio/mpeg;audio/mpegurl;audio/ogg;audio/prs.sid;audio/x-flac;audio/x-it;audio/x-mod;audio/x-mp3;audio/x-mpeg;audio/x-mpegurl;audio/x-ms-asx;audio/x-ms-wma;audio/x-musepack;audio/x-s3m;audio/x-scpls;audio/x-stm;audio/x-vorbis+ogg;audio/x-wav;audio/x-xm;inode/directory;x-content/audio-cdda;

@@ -1,0 +1,63 @@
+Need For Speed Most Wanted - Scripts - PlayOnLinux - Run your Windows applications on Linux easily!
+https://www.playonlinux.com/es/app-406-Need_For_Speed_Most_Wanted.html
+
+#Installing mandatory dependencies
+POL_Call POL_Install_vcrun2005
+POL_Call POL_Install_d3dx9
+
+he instalado esto wachín
+
+
+
+Star Wars: The Old Republic - Scripts - PlayOnLinux - Run your Windows applications on Linux easily!
+https://www.playonlinux.com/es/app-2135-Star_Wars_The_Old_Republic.html
+
+POL_Wine_SelectPrefix "$PREFIX"
+POL_Wine_PrefixCreate "1.7.53"
+# http://www.swtor.com/info/faq
+POL_SetupWindow_VMS "256"
+ POL_Call POL_Install_msxml3
+POL_Call POL_Install_msls31
+POL_Call POL_Install_winhttp
+POL_Call POL_Install_vcrun2008
+POL_Call POL_Install_d3dx9
+
+ 
+
+Diablo III - Scripts - PlayOnLinux - Run your Windows applications on Linux easily!
+https://www.playonlinux.com/es/app-1195-Diablo_III.html
+
+POL_Debug_Message "Setting Wine Variables -----------------------"
+Set_OS "win10"
+# Updated Overrides, many of wine's dlls are up to spec now and diablo has even removed some of their own.
+POL_Wine_OverrideDLL "native,builtin" "vcruntime140"
+POL_Wine_OverrideDLL "native,builtin" "msvcp140"
+POL_Wine_OverrideDLL "native,builtin" "ucrtbase"
+# Updated dependancies, Most no longer needed due to wine 2.0 (07-APR-2017)
+POL_Call POL_Install_corefonts
+POL_Call POL_Install_Physx
+  
+
+
+Space Engineers - Scripts - PlayOnLinux - Run your Windows applications on Linux easily!
+https://www.playonlinux.com/es/app-2628-Space_Engineers.html
+
+# Downloading wine if necessary and creating 32-bit prefix
+POL_System_SetArch "x86"
+POL_Wine_PrefixCreate "$WORKING_WINE_VERSION"
+ 
+# Installing mandatory dependencies BEFORE installing Steam so the buttons inside Steam windows won't appear textless.
+# If this wont work you might have to manually instal SE and set dlls below to native.
+POL_Call POL_Install_corefonts
+POL_Call POL_Function_FontsSmoothRGB
+POL_Call POL_Install_dotnet40
+POL_Call POL_Install_vcrun6
+POL_Call POL_Install_vcrun2012
+POL_Call POL_Install_d3dx11_42
+POL_Call POL_Install_d3dx11_43
+POL_Wine_OverrideDLL "" "dwrite"
+POL_Wine_OverrideDLL "native" "oleaut32"
+POL_Wine_OverrideDLL "native" "mscoree"
+POL_Wine_OverrideDLL "native" "x3daudio1_7"
+ 
+

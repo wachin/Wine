@@ -1,0 +1,64 @@
+#!/bin/sh
+# This script is to launch e-Sword portable created using "create_e-Sword_portable" script.
+# Put this script on your root folder of your usb drive where you have your e-Sword portable.
+
+WINEPREFIX=${WINEPREFIX:-$HOME/.wine_temp}
+
+case "$1" in
+-V|--version) 
+  echo "Esword_portable version beta.  (C) david_kt. LGPL."
+  exit 0
+  ;;
+esac
+
+die() {
+  echo "$@"
+
+  case x"$GUI" in
+  x1) xmessage -center "               Esword_portable error: $@                 " ;;
+  *) ;;
+  esac
+
+  exit 1
+}
+
+# Internal variables; these locations are not too important
+WINEESWORD_CACHE=$HOME/wineeswordcache
+# Default to hiding the directory, by popular demand
+test -d "$WINEESWORD_CACHE" || WINEESWORD_CACHE=$HOME/.wineeswordcache
+
+#-----  Helpers  ------------------------------------------------
+
+# Execute with error checking
+try() {
+    # "VAR=foo try cmd" fails to put VAR in the environment
+    # with some versions of bash if try is a shell function?!
+    # Adding this explicit export works around it.
+    export WINEDLLOVERRIDES
+    echo Executing "$@"
+    "$@"
+    status=$?
+    if test $status -ne 0
+    then
+        die "Note: command '$@' returned status $status.  Aborting."
+    fi
+}
+
+# Prepare temporary bottle
+mv $HOME/.wine_temp $HOME/.wine_temp.ori
+mkdir $HOME/.wine_temp
+pwd > $HOME/.wine_temp/usb
+read USB_DRIVE < $HOME/.wine_temp/usb
+cd $HOME/.wine_temp
+ln -s ''$USB_DRIVE'/eSword_portable/drive_c'
+ln -s ''$USB_DRIVE'/eSword_portable/system.reg'
+ln -s ''$USB_DRIVE'/eSword_portable/user.reg'
+ln -s ''$USB_DRIVE'/eSword_portable/userdef.reg'
+
+# Launch e-Sword portable
+try env WINEPREFIX=$WINEPREFIX $USB_DRIVE/wine-1.0/bin/wine-1.0 "C:\Program Files\e-Sword\e-Sword.exe"
+
+# Clean up after closing e-Sword
+rm -R $HOME/.wine_temp
+mv $HOME/.wine_temp.ori $HOME/.wine_temp
+

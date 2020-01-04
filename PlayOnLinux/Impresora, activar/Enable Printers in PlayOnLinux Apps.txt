@@ -1,0 +1,27 @@
+
+
+Enable Printers in PlayOnLinux Apps
+https://gist.github.com/wachin/b207054304c4411a1ae671f21eddbdc1
+
+RESUME: I install in PlayOnLinux 'Microsoft Word Viewer 2003' but the Printer not working. Here are the solution, for this and for more apps that need use the Printer under Wine PlayOnLinux
+
+Printers
+If you have a printer properly configured under Ubuntu, probably it'll be automatically available under wine.
+
+If not, we can make it available. Basically, your printer must be installed using cups. No problem if the printer is installed using other softwares/drivers, but to get it available for wine, it must be installed under cups too.
+
+If cups package is not installed, install it:
+
+sudo apt-get install cups
+Then, and add your printer with the metod that you want.
+
+After configure it, print a test page using the related printer in Printers from System Settings.
+
+Now, in Ubuntu 16.04 this file /etc/printcap is not available more for cups(1), but is necessary for PlayOnLinux, create it this way:
+
+sudo ln -sf /var/run/cups/printcap /etc/printcap
+Reboot wine: Close all PlayOnLinux windows
+
+THIS IS AN FORK WORK FROM: Install Microsoft Office 2010 on Ubuntu https://gist.github.com/raelgc/4ccc023830bfd12c0227
+
+References: (1) https://debian-handbook.info/browse/stable/sect.config-printing.html

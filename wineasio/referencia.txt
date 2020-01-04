@@ -1,0 +1,11 @@
+
+
+http://wiki.cockos.com/wiki/index.php/How_to_run_Reaper_in_Wine_on_Linux 
+
+HOW-TO: FL Studio 9 in Ubuntu (using Wine)
+http://ubuntuforums.org/showthread.php?t=1260057
+
+New Wine: Running Windows Music & Sound Applications Under Wine 1.2
+http://www.linuxjournal.com/content/new-wine-running-windows-music-sound-applications-under-wine-12
+
+

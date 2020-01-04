@@ -1,0 +1,10 @@
+Need For Speed Most Wanted - Scripts - PlayOnLinux - Run your Windows applications on Linux easily!
+https://www.playonlinux.com/es/app-406-Need_For_Speed_Most_Wanted.html
+
+#Installing mandatory dependencies
+POL_Call POL_Install_vcrun2005
+POL_Call POL_Install_d3dx9
+
+he instalado esto wachín
+
+

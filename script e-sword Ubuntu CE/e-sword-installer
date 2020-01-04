@@ -1,0 +1,874 @@
+#!/bin/sh
+# Below codes was copied and edited from winetricks by david_kt
+# Information about winetricks: 
+# Quick and dirty script to download and install various 
+# redistributable runtime libraries
+# 
+# Copyright 2007, 2008 Google (Dan Kegel, dank@kegel.com)
+# Thanks to Detlef Riekenberg for lots of updates
+# Thanks to Saulius Krasuckas for corrections and suggestions
+
+WINE=${WINE:-wine}
+WINEPREFIX=${WINEPREFIX:-$HOME/.wine_Esword}
+WINDIR="$WINEPREFIX/drive_c/windows"
+
+case "$1" in
+-V|--version) 
+  echo "Esword_installer version beta.  (C) david_kt. LGPL."
+  exit 0
+  ;;
+esac
+
+die() {
+  echo "$@"
+
+  case x"$GUI" in
+  x1) xmessage -center "               Esword_installer error: $@                 " ;;
+  *) ;;
+  esac
+
+  exit 1
+}
+
+# Internal variables; these locations are not too important
+WINEESWORD_CACHE=$HOME/wineeswordcache
+# Default to hiding the directory, by popular demand
+test -d "$WINEESWORD_CACHE" || WINEESWORD_CACHE=$HOME/.wineeswordcache
+WINEESWORD_TMP="$WINEPREFIX"/drive_c/wineeswordtmp
+mkdir -p "$WINEESWORD_TMP"
+WINEESWORD_TMP_WIN='c:\wineeswordtmp'
+
+which "$WINE" > /dev/null
+if test "$?" -ne "0"
+then
+  die "Cannot find wine ($WINE)"
+fi
+
+#-----  Helpers  ------------------------------------------------
+
+override_dlls() {
+    mode=$1
+    shift
+    echo Using $mode override for following DLLs: $@
+    cat > "$WINEESWORD_TMP"/override-dll.reg <<_EOF_
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Wine\DllOverrides]
+_EOF_
+    while test "$1" != ""
+    do
+        case "$1" in
+        comctl32)
+           rm -rf "$WINEPREFIX"/drive_c/windows/winsxs/manifests/x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.2600.2982_none_deadbeef.manifest
+           ;;
+        esac
+        echo "\"$1\"=\"$mode\"" >> "$WINEESWORD_TMP"/override-dll.reg
+	shift
+    done
+
+    try env WINEPREFIX=$WINEPREFIX $WINE regedit "$WINEESWORD_TMP"/override-dll.reg
+    rm "$WINEESWORD_TMP"/override-dll.reg
+}
+
+# Execute with error checking
+try() {
+    # "VAR=foo try cmd" fails to put VAR in the environment
+    # with some versions of bash if try is a shell function?!
+    # Adding this explicit export works around it.
+    export WINEDLLOVERRIDES
+    echo Executing "$@"
+    "$@"
+    status=$?
+    if test $status -ne 0
+    then
+        die "Note: command '$@' returned status $status.  Aborting."
+    fi
+}
+
+# verify an sha1sum
+verify_sha1sum() {
+    wantsum=$1
+    file=$2
+   
+    gotsum=`$SHA1SUM < $file | sed 's/ .*//'`
+    if [ "$gotsum"x != "$wantsum"x ]
+    then
+       die "sha1sum mismatch!  Rename $file and try again."
+    fi
+}
+
+
+# Download a file
+# Usage: package url [sha1sum [filename]]
+# Caches downloads in wineesword/$package
+download() {
+    if [ "$4"x != ""x ]
+    then
+        file="$4"
+    else
+        file=`basename "$2"`
+    fi
+    cache="$WINEESWORD_CACHE/$1"
+    mkdir -p "$cache"
+    if ! test -f "$cache/$file"
+    then
+        cd "$cache"
+        # Mac folks tend to have curl rather than wget
+        # On Mac, 'which' doesn't return good exit status
+        # Need to jam in --header "Accept-Encoding: gzip,deflate" else
+        # redhat.com decompresses liberation-fonts.tar.gz!
+        if [ -x "`which wget`" ]
+        then
+           # Use -nd to insulate ourselves from people who set -x in WGETRC
+           # [*] --retry-connrefused works around the broken sf.net mirroring
+           # system when downloading corefonts
+           # [*] --read-timeout is useful on the adobe server that doesn't
+           # close the connection unless you tell it to (control-C or closing
+           # the socket)
+           try wget -nd -c --read-timeout=300 --retry-connrefused --header "Accept-Encoding: gzip,deflate" "$2" 2>&1 | sed -u 's/.*\ \([0-9]\+%\)\ /\1\n# Downloading /' | zenity --progress --auto-close --title="Downloading File..." 
+        else
+           # curl doesn't get filename from the location given by the server!
+           # fortunately, we know it
+           try curl -L -o $file -C - --header "Accept-Encoding: gzip,deflate" "$2" 2>&1 | sed -u 's/.*\ \([0-9]\+%\)\ /\1\n# Downloading /' | zenity --progress --auto-close --title="Downloading File..." 
+        fi
+        cd "$olddir"
+    fi
+    if [ "$3"x != ""x ]
+    then
+	verify_sha1sum $3  "$cache/$file"
+    fi
+}
+
+
+
+#----------------------------------------------------------------
+usage() {
+    set +x
+    echo "Usage: $0 [options] package [package] ..."
+    echo "This script is to install e-Sword and its addons"
+    echo "Packages:"    
+    echo " esword                e-Sword latest main program, you must install it if not yet installed"
+#    echo " upgrade               Upgrade from old e-Sword (6.0 to 8.0) to e-Sword 8.0.6 "
+#    echo " localize              e-Sword GUI Localization, Includes Afrikaans, Czech, German, French, Slovak and Spanish "
+    echo " manual                To install manually downloaded addons"
+    echo " clear_cache           To clear cache, compulsary for people upgrading to version 9, and in case of bad exe file downloaded."
+    echo " asv                   American Standard Version"
+    echo " bbe                   Bible in Basic English"
+    echo " cev                   Contemporary English Version"
+    echo " drb                   Douay-Rheims Bible w/ Deuterocanon"
+    echo " esv                   English Standard Version, Courtesy of Good News Publishers"
+    echo " gnb                   Good News Translation, Courtesy of American Bible Society"
+    echo " gw                    GODS WORD, Courtesy of GODS WORD to the Nations"
+    echo " isv                   International Standard Version, Courtesy of The ISV Foundation"
+    echo " jps                   Jewish Publication Society Old Testament"
+    echo " kjva                  King James Version w/ Apocrypha"
+    echo " litv                  Literal Translation of the Holy Bible, Courtesy of Sovereign Grace Publishers"
+    echo " mkjv                  Modern King James Version, Courtesy of Sovereign Grace Publishers"
+    echo " rv                    Revised Version"
+    echo " hot+                  Hebrew Old Testament w/ Strongs"
+    echo " gnt-wh+               Westcott-Hort Greek New Testament w/ Strongs"
+    echo " ibis                  Indonesian Bahasa Indonesia Sehari-hari"
+    echo " itb                   Indonesian Terjemahan Baru"
+    echo " fdb                   French Darby Bible"
+    echo " fls                   French Louis Segond Bible"
+    echo " lbla                  Spanish La Biblia de las Américas"
+    echo " nblh                  Spanish Nueva Biblia Latinoamericana de Hoy"
+    echo " srv                   Spanish Reina-Valera"
+    echo " rvg                   Spanish Reina Valera Gómez"
+    echo " sse                   Spanish Sagradas Escrituras"
+    echo " viet                  Vietnamese Bible"
+    echo " thayer                Thayers Greek Definitions"
+    echo " tsk                   Treasury of Scripture Knowledge"
+    echo " cbm                   Classical Bible Map"
+    echo " clarke                Adam Clarkes Commentary on the Bible"
+    echo " henry                 Matthew Henrys Commentary on the Whole Bible"
+    echo " hoekstra              Day-By-Day By Grace (Bob Hoekstra)"
+    echo " backup                To make backup of you current e-Sword installation"
+    echo " restore               To restore e-Sword from backup file"
+    echo " remove_esword         To remove e-Sword installed using this installer"
+    echo " remove_esword_default To remove e-Sword installed on default .wine directory"
+}
+
+
+#----------------------------------------------------------------
+# Trivial GUI just to handle case where user tries running without commandline
+
+# Checks for known desktop environments
+# set variable DE to the desktop environments name, lowercase
+
+detectDE() {
+    if [ x"$KDE_FULL_SESSION" = x"true" ]
+    then 
+        DE=kde
+    elif [ x"$GNOME_DESKTOP_SESSION_ID" != x"" ]
+    then
+        DE=gnome
+    elif [ x"$DISPLAY" != x"" ]
+    then
+        DE=gnome
+    else 
+        DE=none
+    fi
+}
+
+kde_showmenu() {
+    title="$1"
+    shift
+    text="$1"
+    shift
+    col1name="$1"
+    shift
+    col2name="$1"
+    shift
+    while test $# -gt 0
+    do
+        args="$args $1 $1 off"
+        shift
+    done
+    kdialog --title "$title" --separate-output --checklist "$text" $args
+}
+
+x_showmenu() {
+    title="$1"
+    shift
+    text="$1"
+    shift
+    col1name="$1"
+    shift
+    col2name="$1"
+    shift
+    if test $# -gt 0
+    then
+        args="$1"
+        shift
+    fi
+    while test $# -gt 0
+    do
+        args="$args,$1"
+        shift
+    done
+    (echo "$title"; echo ""; echo "$text") > /tmp/x_showmenu.txt 
+    xmessage -print -file /tmp/x_showmenu.txt -buttons "Cancel,$args" | sed 's/Cancel//'
+}
+
+showmenu()
+{
+    detectDE
+    case $DE in
+    kde) kde_showmenu "$@" ;;
+    #gnome) gnome_showmenu "$@" ;;
+    x) x_showmenu "$@" ;;
+    none) usage 1>&2; exit 1;;
+    esac
+}
+ 
+dogui()
+{
+  detectDE
+  if [ $DE = gnome ]
+  then
+    echo "zenity --title 'Select a package to install' --text 'Install?' --list --checklist --column '' --column Package --column Description --height 440 --width 600 \\" > $WINEESWORD_TMP/zenity.sh
+    usage | grep '^ [a-z]' | sed 's/^ \([^ ]*\) *\(.*\)/FALSE "\1" '"'\2'/" | sed 's/$/ \\/' >> $WINEESWORD_TMP/zenity.sh
+    export todo="`sh $WINEESWORD_TMP/zenity.sh | tr '|' ' '`"
+  else
+    packages=`usage | awk '/^ [a-z]/ {print $1}'`
+    export todo="`showmenu "wineESWORD" "Select a package to install" "Install?" "Package" $packages`"
+  fi
+
+  if test "$todo"x = x
+  then
+     exit 0
+  fi
+}
+
+#----------------------------------------------------------------
+
+
+GUI=0
+case x"$1" in
+x) GUI=1; dogui ; set $todo ;;
+x-h|x--help|xhelp) usage ; exit 1 ;;
+esac
+test -d "$WINEPREFIX" || $WINE cmd /c echo yes > /dev/null 2>&1
+mkdir -p "$WINEESWORD_CACHE"
+olddir=`pwd`
+# Clean up after failed runs, if needed
+rm -rf "$WINEESWORD_TMP"/*
+
+# The folder-name is localized!
+programfilesdir_win="`$WINE cmd.exe /c echo "%ProgramFiles%"`"
+test x"$programfilesdir_win" != x || die "$WINE cmd.exe /c echo '%ProgramFiles%' returned empty string"
+programfilesdir_unix="`$WINE winepath -u "$programfilesdir_win"`"
+test x"$programfilesdir_unix" != x || die "winepath -u $programfilesdir_win returned empty string"
+
+# (Fixme: get fonts path from SHGetFolderPath
+# See also http://blogs.msdn.com/oldnewthing/archive/2003/11/03/55532.aspx)
+#
+# Did the user rename Fonts to fonts?
+if ! test -d "$WINEPREFIX"/drive_c/windows/Fonts && test -d "$WINEPREFIX"/drive_c/windows/fonts 
+then
+    winefontsdir="$WINEPREFIX"/drive_c/windows/fonts
+else
+    winefontsdir="$WINEPREFIX"/drive_c/windows/Fonts
+fi
+
+# Mac folks tend to not have sha1sum, but we can make do with openssl
+if [ -x "`which sha1sum`" ]
+then
+   SHA1SUM="sha1sum"
+else
+   SHA1SUM="openssl dgst -sha1"
+fi
+
+which cabextract > /dev/null
+if test "$?" -ne "0"
+then
+  echo "Cannot find cabextract.  Please install it (e.g. 'sudo apt-get install cabextract' or 'sudo yum install cabextract')."
+fi
+
+
+#-------- Main function, install E-sword including the tweak -----------------------
+
+load_esword() { 
+# Check for latest version of e-Sword, download and install it 
+override_dlls builtin riched20 oleaut32
+
+wget http://www.e-sword.net/downloads.html
+option=`wget --force-html -i downloads.html 2>&1 | grep setup | awk '{print $NF}' | sed 's/files\///' | sed 's/exe\./exe/' | awk 'NR>1{print $1}'`
+rm -rf downloads.html
+
+
+	if [ "$option" = "" ];
+	then
+	zenity --info --title "Alert"  --text="Thereis no setup program to install, please inform the maintainer of this script in ubuntuforums."
+	else
+	while [ "$setup" = "" ]
+	do
+	setup="$(zenity --width=400 --height=50 --list --column "" --title="Select a setup program" --text="Select a setup program from the list below" $option)"
+	done
+	fi
+
+download . http://www.e-sword.net/files/$setup
+
+try env WINEPREFIX=$WINEPREFIX $WINE "$WINEESWORD_CACHE"/$setup
+
+# Install native Microsoft Line Services (needed by e-Sword, possibly only when using native riched20)
+    download . http://download.microsoft.com/download/WindowsInstaller/Install/2.0/W9XMe/EN-US/InstMsiA.exe e739c40d747e7c27aacdb07b50925b1635ee7366
+    try cabextract --directory="$WINEESWORD_TMP" "$WINEESWORD_CACHE"/InstMsiA.exe
+    try cp -f "$WINEESWORD_TMP"/msls31.dll "$WINEPREFIX"/drive_c/windows/system32
+
+# Set dll overrides
+override_dlls native,builtin riched20 oleaut32
+
+# Download winetricks and install mfc42
+    rm $WINEPREFIX/drive_c/windows/system32/mfc42u.dll
+    download . http://www.kegel.com/wine/winetricks
+    chmod +x "$WINEESWORD_CACHE"/winetricks
+    cd "$WINEESWORD_CACHE"
+    try env WINEPREFIX=$WINEPREFIX ./winetricks mfc42
+
+# Copy riched20 to correct place
+# Below added to support other languages
+cd $HOME/.wine_Esword
+rm -f $HOME/.wine_Esword/drive_c/windows/system32/riched20.dll
+find . -type f -name "riched20.dll" -exec cp -f {} $HOME/.wine_Esword/drive_c/windows/system32 \;
+
+# Need to register vbscript to enable search function
+try env WINEPREFIX=$WINEPREFIX $WINE regsvr32 vbscript.dll
+
+
+# Make sure there is Desktop Launcher and remove lnk file.
+cp $HOME/.local/share/applications/wine/Programs/e-Sword/e-Sword.desktop $HOME/Desktop
+echo StartupNotify=true >> $HOME/Desktop/e-Sword.desktop
+chmod +x $HOME/Desktop/e-Sword.desktop
+rm -f $HOME/Desktop/e-Sword.lnk
+}
+#----------------------------------------------------------------
+#load_upgrade() {    
+#    download . http://www.e-sword.net/files/update806.exe
+#    try env WINEPREFIX=$WINEPREFIX $WINE "$WINEESWORD_CACHE"/update806.exe
+#}
+
+#----------------------------------------------------------------
+load_localize() {    
+    download . http://www.e-sword.net/files/localize.exe
+    try env WINEPREFIX=$WINEPREFIX $WINE "$WINEESWORD_CACHE"/localize.exe
+}
+
+
+#----------------------------------------------------------------
+load_manual() { 
+
+	choice="$(zenity --width=300 --height=150 --list --column "" --title="Manually downloaded addons" --text="Please select executable or data file."   \
+        "Executable" \
+        "Data file")"
+	case "${choice}" in
+
+	"Executable" )
+while true 
+do
+
+    ans=$(zenity  --title="Select addon or update to install" --file-selection)
+	if [ "$ans" = "" ]; then
+	break
+	fi
+    try env WINEPREFIX=$WINEPREFIX $WINE "$ans"
+done
+	;;
+
+	"Data file" )
+   
+    cd $HOME/.wine_Esword  
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd
+while true 
+do
+    ans=$(zenity  --title="Select addon to install" --file-selection)
+	if [ "$ans" = "" ]; then
+	break
+	fi
+    try mv "$ans" "$HOME/.wine_Esword/$dir"  
+    cd "`dirname "$ans"`"
+
+done
+
+	esac
+
+
+
+}
+
+#----------------------------------------------------------------
+load_clear_cache() {    
+rm -rf $HOME/.wineeswordcache
+}
+
+
+#----- One function per package, in alphabetical order ---------------
+
+load_asv() {    
+    download . http://www.e-sword.net/files/bibles/asv.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/asv.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_bbe() {    
+    download . http://www.e-sword.net/files/bibles/bbe.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/bbe.bblx ./
+
+}
+
+#----------------------------------------------------------------
+
+load_cev() {    
+    download . http://www.e-sword.net/files/bibles/cev.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/cev.bblx ./
+
+}
+
+#----------------------------------------------------------------
+
+load_drb() {    
+    download . http://www.e-sword.net/files/bibles/drb.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/drb.bblx ./
+
+}
+
+#----------------------------------------------------------------
+
+load_esv() {    
+    download . http://www.e-sword.net/files/bibles/esv.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/esv.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_gnb() {    
+    download . http://www.e-sword.net/files/bibles/gnb.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/gnb.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_gw() {    
+    download . http://www.e-sword.net/files/bibles/gw.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/gw.bblx ./
+
+}
+
+#----------------------------------------------------------------
+
+load_isv() {    
+    download . http://www.e-sword.net/files/bibles/isv.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/isv.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_jps() {    
+    download . http://www.e-sword.net/files/bibles/jps.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/jps.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_kjva() {    
+    download . http://www.e-sword.net/files/bibles/kjva.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/kjva.bblx ./
+
+}
+
+#----------------------------------------------------------------
+
+load_litv() {    
+    download . http://www.e-sword.net/files/bibles/litv.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/litv.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_mkjv() {    
+    download . http://www.e-sword.net/files/bibles/mkjv.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/mkjv.bblx ./
+}
+
+
+#----------------------------------------------------------------
+
+load_rv() {    
+    download . http://www.e-sword.net/files/bibles/rv.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/rv.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_hot_plus() {    
+    download . http://www.e-sword.net/files/bibles/hot+.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/hot+.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_gnt_wh_plus() {    
+    download . http://www.e-sword.net/files/bibles/gnt-wh+.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/gnt-wh+.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_ibis() {    
+    download . http://www.e-sword.net/files/bibles/ibis.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/ibis.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_itb() {    
+    download . http://www.e-sword.net/files/bibles/itb.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/itb.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_fdb() {    
+    download . http://www.e-sword.net/files/bibles/fdb.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/cev.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_fls() {    
+    download . http://www.e-sword.net/files/bibles/fls.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/fls.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_lbla() {    
+    download . http://www.e-sword.net/files/bibles/lbla.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/lbla.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_nblh() {    
+    download . http://www.e-sword.net/files/bibles/nblh.bblx
+    cd $HOME/.wine_Esword    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/cev.bblx ./
+
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/nblh.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_srv() {    
+    download . http://www.e-sword.net/files/bibles/srv.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/srv.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_rvg() {    
+    download . http://www.e-sword.net/files/bibles/rvg.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/rvg.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_sse() {    
+    download . http://www.e-sword.net/files/bibles/sse.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/sse.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_viet() {    
+    download . http://www.e-sword.net/files/bibles/viet.bblx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/viet.bblx ./
+}
+
+#----------------------------------------------------------------
+
+load_thayer() {    
+    download . http://www.e-sword.net/files/dictionaries/thayer.dctx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/thayer.dctx ./
+}
+
+#----------------------------------------------------------------
+
+load_tsk() {    
+    download . http://www.e-sword.net/files/commentaries/tsk.cmtx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/tsk.cmtx ./
+}
+
+#----------------------------------------------------------------
+load_cbm() {    
+    download . http://www.e-sword.net/files/graphics/classic.mapx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/classic.mapx ./
+}
+
+#----------------------------------------------------------------
+
+load_clarke() {    
+    download . http://www.e-sword.net/files/commentaries/clarke.cmtx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/clarke.cmtx ./
+}
+
+#----------------------------------------------------------------
+
+load_henry() {    
+    download . http://www.e-sword.net/files/commentaries/henry.cmtx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/henry.cmtx ./
+}
+
+#----------------------------------------------------------------
+load_hoekstra() {    
+    download . http://www.e-sword.net/files/devotions/hoekstra.devx
+    cd $HOME/.wine_Esword
+    dir=`find . -type f -name "e-Sword.exe" | sed 's/e-Sword.exe//' | sed 's/\.//'`
+    cd "$HOME/.wine_Esword/$dir"
+    try mv "$WINEESWORD_CACHE"/hoekstra.devx ./
+}
+
+#----------------------------------------------------------------
+
+load_backup() {    
+ans1=$(zenity  --title="Select Directory to keep your backup" --file-selection --directory)
+try tar -cf $ans1/e-Sword_backup_`date +%Y-%m-%d`.tar.gz  $HOME/.wine_Esword $HOME/e-Sword
+}
+
+#----------------------------------------------------------------
+
+load_restore() {    
+ans2=$(zenity  --title="Select backup file you want to restore from" --file-selection)
+cd $HOME/.wineeswordcache
+try tar -xf $ans2
+rm -r $HOME/.wine_Esword 
+mv $HOME/.wineeswordcache$HOME/.wine_Esword $HOME
+rm -r $HOME/e-Sword
+mv $HOME/.wineeswordcache$HOME/e-Sword $HOME
+rm -r $HOME/.wineeswordcache/home
+}
+
+#----------------------------------------------------------------
+load_remove_esword() {    
+zenity --question --text="Are you sure you want to uninstall e-Sword?"
+rc=$?
+if [ "${rc}" = "1" ]; then
+echo "Program terminated."
+exit 1
+fi
+    try rm -rf $HOME/.wine_Esword 2>&1 | zenity --progress --title="Removing e-Sword..." --text="Please wait...." --pulsate --auto-close --width=350
+    rm $HOME/Desktop/e-Sword.desktop
+}
+#----------------------------------------------------------------
+load_esword_default() { 
+zenity --question --text="Are you sure you want to uninstall e-Sword?"
+rc=$?
+if [ "${rc}" = "1" ]; then
+echo "Program terminated."
+exit 1
+fi
+    try rm -rf ''$HOME'/.wine/drive_c/Program Files/e-Sword' 2>&1 | zenity --progress --title="Removing e-Sword..." --text="Please wait...." --pulsate --auto-close --width=350
+}
+
+#----------------------------------------------------------------
+while test "$1" != ""
+do
+    PACKAGE=$1
+    case $1 in
+    -q) WINEESWORD_QUIET="/q"
+        WINEESWORD_UNIXQUIET="-q"
+        WINEESWORD_SILENT="/silent"
+        WINEESWORD_S="/S"                 # for NSIS installers
+        WINEDEBUG=${WINEDEBUG:-"fixme-all"}
+        export WINEDEBUG
+        ;;
+    -v) set -x;;
+    esword) load_esword;;
+#    upgrade) load_upgrade;;
+    localize) load_localize;;
+    manual) load_manual;;
+    clear_cache) load_clear_cache;;
+    asv) load_asv;;
+    bbe) load_bbe;;
+    cev) load_cev;;
+    drb) load_drb;;
+    esv) load_esv;;
+    gnb) load_gnb;;
+    gw) load_gw;;
+    isv) load_isv;;
+    jps) load_jps;;
+    kjva) load_kjva;;
+    litv) load_litv;;
+    mkjv) load_mkjv;;
+    rv) load_rv;;
+    hot+) load_hot_plus;;
+    gnt-wh+) load_gnt_wh_plus;;
+    ibis) load_ibis;;
+    itb) load_itb;;
+    fdb) load_fdb;;
+    fls) load_fls;;
+    lbla) load_lbla;;
+    nblh) load_nblh;;
+    srv) load_srv;;
+    rvg) load_rvg;;
+    sse) load_sse;;
+    viet) load_viet;;
+    thayer) load_thayer;;
+    tsk) load_tsk;;
+    cbm) load_cbm;;
+    clarke) load_clarke;;
+    henry) load_henry;;
+    hoekstra) load_hoekstra;;
+    backup) load_backup;;
+    restore) load_restore;;
+    remove_esword) load_remove_esword;;
+    remove_esword_default) load_esword_default;;
+    *) echo Unknown arg $1; usage ; exit 1;;
+    esac
+    # Provide a bit of feedback
+    test "$WINEESWORD_QUIET" = "" && case $1 in 
+    -q) echo Setting quiet mode;;
+    -v) echo Setting verbose mode;;
+    *) echo "Install of $1 done" ;;
+    esac
+    shift
+done
+
+# cleanup
+rm -rf "$WINEESWORD_TMP"/*
+
+test "$WINEESWORD_QUIET" = "" && echo e-Sword installer done. && zenity --info --title="Job complete" --text="e-Sword Installer done." || true

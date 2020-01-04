@@ -1,0 +1,85 @@
+Instalar Wine 4 en Xubuntu 18.04 para reparar el menú para abrir ejecutables
+https://facilitarelsoftwarelibre.blogspot.com/2019/01/instalar-wine-4-en-xubuntu-1804-para.html
+
+Este de aquí es el problema en Xubuntu 18.04 de 32 bits, no se si en 64 bits esté solucionado:
+
+
+
+TUTORIAL DE ACTUALIZACIÓN DE WINE APLICABLE A:
+- Ubuntu 18.04 y todos sus derivados oficiales: Lubuntu, Ubuntu Budgie, Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Xubuntu y Linux Mint 19.x
+
+
+SOLUCIÓN INSTALAR WINE 4
+
+1.- Si tu sistema es de 64 bits activa la arquitectura de 32 bits (si no la tienes ya activada)
+
+sudo dpkg --add-architecture i386 
+
+2.- Descarga y añade la llave del repositorio, ponga estas dos líneas de código una por una ejecutandolas
+
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+
+
+
+3.- Añade el repositorio para Ubuntu 18.04 o Linux Mint 19.x
+
+sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+
+4.- Luego actualiza todos los repositorios:
+
+sudo apt update
+
+5.- Instale Wine la rama estable:
+
+sudo apt install --install-recommends winehq-stable
+
+y una vez actualizado ya aparece la opción de abrir los ejecutables de windows con clic derecho (no ha sido necesario reiniciar):
+
+
+
+ADVERTENCIA
+Yo me he dado cuenta de un problema cuando luego enviar una actualización de Wine 4 yaa no me funcionan las aplicaciones que había instalado antes así que es posible que no le funcionen las que tenía instaladas antes así que
+
+6.- Borre wine y los iconos de las aplicaciones instaladas:
+
+rm -fr ~/.wine
+rm -fr ~/.local/share/applications/wine/
+
+7.- y vuelva a instalar todas las aplicaciones de Windows que tenía.
+
+Y me ha pasado un problema de que cuando envian una aplicacion de wine 4 después ya las aplicaciones que había instalado ya no me funcionan así que para evitar eso pienso que lo mejor es
+
+8.- desabilitar el repositorio así:
+
+sudo apt-add-repository --remove 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+
+Esto lo he hecho pensando en que en un entorno de producción núnca debe de pasar algo así como lo que les explico que luego cuando actualicen wine ya no funcionen las aplicaciones que uno instaló (esta es una de las razones de la existencia de PlayOnLinux pues allí uno puede instalar las aplicaciones por separado en una versión particular de Wine)
+
+Si luego quisieran actualizar wine
+Si luego quisieran actualizar wine después de algunos meses o pasando algunos años, añadan el respositorio e instalen siguiendo los pasos:
+
+3.-
+4.-
+5.-
+
+Pero lo más seguro es que tengan que instalar todo otra vez y para ello tengan que seguir los pasos:
+
+6.-
+7.-
+
+Que Dios les bendiga
+
+
+
+Cómo instalar Wine la ultima versión en Ubuntu 18.04
+https://wiki.winehq.org/Ubuntu
+
+
+Me había salido antes un error:
+
+El repositorio «https://dl.winehq.org/wine-builds/ubuntu bionic InRelease» cambió su valor «Codename» de «» a «bionic»
+
+
+Este se soluciona viendo en la página los comandos y volviendolos a poner.
+

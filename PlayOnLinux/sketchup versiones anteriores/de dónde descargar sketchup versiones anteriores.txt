@@ -1,0 +1,27 @@
+
+
+
+SketchUp Make 2014 Download Links (provided here) - SketchUp - SketchUp Community
+http://forums.sketchup.com/t/sketchup-make-2014-download-links-provided-here/11472
+
+Several people have been requesting older versions of SketchUp Make because they can't use SketchUp Make 2015 with their computer's older OS. Please see the hardware and software requirements to run current and older versions of SketchUp in our Knowledge Center here: http://help.sketchup.com/en/article/36208804
+
+[Windows SketchUp Make 2014]
+http://dl.trimble.com/sketchup/2014/en/SketchUpMake-2014-1-1282-61130-en.exe5.8k
+
+[Mac SketchUp Make 2014]
+http://dl.trimble.com/sketchup/2014/en/SketchUpMake-2014-1-1283-61130-en.dmg1.8k
+
+
+Link to download SketchUp 2015 Make
+https://forums.sketchup.com/t/link-to-download-sketchup-2015-make/24281/4
+Hello! It took some time but I found direct links to SketchUp Make 2015 32 and 64 bit versions. Here they are:
+
+SketchUp Make 2015, 64-bit 1.1k
+http://dl.trimble.com/sketchup/2015/en/SketchUpMake-2015-3-331-70959-en-x64.exe
+
+SketchUp Make 2015, 32-bit 433
+http://dl.trimble.com/sketchup/2015/en/SketchUpMake-2015-3-330-70959-en-x86.exe
+
+
+

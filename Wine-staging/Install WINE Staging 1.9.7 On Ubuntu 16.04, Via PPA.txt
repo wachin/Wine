@@ -1,0 +1,33 @@
+
+
+Install WINE Staging 1.9.7 On Ubuntu 16.04, Via PPA
+http://sourcedigit.com/19393-install-wine-staging-on-ubuntu-16-04-via-ppa/
+
+Add stub for ntoskrnl.IoGetDeviceAttachmentBaseRef
+Return stub interface from mf.MFCreateMediaSession
+Install Wine Staging 1.9.7 on Ubuntu
+
+wine-staging
+
+1.- Run the following commands to install up to date Wine Staging PPA:
+
+$ sudo add-apt-repository ppa:pipelight/stable
+ $ sudo apt-get update
+ $ sudo apt-get install --install-recommends wine-staging
+
+To install the 64 bit version of wine-staging, run the following command:
+
+$ sudo apt-get install wine-staging-amd64
+
+Please note that the Wine staging is installed in /opt/wine-staging/bin and hence the Wine Staging can be used along-with the regular wine application. The wine is installed in /usr/bin.
+
+F2.- or Wine Staging to behave as it was in the system’s default PATH, run to install wine-staging-compact:
+
+$ sudo apt-get install wine-staging-compat
+
+Nota: No saltarse el orden 1 y 2 sino no funciona
+
+
+sale esta recomendación en el terminal 
+
+ libgnutls-deb0-28 libgnutls26

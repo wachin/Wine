@@ -1,0 +1,4 @@
+
+e-Sword extraccion con UniExtractor para hacer Componetes e-Sword(PlayOnLinux)
+
+En este tutorial podrás ver cómo extraje todo el contenido e-Sword y lo ubiqué en una sola carpeta. Si usted no quiere usar mi instalador puede hacer estos pasos usted mismo y aunque no pueda crear un instalador puede usar esta carpeta e instalar manualmente el contenido sobre la instalación de e-Sword en PlayOnLinux

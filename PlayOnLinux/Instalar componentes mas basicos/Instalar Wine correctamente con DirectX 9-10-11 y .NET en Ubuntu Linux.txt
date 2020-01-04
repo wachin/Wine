@@ -1,0 +1,38 @@
+
+
+
+Instalar Wine correctamente con DirectX 9/10/11 y .NET en Ubuntu Linux. - Staberman | Cooperativa Tecnológica
+https://staberman.com.ar/blog/instalar-wine-correctamente-directx-91011-net-ubuntu-linux/
+
+
+
+Instalar Wine correctamente con DirectX 9/10/11 y .NET en Ubuntu Linux.
+Instalar Wine correctamente con DirectX 9/10/11 y .NET en Ubuntu Linux.
+Wine no es un emulador, es una capa de compatibilidad que permite que las aplicaciones de windows corran casi nativamente, siempre y cuando tengan todas las librerias necesarias para hacerlo. Por eso Wine sin Winetricks no es la gran cosa.
+
+Winetricks es un script que nos permite instalar todas las librerias necesarias, como DirectX, .NET y C++.
+
+Instalar Wine y Winetricks
+Abrimos la terminal e ingresamos:
+
+sudo add-apt-repository ppa:ricotz/unstable
+sudo apt-get update
+sudo apt-get install wine1.8 winetricks
+La mayoría de los sistemas de hoy en día son de 64 bits, pero Wine funciona mejor en 32 bits, por lo que tendremos que configurarlo para que así sea por defecto. Para eso Borramos la carpeta ./.wine creada por defecto e ingresamos:
+
+env WINEPREFIX=$HOME/.wine32 WINEARCH=win32 winecfg
+Esto creará nuevamente la carpeta que acabamos de borrar, que contenía el prefix por defecto.
+
+Ahora nuestro Winprefix está configurado para funcionar en 32 bits.
+
+Instalar librerías en Winetricks
+Podemos hacerlo a través del entorno gráfico que propone Winetricks, o mediante línea de comandos. Muchas librerías se descargarán automáticamente y las que no, deberemos descargarlas a mano de los sitios que Winetricks nos indique.
+
+Para hacerlo desde la terminal, ingresamos:
+
+
+
+winetricks atmlib corefonts gdiplus gecko msxml3 msxml6 vcrun6 vcrun2003 vcrun2005 vcrun2008 vcrun2010 msxml6 vcrun2005sp1 ie6 mdac28 jet40 winxp d3dx9 dotnet11 fontsmooth-rgb dxdiag tahoma dotnet20 dotnet20sp1 dotnet30 dotnet30sp1 dotnet40 dotnet45 pngfilt  directplay directmusic dinput dinput8 d3dx11_42  d3dx11_43 d3dx10
+
+
+Eso si queremos correr casi todos los juegos y aplicaciones disponibles sin demasiados problemas. Con esta amplia colección de librerías se puede correr Adobe Photoshop CS6 y la mayoría de los juegos que utilizan DirectX 9, 10 y 11, sin mayores inconvenientes.
