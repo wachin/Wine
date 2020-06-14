@@ -1,0 +1,11 @@
+
+
+Instalar e-Sword 12 en Linux (Ubuntu, Debian, Fedora, etc) con PlayOnLinux (wine 3).
+
+e-Sword es una CompuBiblia, este programa es nativo de Windows pero encontré la manera de poder instalarlo en Linux y que funcione al 100%.
+
+El tutorial aquí:
+https://facilitarelsoftwarelibre.blogspot.com/2019/12/instalar-e-sword-en-linux-con-playonlinux.html
+
+
+ 

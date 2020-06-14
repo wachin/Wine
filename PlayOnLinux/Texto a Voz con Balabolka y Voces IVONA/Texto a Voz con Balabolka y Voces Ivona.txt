@@ -225,6 +225,9 @@ Por cierto, pude hacer funcionar este programa gracias a estas dos entradas:
 
 CONSULTA:
 
+TTSReader & Balabolka: ebook-to-speech apps that run in WINE
+http://www.murga-linux.com/puppy/viewtopic.php?p=1032809&sid=55cba4acc7a8e67e1f0c74e5147bd5dc
+
 text to speach, sapi on linux (ubuntu 10.10) | solved!
 http://ubuntu-answers.blogspot.com/2010/12/text-to-speach-sapi-on-linux-ubuntu.html 
 

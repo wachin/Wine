@@ -1,0 +1,400 @@
+
+Este es un tutorial de cómo instalar las voces de Ivona en Linux<br />
+<br />
+<b>INSTRUCCIONES:</b><br />
+<b><br /></b>
+<b><br /></b>
+<b><br /></b>
+<br />
+<div style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 24px;">
+<span style="box-sizing: border-box; font-family: inherit; font-size: 16px;"><span style="box-sizing: border-box; font-weight: bolder;">TUTORIAL APLICABLE A:</span></span></div>
+<div style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 24px;">
+<span style="box-sizing: border-box; font-size: 16px;">-&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=ubuntu" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Ubuntu</a><span style="box-sizing: border-box; font-size: 16px;">&nbsp;y todos sus&nbsp;</span><a href="https://www.ubuntu.com/about/about-ubuntu/flavours" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">sabores o derivados oficiales</a><span style="box-sizing: border-box; font-size: 16px;">:&nbsp;</span><a href="https://www.kubuntu.org/" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Kubuntu</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="http://lubuntu.me/" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Lubuntu</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://ubuntubudgie.org/" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Ubuntu Budgie</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="http://www.ubuntukylin.com/" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Ubuntu Kylin</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://ubuntu-mate.org/" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Ubuntu MATE</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="http://ubuntustudio.org/" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Ubuntu Studio</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://xubuntu.org/" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Xubuntu</a><span style="box-sizing: border-box; font-size: 16px;">&nbsp;y no oficiales como:&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=mint" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Linux Mint</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=elementary" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Elementary OS</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=zorin" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Zorin OS</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=kdeneon" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">KDE Neon</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=popos" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Pop!_OS</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=lite" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Linux Lite</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://trisquel.info/" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Trisquel</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;etc y Sistemas Operativos basados en&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=debian" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Debian</a><span style="box-sizing: border-box; font-size: 16px;">&nbsp;como son:&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=mx" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">MX Linux</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=deepin" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Deepin</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=antix" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">antiX</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=kali" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Kali</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=sparky" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Sparky</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=parrot" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Parrot</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=tails" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Tails</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=q4os" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Q4OS</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=pureos" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">PureOS</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=voyager" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Voyager Live</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=volumio" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Volumio</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=raspbian" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Raspbian</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=whonix" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Whonix</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=slax" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Slax</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=steamos" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">SteamOS</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=avlinux" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">AV Linux</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=solydxk" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">SolydXK</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=pardus" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Pardus</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=proxmox" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Proxmox</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=academix" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Academic GNU/Linux</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=univention" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Univention Corporate Server</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=skolelinux" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Debian Edu/Skolelinux</a><span style="box-sizing: border-box; font-size: 16px;">, etc, los cuales usan la administración de paquetes&nbsp;</span><a href="https://es.wikipedia.org/wiki/Deb" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">DEB</a></div>
+<div style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 24px;">
+<br style="box-sizing: border-box; font-size: 16px;" /></div>
+<div style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 24px;">
+<span style="box-sizing: border-box; font-size: 16px; font-weight: bolder;">y debería de funcionar en:</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 24px;">
+<span style="box-sizing: border-box; font-size: 16px;">distribuciones que usan la administración de paquetes&nbsp;</span><a href="https://es.wikipedia.org/wiki/RPM_Package_Manager" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">RPM</a><span style="box-sizing: border-box; font-size: 16px;">&nbsp;como&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=fedora" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Fedora</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=redhat" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Red Hat</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=opensuse" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">OpenSUSE</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=centos" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">CentOS</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=scientific" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Scientific</a><span style="box-sizing: border-box; font-size: 16px;">, etc</span></div>
+<div style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 24px;">
+<span style="box-sizing: border-box; font-size: 16px;">- Otros Linux basados en&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=arch" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Arch Linux</a><span style="box-sizing: border-box; font-size: 16px;">&nbsp;como:&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=antergos" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Antergos</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=manjaro" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Manjaro</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=archbang" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">ArchBang</a></div>
+<div style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 24px;">
+<span style="box-sizing: border-box; font-family: inherit; font-size: 16px;">- y otras distribuciones independientes de Linux como:&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=gentoo" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Gentoo</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=mageia" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Mageia</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=quirky" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Quirky</a><span style="box-sizing: border-box; font-size: 16px;">,&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=solus" style="box-sizing: border-box; color: #666666; font-size: 16px;" target="_blank">Solus</a><span style="box-sizing: border-box; font-size: 16px;">, etc.&nbsp;</span><span style="box-sizing: border-box; font-size: 16px; font-weight: bolder;"><i style="box-sizing: border-box;">Pero allí se usan otros comandos para instalar aplicaciones los cuales usted deberá de buscar.</i></span></div>
+<b><br /></b>
+<b><br /></b>
+<br />
+<h4 style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 1.5rem; font-weight: 500; line-height: 1.2; margin-bottom: 0.5rem; margin-top: 0px;">
+<span style="box-sizing: border-box; color: red;">2.- Instalar PlayOnLinux</span></h4>
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Ponga en una terminal lo siguiente&nbsp;</span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;">para Ubuntu y sabores</span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">:</span><br />
+<br />
+<pre class="linux-code" style="background: url(&quot;https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif&quot;) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; box-sizing: border-box; color: #212529; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; line-height: 22.4px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><span style="box-sizing: border-box; font-size: small;">sudo apt-get install playonlinux</span><span style="box-sizing: border-box; font-family: &quot;ubuntubeta mono&quot; , &quot;ubuntu mono&quot; , &quot;courier new&quot; , &quot;courier&quot; , monospace;">
+</span></pre>
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;">Para Linux Mint 19.3&nbsp;</span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">(y tal vez para otras versiones):</span><br />
+<br />
+<pre class="linux-code" style="background: url(&quot;https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif&quot;) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; box-sizing: border-box; color: #212529; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; line-height: 22.4px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><span style="box-sizing: border-box; font-size: small;">sudo apt-get install playonlinux winehq-stable</span></pre>
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;">Para antiX 19 de 32 bits</span><br />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;">&nbsp;</span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">(basado en Debian 10 Buster por lo que podría servir para ese y otros de sus derivados):</span><br />
+<br />
+<pre class="linux-code" style="background: url(&quot;https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif&quot;) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; box-sizing: border-box; color: #212529; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; line-height: 22.4px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><span style="box-sizing: border-box; font-size: small;">sudo apt-get install playonlinux wine</span></pre>
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<br />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: 700;">Para antiX 19 de 64 bits</span><br />
+<br />
+<pre class="linux-code" style="background: url(&quot;https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif&quot;) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; box-sizing: border-box; color: #212529; font-size: 14px; line-height: 22.4px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><span style="box-sizing: border-box; font-size: small;">sudo apt-get install playonlinux wine wine32:i386</span></pre>
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: ubuntu; font-size: 16px;" />
+<br />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">durante la instalación es posible que aparezca esto:</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<a href="https://4.bp.blogspot.com/-hVyu4yy2NtY/Xeqrcg5d3FI/AAAAAAAAVqA/RPoG4g0zNR8RWUrfLaao-ZX2RAQcwUiOgCK4BGAYYCw/s1600/02%2Baceptar%2Bla%2Blicencia%2Bttf-corefonts.png" imageanchor="1" style="background-color: white; box-sizing: border-box; color: #666666; font-family: Ubuntu; font-size: 16px;"><img border="0" height="428" src="https://4.bp.blogspot.com/-hVyu4yy2NtY/Xeqrcg5d3FI/AAAAAAAAVqA/RPoG4g0zNR8RWUrfLaao-ZX2RAQcwUiOgCK4BGAYYCw/s640/02%2Baceptar%2Bla%2Blicencia%2Bttf-corefonts.png" style="border-style: none; box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px; box-sizing: border-box; max-width: 100%; vertical-align: middle;" width="640" /></a><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">muévase con&nbsp;</span><a href="https://es.wikipedia.org/wiki/Tecla_de_direcci%C3%B3n" style="background-color: white; box-sizing: border-box; color: #666666; font-family: Ubuntu; font-size: 16px;" target="_blank">teclas de dirección</a><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">&nbsp;y luego confirme con la&nbsp;</span><a href="https://es.wikipedia.org/wiki/Barra_espaciadora" style="background-color: white; box-sizing: border-box; color: #666666; font-family: Ubuntu; font-size: 16px;" target="_blank">barra espaciadora</a><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">&nbsp;para que acepte la licencia y continúe:</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<img src="https://3.bp.blogspot.com/-rPrNqiDCtSI/W3YGkT4x3OI/AAAAAAAAI4c/i8JkLcFoyh0463hpqGZ5q8WoZANyUDoqwCK4BGAYYCw/s640/01%2Binstalando%2Bttf-mscorefonts-installer%2Blicencia.png" style="background-color: white; border-style: none; box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px; max-width: 100%; vertical-align: middle;" /><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">estas son algunas fuentes tipográficas de Microsoft que es necesario instalar.</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;">Nota:</span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">&nbsp;El comando instalación arriba mencionado es para Ubuntu y derivados de Debian. Para otros Sistemas Operativos Linux consultar en Internet.</span><br />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><br /></span>
+<br />
+<b>2.- INSTALAR UNA VERSION DE WINE 2.17</b><br />
+<br />
+Instalar en PlayOnLinux la versión de Wine 2.17 la cual es la última en la que se puede hacer funcionar SAPI 5. En PlayOnLinux de clic en:<br />
+<br />
+Herramientas/Gestiona versiones de Wine<br />
+<br />
+<a href="http://1.bp.blogspot.com/-c5u-hLdXWmk/XoebTGObTZI/AAAAAAAAap8/T2fNR_oKovokR5wI_qNJpNXaucMWYYoogCK4BGAYYCw/s1600/ksnip_20200403-152322.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-c5u-hLdXWmk/XoebTGObTZI/AAAAAAAAap8/T2fNR_oKovokR5wI_qNJpNXaucMWYYoogCK4BGAYYCw/s1600/ksnip_20200403-152322.png" /></a><br />
+<br />
+instale la versión de wine:<br />
+<br />
+2.17<br />
+<br />
+Si tiene un sistema operativo de 32 bits sólo aparecerá una pestaña que dice:<br />
+<br />
+"Versiones de Wine (x86)"<br />
+<br />
+pero si tuviera usted un sistema operativo de 64 bits le aparecerán dos pestañas, al lado derecho una que dice: "Versiones de Wine (x64)". Si es ese el caso, <b>haga esta instalación siempre en la pestaña de 32 bits</b>, pues la versión de IVONA que vamos a instalar sólo es para 32 bits:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-Sed-QWTPRgY/XoebZum-SzI/AAAAAAAAaqE/2isoA-Tr69cKwG_PMOFaETEcpXYqqvWkACK4BGAYYCw/s1600/ksnip_20200403-152254.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-Sed-QWTPRgY/XoebZum-SzI/AAAAAAAAaqE/2isoA-Tr69cKwG_PMOFaETEcpXYqqvWkACK4BGAYYCw/s1600/ksnip_20200403-152254.png" /></a><br />
+<br />
+<br />
+pero no se preocupe eso se encargará de emular su sistema operativo si fuera de 64 bits para los ejecutables de Windows dentro de Wine.<br />
+<br />
+<br />
+<br />
+<b><span style="color: red;">3.- INSTALAR BALABOLKA</span></b><br />
+Descargue el programa desde:<br />
+<br />
+<a href="http://www.cross-plus-a.com/es/balabolka.htm">http://www.cross-plus-a.com/es/balabolka.htm</a><br />
+<br />
+descomprimirlo con clic derecho extraer aquí<br />
+<br />
+En PlayOnLinux de clic en el + y clic en: "<b>Instalar un programa no listado</b>", <b>Siguiente, Siguiente, Siguiente</b><br />
+<br />
+y en "<b>Instalar un programa en una nueva unidad virtual</b>" y <b>Siguiente</b>, y pongale nombre ejemplo:<br />
+<br />
+<b>balabolka-ivona-wine217</b><br />
+<br />
+elegir:<br />
+<br />
+<b>-Use otra versión de wine</b><br />
+<b>-Configurar wine</b><br />
+<br />
+Clic siguiente<br />
+<br />
+En version de wine escoja <b>2.17</b><br />
+<b><br /></b>
+<b>Nota: </b>Si usted esta haciendo esta instalación en un Linux de 64 bits le aparecerá esta ventana:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-LerqxRwM8_8/XoeibQERuxI/AAAAAAAAaqU/9sRH7uIndjAeVZA2sUDDkYwb1XuRut_YgCK4BGAYYCw/s1600/ksnip_20200402-wine%2B2.17%2B32%2Bbits%2Bescoger.png" imageanchor="1"><img border="0" src="https://4.bp.blogspot.com/-LerqxRwM8_8/XoeibQERuxI/AAAAAAAAaqU/9sRH7uIndjAeVZA2sUDDkYwb1XuRut_YgCK4BGAYYCw/s1600/ksnip_20200402-wine%2B2.17%2B32%2Bbits%2Bescoger.png" /></a><br />
+<br />
+deje por defecto allí en 32 bits<br />
+<br />
+es posible que aquí aparezcan las siguientes ventanas:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-ZvHxG8xvvvU/XofDsOpA3wI/AAAAAAAAaqs/Fc-9CyqvTvggUnn5rKexrtOB1r7hR1q9wCK4BGAYYCw/s1600/ksnip_20200403-proceso%2Bde%2Binstalacion%2Bde%2BWine%2BMono.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-ZvHxG8xvvvU/XofDsOpA3wI/AAAAAAAAaqs/Fc-9CyqvTvggUnn5rKexrtOB1r7hR1q9wCK4BGAYYCw/s1600/ksnip_20200403-proceso%2Bde%2Binstalacion%2Bde%2BWine%2BMono.png" /></a><br />
+<br />
+instale Wine Mono y luego Wine Gecko:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-WmHo1FPDtd0/XofDs7wQ80I/AAAAAAAAaq0/1koI0P1-8j49OyDp02jEvhx6VZYHvhRkACK4BGAYYCw/s1600/ksnip_20200403-181029.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-WmHo1FPDtd0/XofDs7wQ80I/AAAAAAAAaq0/1koI0P1-8j49OyDp02jEvhx6VZYHvhRkACK4BGAYYCw/s1600/ksnip_20200403-181029.png" /></a><br />
+<br />
+En la ventana de "<b>Configuración de Wine</b>" por defecto aparecerá en la pestaña "<b>Aplicaciones</b>", abajo en "<b>Version a imitar</b>" escoja "<b>Windows ME</b>":<br />
+<br />
+<a href="http://2.bp.blogspot.com/-iFZJm0Pxm_U/XofEjJKUEQI/AAAAAAAAarE/UQyTROC0d_keAmSPWu4v_UgbL5RzMGMtACK4BGAYYCw/s1600/ksnip_20200403-181922.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-iFZJm0Pxm_U/XofEjJKUEQI/AAAAAAAAarE/UQyTROC0d_keAmSPWu4v_UgbL5RzMGMtACK4BGAYYCw/s1600/ksnip_20200403-181922.png" /></a><br />
+<br />
+y luego en la ventana de "<b>Configuración de Wine</b>" de clic en la pestaña "<b>Graficos</b>" y ponga en "<b>Resolución 120</b><br />
+<br />
+<a href="http://2.bp.blogspot.com/-LtxRTd9A7JQ/XofEzMekjOI/AAAAAAAAarQ/K1nlzjXfbhkG3hCs8Rg31bMgfrlHLz2EgCK4BGAYYCw/s1600/ksnip_20200403-182032.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-LtxRTd9A7JQ/XofEzMekjOI/AAAAAAAAarQ/K1nlzjXfbhkG3hCs8Rg31bMgfrlHLz2EgCK4BGAYYCw/s1600/ksnip_20200403-182032.png" /></a><br />
+<br />
+<br />
+(o la mejor para su monitor), y clic en <b>Aplicar</b> y <b>Aceptar</b><br />
+<br />
+Y de clic en el botón "<b>Expĺorar</b>" y busque el instalador de Balabolka que tiene el nombre <b>setup.exe</b> clic en "<b>Siguiente</b>" siga las instrucciones e instálelo<br />
+<br />
+En uno de estos puntos es posible le aparezca una ventana que falta instalar <b>Wine Gecko</b> o <b>Wine Mono</b>, instale si le pide.<br />
+<br />
+Y al final de la instalación hay un mensaje que dice:<br />
+<br />
+"<b>Ejecutar Balabolka después de la instalación</b>"<br />
+<br />
+<a href="http://1.bp.blogspot.com/-xz41lwPCVYY/XofE9--ADFI/AAAAAAAAarY/69u6qz0zYCszPXv89YtmmYO3fgwjRJ6rgCK4BGAYYCw/s1600/ksnip_20200403-181700.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-xz41lwPCVYY/XofE9--ADFI/AAAAAAAAarY/69u6qz0zYCszPXv89YtmmYO3fgwjRJ6rgCK4BGAYYCw/s1600/ksnip_20200403-181700.png" /></a><br />
+<br />
+Desmarque esa casilla y de clic en "<b>Finalizar</b>"<br />
+<br />
+<br />
+<b>Nota</b>: Si usted no desmarcó la casilla y dió clic en "Finalizar" Balabolka se ejecutará y si usted lo cierra no se cerrará sino que quedará en el area de notificación que está a la derecha en la Barra de tareas lo cual no permitirá que aparezca la siguiente ventana y usted no podrá continual con este tutorial, por tal motivo si así fuera el caso allí en el area de notificación de clic derecho al icono de Balabolka y cierre al programa.<br />
+<br />
+<br />
+y le aparecerá una nueva ventana la cual sirve para que cree un atajo en PlayOnLinux(POL). Dele clic a:<br />
+<br />
+balabolka.exe<br />
+<br />
+<a href="http://1.bp.blogspot.com/-Sl2W0qiLMJ4/XofFEQ5qQeI/AAAAAAAAark/JaAQAO2TVnYRK_2lTAJ6XDWYb_NNUjpXACK4BGAYYCw/s1600/ksnip_20200403-181726.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-Sl2W0qiLMJ4/XofFEQ5qQeI/AAAAAAAAark/JaAQAO2TVnYRK_2lTAJ6XDWYb_NNUjpXACK4BGAYYCw/s1600/ksnip_20200403-181726.png" /></a><br />
+<br />
+y clic en Siguiente y ponga nombre con la version de wine que haya escojido, ejemplo en este caso:<br />
+<b><br /></b>
+<b>Balabolka + voces IVONA (wine 2.17)</b><br />
+<br />
+<a href="http://1.bp.blogspot.com/-ITT99goHvSY/XofFFNV7-HI/AAAAAAAAars/nIrcIK_jdcYQQi82iEhb5blj8GTmAeFngCK4BGAYYCw/s1600/ksnip_20200403-181758.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-ITT99goHvSY/XofFFNV7-HI/AAAAAAAAars/nIrcIK_jdcYQQi82iEhb5blj8GTmAeFngCK4BGAYYCw/s1600/ksnip_20200403-181758.png" /></a><br />
+<br />
+<b>Nota:</b> Puede copiar este nombre y pegarlo allá.<br />
+<br />
+Clic en Siguiente. Espere un momento y aparecerá otra vez la ventana y dele clic en "<b>No quiero crear otro atajo</b>"<br />
+<br />
+<a href="http://3.bp.blogspot.com/-_QAYqzhZjsM/XofFNeIIRQI/AAAAAAAAar4/O0-MwSFVqLUTJm3w_vj1jiG0UwSK6G48gCK4BGAYYCw/s1600/ksnip_20200403-181840.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-_QAYqzhZjsM/XofFNeIIRQI/AAAAAAAAar4/O0-MwSFVqLUTJm3w_vj1jiG0UwSK6G48gCK4BGAYYCw/s1600/ksnip_20200403-181840.png" /></a><br />
+<br />
+&nbsp;y <b>Siguiente</b>.<br />
+<br />
+<br />
+<b>**************************</b><br />
+<b>4.-&nbsp; INSTALAR VOCES IVONA</b><br />
+<b>**************************</b><br />
+<br />
+Desde un navegador Web, descargue las voces de Ivona siguiendo las instrucciones desde:<br />
+<br />
+DESCARGAR E INSTALAR VOCES IVONA 3.0 PARA TEXTALOUD (SIN BALABOLKA) 2019<br />
+<a href="https://youtu.be/OUurpd9oYZc">https://youtu.be/OUurpd9oYZc</a><br />
+<br />
+Una vez que haya descargado el archivo:<br />
+<br />
+TEU - Voces Ivona Español.exe<br />
+<br />
+Ahora hay que instalar las voces (bueno yo las voy a probar todas), para hacerlo en la ventana principal de PlayOnLinux dele clic en el programa "<b>Balabolka + voces IVONA (wine 2.17)</b>", dele clic encima&nbsp; y clic en la <b>tuerca</b>(Configurar)<br />
+<br />
+<a href="http://3.bp.blogspot.com/-tT35fgQkBeM/XofFyA2V7mI/AAAAAAAAasM/5oGYWMpGeh84WOnnbJo5FXQgcC2dMczoQCK4BGAYYCw/s1600/ksnip_20200403-182442.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-tT35fgQkBeM/XofFyA2V7mI/AAAAAAAAasM/5oGYWMpGeh84WOnnbJo5FXQgcC2dMczoQCK4BGAYYCw/s1600/ksnip_20200403-182442.png" /></a><br />
+<br />
+&nbsp;y clic en la pestaña "<b>Miscelanea</b>" y clic en "<b>Ejecutar un archivo .exe en esta unidad virtual</b>"<br />
+<br />
+<a href="http://3.bp.blogspot.com/-XE_GcYX45W4/XofF7WsMuPI/AAAAAAAAasU/frhB-g1HxsEWo8rqRZUkqWKFikezmD-QwCK4BGAYYCw/s1600/ksnip_20200403-182521.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-XE_GcYX45W4/XofF7WsMuPI/AAAAAAAAasU/frhB-g1HxsEWo8rqRZUkqWKFikezmD-QwCK4BGAYYCw/s1600/ksnip_20200403-182521.png" /></a><br />
+<br />
+y busque el instalador<br />
+<br />
+<a href="http://2.bp.blogspot.com/--a49W2x2178/XofG0lI2UtI/AAAAAAAAasw/TrTPzT19Yw4k99FRnv_Y-XhxBbwpAPCowCK4BGAYYCw/s1600/ksnip_20200403-182755.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/--a49W2x2178/XofG0lI2UtI/AAAAAAAAasw/TrTPzT19Yw4k99FRnv_Y-XhxBbwpAPCowCK4BGAYYCw/s1600/ksnip_20200403-182755.png" /></a><br />
+<br />
+El instalador debe estar en una carpeta de HOME, o en otros administradores de archivos llamada "Carpeta Personal", NO debe estar en un pendrive o en alguna particion o dentro de muchas carpetas pues no les funcionará, así que en este ejemplo tengo los instaladores dentro de Documentos/VBox/IVONA, si, sólo dentro de tres carpetas en HOME:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-U9_MZzWJYEA/XofHS0n8pEI/AAAAAAAAas8/bh4Z-QobndwL0Hrm7d82carp6wt_GbExwCK4BGAYYCw/s1600/ksnip_20200403-182833.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-U9_MZzWJYEA/XofHS0n8pEI/AAAAAAAAas8/bh4Z-QobndwL0Hrm7d82carp6wt_GbExwCK4BGAYYCw/s1600/ksnip_20200403-182833.png" /></a><br />
+<br />
+<br />
+dele clic y espere a que se ejecute, y se abrirá una ventana con unas opciones, allí dice:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-IYqqUnBrnxY/XofGGOLq3uI/AAAAAAAAasg/03ryxzdUMUE0ykSKT-m4-A5LSpVzQVnfgCK4BGAYYCw/s1600/ksnip_20200402-IVONA%2B1.png" imageanchor="1"><img border="0" src="https://4.bp.blogspot.com/-IYqqUnBrnxY/XofGGOLq3uI/AAAAAAAAasg/03ryxzdUMUE0ykSKT-m4-A5LSpVzQVnfgCK4BGAYYCw/s1600/ksnip_20200402-IVONA%2B1.png" /></a><br />
+<br />
+1.- <b>primero instalan una voz</b><br />
+2.-luego abren <b>ivona_sapi5_voice_v1.6.60</b>, hagan eso y se abrirá un emulador del administrador de archivos de Windows, delen clic derecho al archivo que aparece allí y copienlon<br />
+<br />
+<a href="http://2.bp.blogspot.com/-e3pwe3QH3Kw/XofKONZYGZI/AAAAAAAAatI/pxzdYa-A4Fg_FlXEuFYDMQqauqLKN5HnwCK4BGAYYCw/s1600/ksnip_20200403-175038.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-e3pwe3QH3Kw/XofKONZYGZI/AAAAAAAAatI/pxzdYa-A4Fg_FlXEuFYDMQqauqLKN5HnwCK4BGAYYCw/s1600/ksnip_20200403-175038.png" /></a><br />
+<br />
+pero, aquí viene lo dificil, hagan lo siguiente, ahí en esa ventana del emulador del administrador de archivos en la izquierda vayan a la raíz:<br />
+<br />
+/<br />
+<br />
+allí busquen la carpeta :<br />
+<br />
+home<br />
+<br />
+<a href="http://2.bp.blogspot.com/-64AgNDDlruA/XofKguCCXTI/AAAAAAAAatg/LOm5cckAyLgCJ5za00UYkl-bg3y-luPEgCK4BGAYYCw/s1600/ksnip_20200403-184451.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-64AgNDDlruA/XofKguCCXTI/AAAAAAAAatg/LOm5cckAyLgCJ5za00UYkl-bg3y-luPEgCK4BGAYYCw/s1600/ksnip_20200403-184451.png" /></a><br />
+<br />
+y allí busquen su usuario, en mi caso "wachin"<br />
+<br />
+<a href="http://2.bp.blogspot.com/-Jq19kRnrXwA/XofKpkxe1_I/AAAAAAAAato/pa8YeV6yxuQ0XWCsJN8hp5tCRMBVXZz5QCK4BGAYYCw/s1600/ksnip_20200403-175108.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-Jq19kRnrXwA/XofKpkxe1_I/AAAAAAAAato/pa8YeV6yxuQ0XWCsJN8hp5tCRMBVXZz5QCK4BGAYYCw/s1600/ksnip_20200403-175108.png" /></a><br />
+<br />
+&nbsp;en el de ustedes el suyo, y allí busquen la carpeta:<br />
+<br />
+PlayOnLinux's virtual drives<br />
+<br />
+<a href="http://2.bp.blogspot.com/-g81J2LJejbQ/XofKut_OHgI/AAAAAAAAatw/u3SDCqA5b2UKM6GKB0NWtuj6CQiMgUNUQCK4BGAYYCw/s1600/ksnip_20200403-175126.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-g81J2LJejbQ/XofKut_OHgI/AAAAAAAAatw/u3SDCqA5b2UKM6GKB0NWtuj6CQiMgUNUQCK4BGAYYCw/s1600/ksnip_20200403-175126.png" /></a><br />
+<br />
+entren allí en la unidad virtual que hemos creado, le pusimos el nombre:<br />
+<br />
+balabolka-ivona_wine217<br />
+<br />
+<a href="http://2.bp.blogspot.com/-MbWhG56SbHA/XofKzTablRI/AAAAAAAAat8/BYlCVklmbDsTDQP_U0qeEH_nJ-2EvsIKACK4BGAYYCw/s1600/ksnip_20200403-175154.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-MbWhG56SbHA/XofKzTablRI/AAAAAAAAat8/BYlCVklmbDsTDQP_U0qeEH_nJ-2EvsIKACK4BGAYYCw/s1600/ksnip_20200403-175154.png" /></a><br />
+<br />
+<b>Nota: </b>Disculpen en la imagen dice al final wine216 (esa era una prueba que estaba haciendo anteriormente sino que ya no tengo una imagen de la version 2.17 y por eso pongo esa)<br />
+<br />
+y allí entre en:<br />
+<br />
+drive_c<br />
+<br />
+<a href="http://2.bp.blogspot.com/-EEuxQ_IJKaU/XofLSpLirzI/AAAAAAAAauI/oT23Fb2pp3Mzzn77Q0dLHgJN7EABybdIgCK4BGAYYCw/s1600/ksnip_20200403-175204.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-EEuxQ_IJKaU/XofLSpLirzI/AAAAAAAAauI/oT23Fb2pp3Mzzn77Q0dLHgJN7EABybdIgCK4BGAYYCw/s1600/ksnip_20200403-175204.png" /></a><br />
+<br />
+y allí entre en:<br />
+<br />
+Program Files<br />
+<br />
+<a href="http://3.bp.blogspot.com/-Z4ZBikkIHxI/XofLThgXDEI/AAAAAAAAauQ/1oqjGHXf6ykqIdqw4QNHZwa3ZbzHFSGiACK4BGAYYCw/s1600/ksnip_20200403-175216.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-Z4ZBikkIHxI/XofLThgXDEI/AAAAAAAAauQ/1oqjGHXf6ykqIdqw4QNHZwa3ZbzHFSGiACK4BGAYYCw/s1600/ksnip_20200403-175216.png" /></a><br />
+y allí entre en:<br />
+<br />
+IVONA/IVONA 2 Voice/x86<br />
+<br />
+<a href="http://4.bp.blogspot.com/-ozvd45mJ8TA/XofLVxOzHcI/AAAAAAAAauY/uo_GHQmidjst0-YDqGJQ1-V6b-LnfgJcQCK4BGAYYCw/s1600/ksnip_20200403-175227.png" imageanchor="1"><img border="0" src="https://4.bp.blogspot.com/-ozvd45mJ8TA/XofLVxOzHcI/AAAAAAAAauY/uo_GHQmidjst0-YDqGJQ1-V6b-LnfgJcQCK4BGAYYCw/s1600/ksnip_20200403-175227.png" /></a><br />
+<br />
+<br />
+<br />
+<a href="http://1.bp.blogspot.com/-SCjA2B1fRMk/XofLXqkNSMI/AAAAAAAAaug/Yrb9oAMZ5kgQzp5qt-ahq7aix8WIpFROQCK4BGAYYCw/s1600/ksnip_20200403-175238.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-SCjA2B1fRMk/XofLXqkNSMI/AAAAAAAAaug/Yrb9oAMZ5kgQzp5qt-ahq7aix8WIpFROQCK4BGAYYCw/s1600/ksnip_20200403-175238.png" /></a><br />
+<br />
+<br />
+<br />
+<a href="http://3.bp.blogspot.com/-uTiunuQ5uNA/XofLZFdhV3I/AAAAAAAAauo/pmqln0LRg1wQqZqctXB4uRoyuG8oVwB9ACK4BGAYYCw/s1600/ksnip_20200403-175249.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-uTiunuQ5uNA/XofLZFdhV3I/AAAAAAAAauo/pmqln0LRg1wQqZqctXB4uRoyuG8oVwB9ACK4BGAYYCw/s1600/ksnip_20200403-175249.png" /></a><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+clic derecho y pegar<br />
+<br />
+<a href="http://1.bp.blogspot.com/-0YTyqD4IGU8/XofLahDxarI/AAAAAAAAauw/3Y89fNWhTHs5Yf5JX0CQ-H0yiePb2edOwCK4BGAYYCw/s1600/ksnip_20200403-175307.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-0YTyqD4IGU8/XofLahDxarI/AAAAAAAAauw/3Y89fNWhTHs5Yf5JX0CQ-H0yiePb2edOwCK4BGAYYCw/s1600/ksnip_20200403-175307.png" /></a><br />
+<br />
+&nbsp;debe aparecer una ventana que le pregunta si desea "Confirmar sobreescritura de archivo", pongale que si<br />
+<br />
+<a href="http://1.bp.blogspot.com/-q7lofAoYrZ8/XofLk6dUzlI/AAAAAAAAau8/pAI9zDicPDg10wltlslLpOWB2SNzr4jMQCK4BGAYYCw/s1600/ksnip_20200403-175457.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-q7lofAoYrZ8/XofLk6dUzlI/AAAAAAAAau8/pAI9zDicPDg10wltlslLpOWB2SNzr4jMQCK4BGAYYCw/s1600/ksnip_20200403-175457.png" /></a><br />
+<br />
+, y cierren la ventana.<br />
+<br />
+Confirmar si se pegó.- Para esto den clic allí en el emulador del administrador de archivos para windows, den clic derecho en "Actualizar"<br />
+<br />
+<a href="http://2.bp.blogspot.com/-YWbC24-qsMs/XofLp6SZQ-I/AAAAAAAAavQ/1q4o6znf20YRJzLpQk3FWBI5oCpZw0w8wCK4BGAYYCw/s1600/ksnip_20200403-175518.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-YWbC24-qsMs/XofLp6SZQ-I/AAAAAAAAavQ/1q4o6znf20YRJzLpQk3FWBI5oCpZw0w8wCK4BGAYYCw/s1600/ksnip_20200403-175518.png" /></a><br />
+<br />
+&nbsp;y observen en "Modificado" debe cambiarse la fecha a la del nuevo archivo<br />
+<br />
+<a href="http://3.bp.blogspot.com/-fTAMB-2cP-A/XofLuRnI-hI/AAAAAAAAavY/VidIEWKgCO4WQHHLw2gW3WilNn6UIgd5QCK4BGAYYCw/s1600/ksnip_20200403-175530.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-fTAMB-2cP-A/XofLuRnI-hI/AAAAAAAAavY/VidIEWKgCO4WQHHLw2gW3WilNn6UIgd5QCK4BGAYYCw/s1600/ksnip_20200403-175530.png" /></a><br />
+<br />
+&nbsp;y cierren la ventana.<br />
+<br />
+<b>Nota: </b>Suponiendo que se demoraron mucho haciendo estos pasos y ya no pudieron pegar allí el archivo porque no les apareció la ventana de confirmación de sobreescribir el archivo, repita el proceso.<br />
+<br />
+Ahora cierren la ventana de instalación de las voces de balabolka<br />
+<br />
+<br />
+<br />
+<b>5.- INSTALAR EL REPARADOR DE SAPI 5</b><br />
+<br />
+Deben entrar en la siguiente pagina y descargar el zip:<br />
+<br />
+"SAPI5 Repairing Tools"<br />
+<a href="http://dimiodati.altervista.org/zip/SAPI%20Repairing%20Tools.html">http://dimiodati.altervista.org/zip/SAPI%20Repairing%20Tools.html</a><br />
+<br />
+el nombre del archivo es:<br />
+<br />
+SAPI Repairing Tools.zip<br />
+<br />
+a este zip debemos descomprimirlo y dentro de la carpeta está el ejecutable (recuerde donde lo ha puesto):<br />
+<br />
+FixRegistry.exe<br />
+<br />
+<a href="http://4.bp.blogspot.com/-F1_FRb7-Bl0/XVbPExysY5I/AAAAAAAARYs/-0Kv9c6d1Ow0_E0fpL6Lt5xeyFXyAzaJACK4BGAYYCw/s1600/Selecci%25C3%25B3n_706.png" imageanchor="1"><img border="0" height="356" src="https://4.bp.blogspot.com/-F1_FRb7-Bl0/XVbPExysY5I/AAAAAAAARYs/-0Kv9c6d1Ow0_E0fpL6Lt5xeyFXyAzaJACK4BGAYYCw/s640/Selecci%25C3%25B3n_706.png" width="640" /></a><br />
+<br />
+en PlayOnLinux dele clic al icono del programa que hemos instalado: "Balabolka (Wine 2.17)", dele clic encima y clic en la tuerca(configurar) y clic en la pestaña "Miscelanea" y clic en "Ejecutar un archivo .exe en esta unidad virtual" y busque el instalador el ejecutable:<br />
+<br />
+FixRegistry.exe<br />
+<br />
+Se abrirá la ventana del programita, y abajo hay un botón, que si no lo ven den clic en el deslizador hasta que aparezca el botón: "Check Registry" y clic y les aparecerá un mensaje que en resumen se hizo todo bien.<br />
+<br />
+<b>5.- INSTALAR COMPONENTES DE PLAYONLINUX</b><br />
+en PlayOnLinux dele clic al icono del programa que hemos instalado: "Balabolka (Wine 2.17)", dele clic encima y clic en la tuerca(configurar) y clic en la pestaña "Componentes" y allí instale:<br />
+<br />
+msxml3<br />
+msls31<br />
+<br />
+aparecerá una ventana, espere a que solita se desaparezca y ya estará instalado.<br />
+<br />
+<br />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;"><span style="box-sizing: border-box; color: red;">INSTALE HUNSPELL</span></span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Búsque hunspell en:</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<a href="http://www.cross-plus-a.com/es/balabolka.htm" style="background-color: white; box-sizing: border-box; color: #666666; font-family: Ubuntu; font-size: 16px;" target="_blank">http://www.cross-plus-a.com/es/balabolka.htm</a><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Esto es necesario para poder corregir la ortografía, está al final de la página, allí debe buscar el idioma que necesita, ejemplo yo necesito español e inglés:</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<a href="https://3.bp.blogspot.com/-KJCMiYhoC0k/XnrNlaB9TjI/AAAAAAAAajA/S0lyYOwGFYcLlJODkw6LTtnq_2DRIXzzQCK4BGAYYCw/s1600/ksnip_20200324-221809.png" imageanchor="1" style="background-color: white; box-sizing: border-box; color: #666666; font-family: Ubuntu; font-size: 16px;"><img border="0" src="https://3.bp.blogspot.com/-KJCMiYhoC0k/XnrNlaB9TjI/AAAAAAAAajA/S0lyYOwGFYcLlJODkw6LTtnq_2DRIXzzQCK4BGAYYCw/s1600/ksnip_20200324-221809.png" style="border-style: none; box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px; box-sizing: border-box; max-width: 100%; vertical-align: middle;" /></a><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">darle clic para que se pueda descargar el archivo .zip, luego descomprímalo para que pueda tener el ejecutable</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Instale allí mismo en "</span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;">Miscelaneo</span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">", en:</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">"</span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;">Ejecutar un archivo .exe en esta unidad</span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">"</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">y busque el ejecutable que necesita e instálelo:</span><br />
+<br />
+<div class="separator" style="background-color: white; box-sizing: border-box; clear: both; color: #212529; font-family: Ubuntu; font-size: 16px; text-align: center;">
+</div>
+<div class="video-container" style="box-sizing: border-box; height: 0px; overflow: hidden; padding-bottom: 464.062px; padding-top: 30px; position: relative;">
+<iframe allowfullscreen="allowfullscreen" class="b-hbp-video b-uploaded" frameborder="0" height="266" id="BLOGGER-video-2ed5464048d48247-7475" mozallowfullscreen="mozallowfullscreen" src="https://www.blogger.com/video.g?token=AD6v5dxoUgg6RLSTjdtY9CxrHNFqY1Ni6pqONHjOodeI9_9u2GcHyX3kFn96-WoyTQGOD4zXIWED7ZoJknF4HEKP9OKrd7TWUgFTDmcrIdWx3dJK0S_9phDr2YptKCbLvOyBkPJdkrI" style="box-sizing: border-box; height: 494.062px; left: 0px; position: absolute; top: 0px; width: 825px;" webkitallowfullscreen="webkitallowfullscreen" width="320"></iframe></div>
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<br />
+<br />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;"><span style="box-sizing: border-box; color: red;">&nbsp;CÓMO RESALTAR PALABRAS CON ERRORES</span></span><br />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Se puede configurar para que las palabras que escribimos mal se puedan distinguir, haga esto:</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<a href="https://4.bp.blogspot.com/-BnAICgPPgo4/XSZHriSRQ0I/AAAAAAAAP-0/9-N5fYYcSI8slU6UGgoSExr5eg3gmM-bgCK4BGAYYCw/s1600/1_690.png" imageanchor="1" style="background-color: white; box-sizing: border-box; color: #666666; font-family: Ubuntu; font-size: 16px;"><img border="0" src="https://4.bp.blogspot.com/-BnAICgPPgo4/XSZHriSRQ0I/AAAAAAAAP-0/9-N5fYYcSI8slU6UGgoSExr5eg3gmM-bgCK4BGAYYCw/s1600/1_690.png" style="border-style: none; box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px; box-sizing: border-box; max-width: 100%; vertical-align: middle;" /></a><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">luego marque donde le indico en las flechas:</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<a href="https://1.bp.blogspot.com/-CBePx2coU0w/XSZIUfcvQtI/AAAAAAAAP_A/YFpL-nauG185bvxzdX6VXFvI3JZEOEWXwCK4BGAYYCw/s1600/Selecci%25C3%25B3n_691.png" imageanchor="1" style="background-color: white; box-sizing: border-box; color: #666666; font-family: Ubuntu; font-size: 16px;"><img border="0" src="https://1.bp.blogspot.com/-CBePx2coU0w/XSZIUfcvQtI/AAAAAAAAP_A/YFpL-nauG185bvxzdX6VXFvI3JZEOEWXwCK4BGAYYCw/s1600/Selecci%25C3%25B3n_691.png" style="border-style: none; box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px; box-sizing: border-box; max-width: 100%; vertical-align: middle;" /></a><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">y después ya aparecerán así las palabras erroneas:</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<a href="https://2.bp.blogspot.com/-FFg71Ws_uCk/XSZJMCtlHiI/AAAAAAAAP_M/T5Fxxt4kJLovi1xFx_KNtlCW8Vx88g3BwCK4BGAYYCw/s1600/Selecci%25C3%25B3n_692.png" imageanchor="1" style="background-color: white; box-sizing: border-box; color: #666666; font-family: Ubuntu; font-size: 16px;"><img border="0" src="https://2.bp.blogspot.com/-FFg71Ws_uCk/XSZJMCtlHiI/AAAAAAAAP_M/T5Fxxt4kJLovi1xFx_KNtlCW8Vx88g3BwCK4BGAYYCw/s1600/Selecci%25C3%25B3n_692.png" style="border-style: none; box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px; box-sizing: border-box; max-width: 100%; vertical-align: middle;" /></a><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;">Nota:&nbsp;</span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Cuando cierren Balabolka no se asusten si luego no aparece, estará guardado aquí:</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<a href="https://3.bp.blogspot.com/-2iLYS4mIvkA/XnrVCZCB2TI/AAAAAAAAaj8/9cMSyX45I-oM1_FfLw__bnTgMSIV9G7QgCK4BGAYYCw/s1600/ksnip_20200324-225019.png" imageanchor="1" style="background-color: white; box-sizing: border-box; color: #666666; font-family: Ubuntu; font-size: 16px;"><img border="0" src="https://3.bp.blogspot.com/-2iLYS4mIvkA/XnrVCZCB2TI/AAAAAAAAaj8/9cMSyX45I-oM1_FfLw__bnTgMSIV9G7QgCK4BGAYYCw/s1600/ksnip_20200324-225019.png" style="border-style: none; box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px; box-sizing: border-box; max-width: 100%; vertical-align: middle;" /></a><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">y el siguiente video para que vean que me funciona a mi en antiX 19 de 32 bits (está basado en Debian 10 Buster):</span><br />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span>
+<br />
+<div class="separator" style="background-color: white; box-sizing: border-box; clear: both; color: #212529; font-family: Ubuntu; font-size: 16px; text-align: center;">
+</div>
+<div class="video-container" style="box-sizing: border-box; height: 0px; overflow: hidden; padding-bottom: 464.062px; padding-top: 30px; position: relative;">
+<iframe allowfullscreen="allowfullscreen" class="b-hbp-video b-uploaded" frameborder="0" height="266" id="BLOGGER-video-b295b33837a97746-4342" mozallowfullscreen="mozallowfullscreen" src="https://www.blogger.com/video.g?token=AD6v5dy3M1RTA_hvQ-lSsDnMn3NcxvATYX5p-cHOMLoR3iNPgDz4kvsU9MkXVpor8d-BFrWFDFXUP2dRmjOd8hhR6E8GH-Y473g6XyQCc5vaSeON6_Rb2j12Veg8Sdp7QBmfwG6-mdI" style="box-sizing: border-box; height: 494.062px; left: 0px; position: absolute; top: 0px; width: 825px;" webkitallowfullscreen="webkitallowfullscreen" width="320"></iframe></div>
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Y para cerrar el programa hagan así:</span><br />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><a href="https://4.bp.blogspot.com/-CC4rcRfV0vQ/XnuGoKKOYFI/AAAAAAAAakI/1X62KWIAGhwNxwoSb-wEAVdQSI1t48zDgCK4BGAYYCw/s1600/ksnip_20200325-112759.png" imageanchor="1" style="background-color: transparent; box-sizing: border-box; color: #666666;"><img border="0" src="https://4.bp.blogspot.com/-CC4rcRfV0vQ/XnuGoKKOYFI/AAAAAAAAakI/1X62KWIAGhwNxwoSb-wEAVdQSI1t48zDgCK4BGAYYCw/s1600/ksnip_20200325-112759.png" style="border-style: none; box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px; box-sizing: border-box; max-width: 100%; vertical-align: middle;" /></a></span><br />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Porque sino se les queda escondido iconizado.</span><br />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: bolder;">PARA CONVERTIR EL TEXTO A MP3</span></span></span><br />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><span style="box-sizing: border-box;">Den clic en este icono:</span></span><br />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><span style="box-sizing: border-box;"><br style="box-sizing: border-box;" /></span></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><span style="box-sizing: border-box;"><a href="https://2.bp.blogspot.com/-gctNPZluT4c/XnuHPJbEkAI/AAAAAAAAakU/xGfeMZNcZxQjn5YmWdtPwLLmDTwZqsILACK4BGAYYCw/s1600/ksnip_20200325-113013.png" imageanchor="1" style="background-color: transparent; box-sizing: border-box; color: #666666;"><img border="0" src="https://2.bp.blogspot.com/-gctNPZluT4c/XnuHPJbEkAI/AAAAAAAAakU/xGfeMZNcZxQjn5YmWdtPwLLmDTwZqsILACK4BGAYYCw/s1600/ksnip_20200325-113013.png" style="border-style: none; box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px; box-sizing: border-box; max-width: 100%; vertical-align: middle;" /></a></span></span><br />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"><br style="box-sizing: border-box;" /></span><span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;"></span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Me comentan cualquier pregunta</span><br />
+<br style="background-color: white; box-sizing: border-box; color: #212529; font-family: Ubuntu; font-size: 16px;" />
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Dios les bendiga</span><br />
+<br />
+<br />
+<br />
+<br />
+<b>CONSULTAS:</b><br />
+<br />
+text to speach, sapi on linux (ubuntu 10.10) | solved!<br />
+<a href="http://ubuntu-answers.blogspot.com/2010/12/text-to-speach-sapi-on-linux-ubuntu.html">http://ubuntu-answers.blogspot.com/2010/12/text-to-speach-sapi-on-linux-ubuntu.html</a><br />
+<br />
+My Text to Speech (TTS) solution. wine + Microsoft Speech Platform v11 : linux<br />
+<a href="https://www.reddit.com/r/linux/comments/6z41qb/my_text_to_speech_tts_solution_wine_microsoft/">https://www.reddit.com/r/linux/comments/6z41qb/my_text_to_speech_tts_solution_wine_microsoft/</a><br />
+<br />
+How to Fix OLE Error 8004013F on Linux - Appuals.com<br />
+<a href="https://appuals.com/fix-ole-error-8004013f-linux/">https://appuals.com/fix-ole-error-8004013f-linux/</a><br />
+<div>
+<br /></div>
+<br /> 

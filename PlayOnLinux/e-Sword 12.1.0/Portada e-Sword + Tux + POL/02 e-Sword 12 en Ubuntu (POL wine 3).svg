@@ -18,9 +18,9 @@
    version="1.1"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="02 e-Sword 12 en Ubuntu (POL wine 3).svg"
-   inkscape:export-filename="/home/wachin/Dropbox/UbuntuManuales/Wine/PlayOnLinux/e-Sword 12.1.0/01 e-Sword 11 en Ubuntu (POL wine 3).png"
-   inkscape:export-xdpi="105.9"
-   inkscape:export-ydpi="105.9">
+   inkscape:export-filename="/home/wachin/github-2/WINE-make-work-windows-apps-on-linux/PlayOnLinux/e-Sword 12.1.0/Portada e-Sword + Tux + POL/01 e-Sword 11 en Ubuntu (POL wine 3) 1333x750px.png"
+   inkscape:export-xdpi="99.974998"
+   inkscape:export-ydpi="99.974998">
   <defs
      id="defs3663">
     <linearGradient
@@ -1607,11 +1607,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.36260587"
-     inkscape:cx="419.39349"
-     inkscape:cy="232.7459"
+     inkscape:zoom="0.51280214"
+     inkscape:cx="478.1469"
+     inkscape:cy="314.33361"
      inkscape:document-units="px"
-     inkscape:current-layer="g5278"
+     inkscape:current-layer="layer2"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -1669,6 +1669,26 @@
        position="310.25422,12.927259"
        orientation="0,1"
        id="guide526"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="254.11848,477.15772"
+       orientation="1,0"
+       id="guide1343"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="943.3463,360.15353"
+       orientation="1,0"
+       id="guide1345"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="513.72153,-7.312762"
+       orientation="0,1"
+       id="guide1347"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="577.7082,680.08687"
+       orientation="0,1"
+       id="guide1349"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
@@ -1914,7 +1934,7 @@
        inkscape:export-ydpi="600" />
     <g
        id="g4205"
-       transform="matrix(0.93170134,0,0,0.90222331,-22.544385,132.48111)">
+       transform="matrix(0.93170134,0,0,0.90222331,19.503997,132.4343)">
       <g
          inkscape:export-ydpi="600"
          inkscape:export-xdpi="600"
@@ -2038,20 +2058,20 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.91500005;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.21366608;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4278)"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.91500005;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.21366596;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4278)"
        x="595.69995"
        y="90.212646"
        id="text2987-3-1-7"
-       transform="matrix(0.9054035,0,0,1.2381013,75.14401,41.660719)"><tspan
+       transform="matrix(0.77280326,0,0,1.294955,151.83314,30.444298)"><tspan
          sodipodi:role="line"
          x="606.09845"
          y="90.212646"
          id="tspan2991-6-2-7"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.69731903px;line-height:95.99999785%;font-family:Kimberley;-inkscape-font-specification:Kimberley;text-align:center;text-anchor:middle;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.21366608;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"> </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.69731903px;line-height:95.99999785%;font-family:Kimberley;-inkscape-font-specification:Kimberley;text-align:center;text-anchor:middle;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.21366596;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"> </tspan><tspan
          sodipodi:role="line"
          x="595.69995"
          y="156.16208"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.69731903px;line-height:95.99999785%;font-family:Kimberley;-inkscape-font-specification:Kimberley;text-align:center;text-anchor:middle;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.21366608;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.69731903px;line-height:95.99999785%;font-family:Kimberley;-inkscape-font-specification:Kimberley;text-align:center;text-anchor:middle;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.21366596;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="tspan4230">en Linux con PlayOnLinux</tspan></text>
     <text
        xml:space="preserve"
@@ -2059,7 +2079,7 @@
        x="60.236019"
        y="90.212646"
        id="text2987-3-1-7-2"
-       transform="matrix(1.0392352,0,0,0.8397276,209.23679,621.6061)"><tspan
+       transform="matrix(1.0392352,0,0,0.8397276,225.6905,617.8561)"><tspan
          sodipodi:role="line"
          x="60.236019"
          y="90.212646"
@@ -2067,21 +2087,16 @@
          id="tspan4230-2">(wine 3 )</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.91500005;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.08524263;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4278-3)"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.91500005;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.08524275;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4278-3)"
        x="595.69995"
        y="90.212646"
        id="text2987-3-1-7-6"
-       transform="matrix(1.0591351,0,0,1.1927736,-24.132832,38.890022)"><tspan
+       transform="matrix(0.93400166,0,0,1.2250473,54.861833,33.93084)"><tspan
          sodipodi:role="line"
          x="606.09845"
          y="90.212646"
-         id="tspan2991-6-2-7-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.69731903px;line-height:95.99999785%;font-family:Kimberley;-inkscape-font-specification:Kimberley;text-align:center;text-anchor:middle;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.08524263;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Instalar e-Sword 12 </tspan><tspan
-         sodipodi:role="line"
-         x="606.09845"
-         y="156.16208"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.69731903px;line-height:95.99999785%;font-family:Kimberley;-inkscape-font-specification:Kimberley;text-align:center;text-anchor:middle;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.08524263;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="tspan4230-9"> </tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.69731903px;line-height:95.99999785%;font-family:Kimberley;-inkscape-font-specification:Kimberley;text-align:center;text-anchor:middle;fill:#fff7f5;fill-opacity:1;stroke:#f70e0e;stroke-width:2.08524275;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="tspan4230-9">Instalar e-Sword 12 </tspan></text>
     <g
        id="g3606"
        transform="matrix(0.48959854,0,0,0.48959854,40.419304,88.30448)">
@@ -2271,7 +2286,7 @@
          width="157.14238" />
     </g>
     <g
-       transform="matrix(1.8601425,0,0,1.8517234,337.82625,-201.94703)"
+       transform="matrix(1.8601425,0,0,1.8517234,303.09063,-205.69703)"
        id="g5278">
       <path
          id="Corps_1_"
