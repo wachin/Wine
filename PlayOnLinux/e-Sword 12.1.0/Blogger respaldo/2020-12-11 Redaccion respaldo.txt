@@ -1,0 +1,668 @@
+
+<a href="http://2.bp.blogspot.com/-c2Ye_o61XeI/Xgvs0o6eaMI/AAAAAAAAXC4/bRbtz-ZDY8Yr1jWobWAdbrZyoN2wpzgqwCK4BGAYYCw/s1600/01%2Be-Sword%2B11%2Ben%2BUbuntu%2B%2528POL%2Bwine%2B3%2529.png"><img border="0" height="180" src="https://2.bp.blogspot.com/-c2Ye_o61XeI/Xgvs0o6eaMI/AAAAAAAAXC4/bRbtz-ZDY8Yr1jWobWAdbrZyoN2wpzgqwCK4BGAYYCw/s320/01%2Be-Sword%2B11%2Ben%2BUbuntu%2B%2528POL%2Bwine%2B3%2529.png" width="320" /></a><br />
+<br />
+<br />
+Hola, soy Washington Indacochea Delgado, soy usuario de un Sistema Operativo Linux y en Windows usaba e-Sword el cual es una CompuBiblia, pero encontré la manera de poder instalarl e-Sword en Linux y que funcione bien<br />
+<br />
+<br />
+<span style="font-family: inherit;"><b>TUTORIAL APLICABLE A:</b></span><br />
+-&nbsp;<a href="https://distrowatch.com/table.php?distribution=ubuntu" target="_blank">Ubuntu</a>&nbsp;y todos sus&nbsp;<a href="https://www.ubuntu.com/about/about-ubuntu/flavours" target="_blank">sabores o derivados oficiales</a>:&nbsp;<a href="http://lubuntu.me/" target="_blank">Lubuntu</a>,&nbsp;<a href="https://ubuntubudgie.org/" target="_blank">Ubuntu Budgie</a>,&nbsp;<a href="http://www.ubuntukylin.com/" target="_blank">Ubuntu Kylin</a>,&nbsp;<a href="https://ubuntu-mate.org/" target="_blank">Ubuntu MATE</a>,&nbsp;<a href="http://ubuntustudio.org/" target="_blank">Ubuntu Studio</a>,&nbsp;<a href="https://xubuntu.org/" target="_blank">Xubuntu</a>&nbsp;y no oficiales como:&nbsp;<a href="https://distrowatch.com/table.php?distribution=mint" target="_blank">Linux Mint</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=elementary" target="_blank">Elementary OS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=zorin" target="_blank">Zorin OS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=kdeneon" target="_blank">KDE Neon</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=popos" target="_blank">Pop!_OS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=lite" target="_blank">Linux Lite</a>,&nbsp;<a href="https://trisquel.info/" target="_blank">Trisquel</a>,&nbsp;etc y Sistemas Operativos basados en&nbsp;<a href="https://distrowatch.com/table.php?distribution=debian" target="_blank">Debian</a>&nbsp;como son:&nbsp;<a href="https://distrowatch.com/table.php?distribution=mx" target="_blank">MX Linux</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=deepin" target="_blank">Deepin</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=antix" target="_blank">antiX</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=kali" target="_blank">Kali</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=sparky" target="_blank">Sparky</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=parrot" target="_blank">Parrot</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=tails" target="_blank">Tails</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=q4os" target="_blank">Q4OS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=pureos" target="_blank">PureOS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=voyager" target="_blank">Voyager Live</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=volumio" target="_blank">Volumio</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=raspbian" target="_blank">Raspbian</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=whonix" target="_blank">Whonix</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=slax" target="_blank">Slax</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=steamos" target="_blank">SteamOS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=avlinux" target="_blank">AV Linux</a>,&nbsp;&nbsp;<a href="https://distrowatch.com/table.php?distribution=solydxk" target="_blank">SolydXK</a>,&nbsp;&nbsp;<a href="https://distrowatch.com/table.php?distribution=pardus" target="_blank">Pardus</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=proxmox" target="_blank">Proxmox</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=academix" target="_blank">Academic GNU/Linux</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=univention" target="_blank">Univention Corporate Server</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=skolelinux" target="_blank">Debian Edu/Skolelinux</a>, etc, los cuales usan la administración de paquetes&nbsp;<a href="https://es.wikipedia.org/wiki/Deb" target="_blank">DEB</a><br />
+<br />
+<b>y debería de funcionar en:</b><br />
+distribuciones que usan la administración de paquetes&nbsp;<a href="https://es.wikipedia.org/wiki/RPM_Package_Manager" target="_blank">RPM</a>&nbsp;como&nbsp;<a href="https://distrowatch.com/table.php?distribution=fedora" target="_blank">Fedora</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=redhat" target="_blank">Red Hat</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=opensuse" target="_blank">OpenSUSE</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=centos" target="_blank">CentOS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=scientific" target="_blank">Scientific</a>, etc<br />
+- Otros Linux basados en&nbsp;<a href="https://distrowatch.com/table.php?distribution=arch" target="_blank">Arch Linux</a>&nbsp;como:&nbsp;<a href="https://distrowatch.com/table.php?distribution=antergos" target="_blank">Antergos</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=manjaro" target="_blank">Manjaro</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=archbang" target="_blank">ArchBang</a><br />
+<span style="font-family: inherit;">- y otras distribuciones independientes de Linux como:&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=gentoo" target="_blank">Gentoo</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=mageia" target="_blank">Mageia</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=quirky" target="_blank">Quirky</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=solus" target="_blank">Solus</a>, etc.&nbsp;<b><i>Pero allí se usan otros comandos para instalar aplicaciones los cuales usted deberá de buscar.</i></b><br />
+<br />
+<br />
+<b>Nota:</b> No se salte los pasos, aquí el orden de los factores si afecta al producto. <b>Si se salta los pasos no le funcionará bien e-Sword</b>.<br />
+<br />
+<br />
+<b><span style="color: blue;"><span style="font-size: large;"><i><span style="color: red;">IMPORTANTE.-</span></i></span> <i>Este tutorial está hecho con e-Sword 12.1.0 pero cuando Rick Meyers actualice el programa la versión del programa en las imágenes de este tutorial ya no coincidirá, pero yo le cambiaré el título de este tutorial a la versión nueva que haya salido, así que les pido que en la instalación que ustedes van a hacer cuando llegue ese día ustedes me comprendan, por cuestiones de tiempo yo no puedo volver a cambiar las imágenes de este tutorial porque son muchas, les pido que ustedes en la instalación le cambien la versión de e-Sword por la más actual en todos los lugares donde se mencione cuando llegue ese día.</i></span></b><br />
+<br />
+<br />
+<br />
+<pre class="language-bash code-toolbar" style="background: rgb(77, 64, 51) none repeat scroll 0% 0%; border-radius: 0.5em; border: 0.3em solid rgb(122, 102, 82); box-shadow: rgb(0, 0, 0) 1px 1px 0.5em inset; box-sizing: border-box; color: white; font-family: &quot;consolas&quot;, &quot;monaco&quot;, &quot;andale mono&quot;, &quot;ubuntu mono&quot;, monospace; line-height: 1.5; margin-bottom: 0.5em; margin-top: 0.5em; overflow-wrap: normal; overflow: auto; padding: 1em; position: relative; text-shadow: rgb(0, 0, 0) 0px -0.1em 0.2em; word-break: normal;"><b>MICRO RESUMEN</b>
+(Esto para alguien que ya entienda el funcionamiento de PlayOnLinux)
+- Wine 3.0.1 en adelante hasta antes de 4 y usar el tipo de unidad
+  virual de 32 bits así sea que tenga un S.O. de 64 bits.
+- En la versión de Windows a imitar ponga "Windows 10"
+- Instalar los siguientes componentes:
+  mfc42
+  msls31
+  msxml6<br />  wsh57
+- Poner a riched20 y oleaut32 como "librería nativa y luego interna"</pre>
+<br />
+<br />
+<h4>
+<span style="color: red;">1.- Descargas necesarias</span></h4>
+a) e-Sword, descarguelo desde:<br />
+<br />
+<a href="http://www.e-sword.net/downloads.html">http://www.e-sword.net/downloads.html</a><br />
+<br />
+y aquí pongo un espejo (mirror) en mi cuenta de Google Drive:<br />
+<br />
+<a href="https://drive.google.com/drive/folders/1XFUcs0w16gtTdUBaqjT5rmUIpNenjHJR?usp=sharing">https://drive.google.com/drive/folders/1XFUcs0w16gtTdUBaqjT5rmUIpNenjHJR?usp=sharing</a><br />
+<br />
+c) Modulos<br />
+<br />
+Instale los que yo he recopilado para fines didacticos (contiene lo mínimo necesario para poder explicar las características más importante del programa):<br />
+<br />
+<b>Compilación de Módulos de Biblias, Comentarios, Diccionarios para e-Sword (WachoPack)</b><br />
+<a href="https://facilitarelsoftwarelibre.blogspot.com/2018/02/biblias-para-e-sword-wachopack-2018.html">https://facilitarelsoftwarelibre.blogspot.com/2018/02/biblias-para-e-sword-wachopack-2018.html</a><br />
+<br />
+o<br />
+<br />
+los suyos que usted tenga<br />
+<br />
+<br />
+<h4 style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 1.5rem; font-weight: 500; line-height: 1.2; margin-bottom: 0.5rem; margin-top: 0px;">
+<span style="box-sizing: border-box; color: red;">2.- Instalar PlayOnLinux</span></h4>
+<h4>
+<span style="background-color: white; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px;">Ponga en una terminal lo siguiente&nbsp;</span><span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;">para</span></h4>
+<br />
+<br />
+<pre style="box-sizing: border-box; overflow: auto; padding: 0px;"><code class="language-bash hljs" style="background: rgb(233, 84, 32) none repeat scroll 0% 0%; border: 6px solid rgb(187, 187, 187); box-sizing: border-box; display: block; line-height: 1.5; margin-bottom: 10px; overflow-x: auto; padding: 0.5em;">
+<span style="color: white;"><span style="font-size: medium;"><b><span style="font-size: x-large;"><b>Ubuntu</b></span>
+Los siguientes comandos son únicamente para Ubuntu y sabores de Ubuntu,
+NO debe usarlos en otras distribuciones Linux.
+
+Para Ubuntu 14.04, 16.04, 18.04, 20.04 de 64 bits </b></span></span>
+<span style="background-color: #222222; color: white; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace; font-size: medium; white-space: normal;">sudo apt-get install playonlinux</span>
+<span style="color: white;"><span style="font-size: medium;"><b>
+Para Ubuntu 14.04, 16.04 de 32 bits</b></span></span>
+<span style="background-color: #222222; color: white; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace; font-size: medium; white-space: normal;">sudo apt-get install playonlinux</span>
+<span style="color: white;"><span style="font-size: medium;"><b>
+Nota: Se da cuenta que en Ubuntu para 64 y 32 bits se usa
+sólo un comando, si, eso es lo bueno de Ubuntu, está hecho para
+facilitar las cosas, si, como ninguna otra distribución Linux,
+lastima que ya no hagan la distribución de 32 bits</b></span></span>
+
+</code></pre>
+<b>Descargas:</b><br />
+<a href="https://ubuntu.com/" target="_blank">Ubuntu</a><br />
+<a href="https://ubuntu.com/download/flavours" target="_blank">Sabores de Ubuntu</a><br />
+<br />
+<br />
+<br />
+<br />
+<pre style="box-sizing: border-box; overflow: auto; padding: 0px;"><code class="language-bash hljs" style="background: rgb(135, 207, 62) none repeat scroll 0% 0%; border: 6px solid rgb(187, 187, 187); box-sizing: border-box; display: block; line-height: 1.5; margin-bottom: 10px; overflow-x: auto; padding: 0.5em;">
+<span style="color: white;"><span style="font-size: medium;"><b><span style="font-size: x-large;"><b>Linux Mint</b></span>
+Los siguientes comandos son únicamente para Linux Mint, yo lo he probado en
+la versión "Linux Mint 19.3 Cinnamon de 64 bits" así que debería funcionar
+en las otras versiones de Linux Mint como son MATE y XFCE que están dentro
+de cada versión que tienen como "Package base" a Ubuntu.
+
+Los siguientes comandos para Linux Mint NO debe usarlos en otras 
+distribuciones Linux:
+
+Para Linux Mint de 64 bits </b></span></span>
+<span style="background-color: #222222; color: white; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace; font-size: medium; white-space: normal;">sudo apt-get install playonlinux winehq-stable wine32:i386</span>
+<span style="color: white;"><span style="font-size: medium;"><b>
+Para Linux Mint de 32 bits</b></span></span>
+<span style="background-color: #222222; color: white; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace; font-size: medium; white-space: normal;">sudo apt-get install playonlinux winehq-stable</span>
+<span style="color: white;"><span style="font-size: medium;"><b>
+Nota: Linux Mint tiene una version basada en Debian la cual se llama
+LMDE y en este momento van por la version 4 que tiene nombre Debbie, 
+los comandos puestos arriba lo más seguro es que no funcionen allí.
+
+Nota 2: Dejará de haber 32 bits en Linux Mint 20, pero es posible 
+que la versión de Linux Mint Debian siga teniendo 32 bits.</b></span></span>
+
+</code></pre>
+<b>Descargas:</b><br />
+<a href="https://www.linuxmint.com/edition.php?id=274" target="_blank">Linux Mint 19.3 "Tricia" - Cinnamon (64-bit)</a><br />
+<a href="https://www.linuxmint.com/download_lmde.php" target="_blank">Linux Mint LMDE 4 Debbie</a><br />
+<a href="https://www.linuxmint.com/download_all.php" target="_blank">Linux Mint Releases (dentro versiones XFCE, MATE)</a><br />
+<br />
+<br />
+<br />
+<br />
+<pre style="box-sizing: border-box; overflow: auto; padding: 0px;"><code class="language-bash hljs" style="background: rgb(70, 77, 129) none repeat scroll 0% 0%; border: 6px solid rgb(187, 187, 187); box-sizing: border-box; display: block; line-height: 1.5; margin-bottom: 10px; overflow-x: auto; padding: 0.5em;">
+<span style="color: white;"><span style="font-size: medium;"><b><span style="font-size: x-large;"><b>antiX Linux</b></span>
+Los siguientes comandos son únicamente para antiX Linux, los he probado
+en antiX 17 de 32 bits y antiX 19 de 64 y 32 bits y NO debe usarlos en 
+otras distribuciones Linux
+
+Para antiX 17 y 19 de 64 bits </b></span></span>
+<span style="background-color: #222222; color: white; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace; font-size: medium; white-space: normal;">sudo apt-get install playonlinux wine wine32:i386</span>
+
+<span style="color: white;"><span style="font-size: medium;"><b>
+Para antiX 17 y 19 de 32 bits </b></span></span>
+<span style="background-color: #222222; color: white; font-family: &quot;menlo&quot; , &quot;monaco&quot; , &quot;consolas&quot; , &quot;courier new&quot; , monospace; font-size: medium; white-space: normal;">sudo apt-get install playonlinux wine</span>
+
+<span style="color: white;"><span style="font-size: medium;"><b>Nota: A esta fecha 8 de Abril del 2020 antiX 17 (que está basado en Debian 9 Stretch)
+ha sido archivado lo mismo que Debian 9 Stretch, pero aún así se lo puede conseguir, sólo
+que no tiene los programas más actuales y para mi mejor es la interfaz de antiX 19</b></span></span>
+
+</code></pre>
+<b>Descargar</b> <a href="https://antixlinux.com/download/" target="_blank">antiX Linux:</a> <br />
+<a href="https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/" target="_blank">antiX 19</a><br />
+<a href="https://sourceforge.net/projects/antix-linux/files/Final/antiX-17.4/" target="_blank">antiX 17</a><br />
+<a href="https://sourceforge.net/projects/antix-linux/files/" target="_blank">Raíz de las descargas</a><br />
+<span style="background-color: white; color: #212529; font-family: ubuntu; font-size: 16px;">además MX Linux es primo de antiX así que debe funcinar también allí: <a href="https://mxlinux.org/">https://mxlinux.org/</a>&nbsp;</span><br />
+<h4>
+<span style="background-color: white; box-sizing: border-box; color: #212529; font-family: &quot;ubuntu&quot;; font-size: 16px; font-weight: bolder;">DURANTE LA INSTALACIÓN</span><span style="font-weight: normal;">&nbsp;</span></h4>
+<h4>
+<span style="font-weight: normal;">durante la instalación en Ubuntu es posible que aparezca esto:</span></h4>
+<br />
+<a href="http://4.bp.blogspot.com/-hVyu4yy2NtY/Xeqrcg5d3FI/AAAAAAAAVqA/RPoG4g0zNR8RWUrfLaao-ZX2RAQcwUiOgCK4BGAYYCw/s1600/02%2Baceptar%2Bla%2Blicencia%2Bttf-corefonts.png"><img border="0" height="428" src="https://4.bp.blogspot.com/-hVyu4yy2NtY/Xeqrcg5d3FI/AAAAAAAAVqA/RPoG4g0zNR8RWUrfLaao-ZX2RAQcwUiOgCK4BGAYYCw/s640/02%2Baceptar%2Bla%2Blicencia%2Bttf-corefonts.png" width="640" /></a><br />
+<br />
+<!--more--><br />
+<br />
+muévase con&nbsp;<a href="https://es.wikipedia.org/wiki/Tecla_de_direcci%C3%B3n" target="_blank">teclas de dirección</a>&nbsp;y luego confirme con la&nbsp;<a href="https://es.wikipedia.org/wiki/Barra_espaciadora" target="_blank">barra espaciadora</a>&nbsp;para que acepte la licencia y continúe:<br />
+<br />
+<img src="https://3.bp.blogspot.com/-rPrNqiDCtSI/W3YGkT4x3OI/AAAAAAAAI4c/i8JkLcFoyh0463hpqGZ5q8WoZANyUDoqwCK4BGAYYCw/s640/01%2Binstalando%2Bttf-mscorefonts-installer%2Blicencia.png" /><br />
+<br />
+estas son algunas fuentes tipográficas de Microsoft que es necesario instalar.<br />
+<br />
+<br />
+<b>Nota:</b> El comando instalación arriba mencionado es para Ubuntu y derivados de Debian. Para otros Sistemas Operativos Linux consultar en Internet.<br />
+<br />
+<h4>
+<b><span style="color: red;">3.- INSTALAR UNA VERSION DE WINE 3 EN PLAYONLINUX</span></b></h4>
+<b>Nota Importante:</b><br />
+<ul>
+</ul>
+- Sistemas Operativos Linux después del 2018 sólo pueden ejecutar correctamente en PlayOnLinux versiones de Wine desde la 2.16 <i>(en las pruebas que yo he hecho)</i> y con más exactitud la versión 3.0.1 en adelante (no usen la 3.0 pues esa no le pone icono a la aplicación)<br />
+<ul>
+</ul>
+<ul>
+</ul>
+- Sistemas Operativos Linux anteriores al 2018 si pueden ejecutar versiones de Wine 1.7, 1.8, 1.9, 2.0 además de las nuevas versiones 3.0.1, 3.15, etc hasta donde estén disponibles <i>(las versiones más nuevas no se podrán instalar en&nbsp;Sistemas Operativos Linux anteriores al 2018)</i> en PlayOnLinux.<br />
+<ul>
+</ul>
+Para este tutorial usaremos la versión <b>Wine 3.0.1</b> porque en esta versión funciona bien e-Sword en todas las pruebas que he hecho&nbsp;<i>(</i>en Linux antes del 2018 y después del 2018).<br />
+<br />
+En PlayOnLinux en la ventana principal vaya a:<br />
+<div>
+<br /></div>
+<br />
+<b>Herramientas</b>/<b>Gestiona versiones de Wine</b><br />
+<br />
+<a href="http://3.bp.blogspot.com/-nWw74LaMohk/XeXZWHpLBMI/AAAAAAAAVRU/8mmLGfmfdacCnBuLxun2Tz2HX1aJlp70gCK4BGAYYCw/s1600/ksnip_20191202-224051.png"><img border="0" src="https://3.bp.blogspot.com/-nWw74LaMohk/XeXZWHpLBMI/AAAAAAAAVRU/8mmLGfmfdacCnBuLxun2Tz2HX1aJlp70gCK4BGAYYCw/s1600/ksnip_20191202-224051.png" /></a><br />
+<br />
+<br />
+Por cierto, si usan un <b>Sistema Operativo Linux de 64 bits</b> les aparecerá dos pestañas, instalen allí como por defecto les aparece. Instale la versión de wine 3.0.1:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-vASOwejYDkQ/XkSvbC0Z_TI/AAAAAAAAYv8/Sd1cr2LMM08e7YDC4vHhlII0Clp4iEyYwCK4BGAYYCw/s1600/03%2Bwine%2Bpesta%25C3%25B1a%2B32%2By%2B64bits.png"><img border="0" src="https://4.bp.blogspot.com/-vASOwejYDkQ/XkSvbC0Z_TI/AAAAAAAAYv8/Sd1cr2LMM08e7YDC4vHhlII0Clp4iEyYwCK4BGAYYCw/s1600/03%2Bwine%2Bpesta%25C3%25B1a%2B32%2By%2B64bits.png" /></a><br />
+<br />
+<br />
+<b>3.0.1</b><br />
+<br />
+En mi caso yo estoy usando un sistema operativo Linux de 32 bits y solo me aparece una pestaña, para instalarla hacer así:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-s7XsNXLJnbk/XeefdqzOvTI/AAAAAAAAVgg/d3WIwqnO7g0Ej9HpCYxC5VK1KupzNUMgwCK4BGAYYCw/s1600/ksnip_20191204-065821.png"><img border="0" src="https://2.bp.blogspot.com/-s7XsNXLJnbk/XeefdqzOvTI/AAAAAAAAVgg/d3WIwqnO7g0Ej9HpCYxC5VK1KupzNUMgwCK4BGAYYCw/s1600/ksnip_20191204-065821.png" /></a><br />
+<br />
+aparecerá la siguiente ventana, clic en siguiente:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-sDT3QDfMA54/XeegETME4yI/AAAAAAAAVg4/fMsWzPt2Wbovx4TyIbBI6mlb46yB51STwCK4BGAYYCw/s1600/ksnip_20191204-070029.png"><img border="0" src="https://3.bp.blogspot.com/-sDT3QDfMA54/XeegETME4yI/AAAAAAAAVg4/fMsWzPt2Wbovx4TyIbBI6mlb46yB51STwCK4BGAYYCw/s1600/ksnip_20191204-070029.png" /></a><br />
+<br />
+empezará la descarga:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-8uZb8lPngLs/XeegR63zonI/AAAAAAAAVhA/EdSGWyxRJXAgtpIgj3ma1cTq1JKFuVRnQCK4BGAYYCw/s1600/ksnip_20191204-070138.png"><img border="0" src="https://4.bp.blogspot.com/-8uZb8lPngLs/XeegR63zonI/AAAAAAAAVhA/EdSGWyxRJXAgtpIgj3ma1cTq1JKFuVRnQCK4BGAYYCw/s1600/ksnip_20191204-070138.png" /></a><br />
+<br />
+debe quedar así:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-UBFAz9JGQB8/XeefjARFWWI/AAAAAAAAVgo/_H90KcnMapIo_v_LlLnMbLpTHMuJISlUwCK4BGAYYCw/s1600/ksnip_20191204-065634.png"><img border="0" src="https://3.bp.blogspot.com/-UBFAz9JGQB8/XeefjARFWWI/AAAAAAAAVgo/_H90KcnMapIo_v_LlLnMbLpTHMuJISlUwCK4BGAYYCw/s1600/ksnip_20191204-065634.png" /></a><br />
+<br />
+cerrar esa ventana.<br />
+<br />
+<h4>
+<b><span style="color: red;">4.- INSTALAR E-SWORD</span></b></h4>
+En PlayOnLinux de clic en el <b><span style="font-size: large;">+</span></b> y clic en: "<b>Instalar un programa no listado</b>":<br />
+<br />
+<a href="http://1.bp.blogspot.com/-WU69HOjPGEY/XeXaOAc9o1I/AAAAAAAAVRg/OUU8kwUWyM45PelztFE7H39H2ic8pDRRwCK4BGAYYCw/s1600/ksnip_20191202-224430.png"><img border="0" src="https://1.bp.blogspot.com/-WU69HOjPGEY/XeXaOAc9o1I/AAAAAAAAVRg/OUU8kwUWyM45PelztFE7H39H2ic8pDRRwCK4BGAYYCw/s1600/ksnip_20191202-224430.png" /></a><br />
+<br />
+clic <b>Siguiente</b>, <b>Siguiente</b>, <b>Siguiente</b>:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-rgzV57QNpZ8/XeXacll3gfI/AAAAAAAAVRo/aqQIerMVoM4ML5LPs_AMxIb7Lu3zGRWvgCK4BGAYYCw/s1600/ksnip_20191202-224526.png"><img border="0" src="https://1.bp.blogspot.com/-rgzV57QNpZ8/XeXacll3gfI/AAAAAAAAVRo/aqQIerMVoM4ML5LPs_AMxIb7Lu3zGRWvgCK4BGAYYCw/s1600/ksnip_20191202-224526.png" /></a><br />
+<br />
+&nbsp;y en "<b>Instalar un programa en una nueva unidad virtual</b>":<br />
+<br />
+<a href="http://1.bp.blogspot.com/-b9FHUUxqygw/XeXa85s64JI/AAAAAAAAVR4/atJDr4eRVJ4BfTJUG7URyGbwUPf7tXHcACK4BGAYYCw/s1600/ksnip_20191202-224734.png"><img border="0" src="https://1.bp.blogspot.com/-b9FHUUxqygw/XeXa85s64JI/AAAAAAAAVR4/atJDr4eRVJ4BfTJUG7URyGbwUPf7tXHcACK4BGAYYCw/s1600/ksnip_20191202-224734.png" /></a><br />
+<br />
+&nbsp;y <b>Siguiente</b>, y póngale nombre sin espacios, ejemplo:<br />
+<br />
+eSword1220wine3<br />
+<br />
+<a href="http://1.bp.blogspot.com/-ES6hrtDypLA/XeXbNUaANrI/AAAAAAAAVSE/XP3a4V48t3s0Ks3OQFUqVB4c5q0c0PUzACK4BGAYYCw/s1600/ksnip_20191202-224854.png"><img border="0" src="https://1.bp.blogspot.com/-ES6hrtDypLA/XeXbNUaANrI/AAAAAAAAVSE/XP3a4V48t3s0Ks3OQFUqVB4c5q0c0PUzACK4BGAYYCw/s1600/ksnip_20191202-224854.png" /></a><br />
+<br />
+elegir marcar las siguientes dos opciones:<br />
+<br />
+<ul>
+<li>Use otra versión de wine</li>
+<li>Configurar wine</li>
+</ul>
+<br />
+<a href="http://3.bp.blogspot.com/-b4MjvqJ6ag8/Xecx5RHkPfI/AAAAAAAAVgE/3NSb_fpgjnoS_rVdKZpuJu6kWYGtmuwAQCK4BGAYYCw/s1600/ksnip_20191203-231022.png"><img border="0" src="https://3.bp.blogspot.com/-b4MjvqJ6ag8/Xecx5RHkPfI/AAAAAAAAVgE/3NSb_fpgjnoS_rVdKZpuJu6kWYGtmuwAQCK4BGAYYCw/s1600/ksnip_20191203-231022.png" /></a><br />
+<br />
+En versión de wine escoja a la que nos referimos:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-7xaTiArPcTA/Xeeh-EmGczI/AAAAAAAAVhQ/50lsCOEmHQ0iXtegHAiz4v62T3ZQnBhKwCK4BGAYYCw/s1600/ksnip_20191204-070900.png"><img border="0" src="https://4.bp.blogspot.com/-7xaTiArPcTA/Xeeh-EmGczI/AAAAAAAAVhQ/50lsCOEmHQ0iXtegHAiz4v62T3ZQnBhKwCK4BGAYYCw/s1600/ksnip_20191204-070900.png" /></a><br />
+<br />
+Si usa un sistema de 64 bits le aparecerá así:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-F64Tzk_KiWo/XkSwoeVBauI/AAAAAAAAYwU/SXBjfF--JCkTt8ElUCk99as1YYcNprezACK4BGAYYCw/s1600/ksnip_20200212-211226.png"><img border="0" src="https://1.bp.blogspot.com/-F64Tzk_KiWo/XkSwoeVBauI/AAAAAAAAYwU/SXBjfF--JCkTt8ElUCk99as1YYcNprezACK4BGAYYCw/s1600/ksnip_20200212-211226.png" /></a><br />
+<br />
+dele Siguiente.<br />
+<br />
+<b>Ahora, </b>es posible que en este momento le aparezca un mensaje que dice en resumen que no se puede encontrar wine-mono:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-M93wp19nP44/XeXczBE4saI/AAAAAAAAVS0/19cCkkod7oYBBK8ObBUTDE7kcPZrouBAACK4BGAYYCw/s1600/04%2Bcould%2Bnot%2Bfind%2Bwine-mono.png"><img border="0" src="https://4.bp.blogspot.com/-M93wp19nP44/XeXczBE4saI/AAAAAAAAVS0/19cCkkod7oYBBK8ObBUTDE7kcPZrouBAACK4BGAYYCw/s1600/04%2Bcould%2Bnot%2Bfind%2Bwine-mono.png" /></a><br />
+<br />
+&nbsp;de clic en el botón "Instalar":<br />
+<br />
+<a href="http://4.bp.blogspot.com/-YtRPrWkrtK0/XeXc2wuZO7I/AAAAAAAAVS8/CZutuCELTUw4_1QZK0yinG3bDo6CI9nhwCK4BGAYYCw/s1600/04%2Bdescargando%2Bwine-mono.png"><img border="0" src="https://4.bp.blogspot.com/-YtRPrWkrtK0/XeXc2wuZO7I/AAAAAAAAVS8/CZutuCELTUw4_1QZK0yinG3bDo6CI9nhwCK4BGAYYCw/s1600/04%2Bdescargando%2Bwine-mono.png" /></a><br />
+<br />
+Si luego aparece otra ventana que dice sobre que no se encuentra wine-gecko también instalen (<i>esto puede demorar algún tiempo</i>)<br />
+<br />
+En la ventana de "<b>Configuración de Wine</b>" en la pestaña "<b>Aplicaciones</b>" en "<b>Versión a imitar</b>" poner "<b>Windows 10"</b><br />
+<br />
+<b><a href="http://2.bp.blogspot.com/-01C7i3vui3w/XrtqOI8oAaI/AAAAAAAAbrc/klhQAG-wck8_XLzscALz_yG_2irgBOUNACK4BGAYYCw/s1600/20200512-223049.png"><img border="0" src="https://2.bp.blogspot.com/-01C7i3vui3w/XrtqOI8oAaI/AAAAAAAAbrc/klhQAG-wck8_XLzscALz_yG_2irgBOUNACK4BGAYYCw/s1600/20200512-223049.png" /></a>&nbsp;</b><br />
+<br />
+<br />
+<b>Nota: </b>Es necesario ponerle Windows 10 para que al cerrar la aplicación se cierre bien.<br />
+<br />
+allí mismo en la ventana de "<b>Configuración de Wine</b>" de clic en la pestaña "<b>Gráficos</b>" y ponga en "<b>Resolución 120"</b>:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-SxHREltVTwE/XeXdT_Yr42I/AAAAAAAAVTM/yVcYe5EwkPcsR4I4VGMhnsly9kf7z4NzwCK4BGAYYCw/s1600/ksnip_20191202-225741.png"><img border="0" src="https://2.bp.blogspot.com/-SxHREltVTwE/XeXdT_Yr42I/AAAAAAAAVTM/yVcYe5EwkPcsR4I4VGMhnsly9kf7z4NzwCK4BGAYYCw/s1600/ksnip_20191202-225741.png" /></a><br />
+<br />
+<b>Nota: </b>Si más adelante cuando ya está instalado y funcionando el programa e-Sword no le gusta el tamaño de las letras si se puede cambiar a otra resolución, más abajo dejaré una explicación.<br />
+<br />
+Clic en <b>Aplicar</b> y <b>Aceptar</b>. Ahora de clic en el botón "<b>Expĺorar</b>":<br />
+<br />
+<a href="http://2.bp.blogspot.com/-PS4NGmrY_yI/XeXf50GHIvI/AAAAAAAAVT8/EVYpYTsono06EciPr6xfQ495a7WehZ3IwCK4BGAYYCw/s1600/ksnip_20191202-230648.png"><img border="0" src="https://2.bp.blogspot.com/-PS4NGmrY_yI/XeXf50GHIvI/AAAAAAAAVT8/EVYpYTsono06EciPr6xfQ495a7WehZ3IwCK4BGAYYCw/s1600/ksnip_20191202-230648.png" /></a><br />
+<br />
+&nbsp;y busque el instalador:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-PjsOlc7gl1M/XeXf9absIGI/AAAAAAAAVUE/af1ROfTM8NwbBNu4kMfTcNR5Sgv5jFa7QCK4BGAYYCw/s1600/ksnip_20191202-230853.png"><img border="0" src="https://1.bp.blogspot.com/-PjsOlc7gl1M/XeXf9absIGI/AAAAAAAAVUE/af1ROfTM8NwbBNu4kMfTcNR5Sgv5jFa7QCK4BGAYYCw/s1600/ksnip_20191202-230853.png" /></a><br />
+<br />
+&nbsp;clic en "Open" y luego clic en "Siguiente":<br />
+<br />
+<a href="http://4.bp.blogspot.com/-ZRwtwv7Mtww/XeXgMlfGBNI/AAAAAAAAVUQ/eVeuSOo1juQY7gW63NgMsSNLmt22-eXMQCK4BGAYYCw/s1600/ksnip_20191202-231016.png"><img border="0" src="https://4.bp.blogspot.com/-ZRwtwv7Mtww/XeXgMlfGBNI/AAAAAAAAVUQ/eVeuSOo1juQY7gW63NgMsSNLmt22-eXMQCK4BGAYYCw/s1600/ksnip_20191202-231016.png" /></a><br />
+<br />
+&nbsp;e instálelo:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-8nJt0IR1QVE/XeXglXe_3iI/AAAAAAAAVUg/XfyfP8E_WdELdjojieisPBSBJQfQUR1uACK4BGAYYCw/s1600/ksnip_20191202-231131.png"><img border="0" src="https://4.bp.blogspot.com/-8nJt0IR1QVE/XeXglXe_3iI/AAAAAAAAVUg/XfyfP8E_WdELdjojieisPBSBJQfQUR1uACK4BGAYYCw/s1600/ksnip_20191202-231131.png" /></a><br />
+<br />
+&nbsp;y al final cierre la ventana de fin de instalación (Finish):<br />
+<br />
+<a href="http://4.bp.blogspot.com/-CQKWzoAyA6g/XeXgswH9MtI/AAAAAAAAVUo/LszpwuqMAjAtSfu7Hyf5c1bEJBWrYGTwwCK4BGAYYCw/s1600/ksnip_20191202-231219.png"><img border="0" src="https://4.bp.blogspot.com/-CQKWzoAyA6g/XeXgswH9MtI/AAAAAAAAVUo/LszpwuqMAjAtSfu7Hyf5c1bEJBWrYGTwwCK4BGAYYCw/s1600/ksnip_20191202-231219.png" /></a><br />
+<br />
+Y le aparecerá una nueva ventana, pero si no le aparece es posible que se haya quedado escondida abajo en la "<a href="https://es.wikipedia.org/wiki/Barra_de_tareas" target="_blank">Barra de tareas</a>":<br />
+<br />
+<a href="http://4.bp.blogspot.com/-xSy1w_jJA_I/Xecz2sKkaYI/AAAAAAAAVgQ/Obyx5oGpu54Zeir4PTOg9rP9D1E3zLA4ACK4BGAYYCw/s1600/ksnip_20191203-231759.png"><img border="0" src="https://4.bp.blogspot.com/-xSy1w_jJA_I/Xecz2sKkaYI/AAAAAAAAVgQ/Obyx5oGpu54Zeir4PTOg9rP9D1E3zLA4ACK4BGAYYCw/s1600/ksnip_20191203-231759.png" /></a><br />
+<br />
+dele clic allí para que aparezca<br />
+<br />
+esa ventana sirve para crear un atajo de e-Sword en PlayOnLinux. Dele clic a:<br />
+<br />
+e-Sword.exe<br />
+<br />
+<a href="http://3.bp.blogspot.com/-EwAOBJOu--k/XebcyEE2H6I/AAAAAAAAVdA/5klH6u06RPQmzvvPucuqq-bUijAJ1Q0PwCK4BGAYYCw/s1600/ksnip_20191203-131015.png"><img border="0" src="https://3.bp.blogspot.com/-EwAOBJOu--k/XebcyEE2H6I/AAAAAAAAVdA/5klH6u06RPQmzvvPucuqq-bUijAJ1Q0PwCK4BGAYYCw/s1600/ksnip_20191203-131015.png" /></a><br />
+<br />
+clic en <b>Siguiente</b> y ponga nombre con la version de wine (<i>esto es para diferenciar por si instala más aplicaciones en PlayOnLinux</i>):<br />
+<br />
+e-Sword 12.2.0 (wine 3.0.1)<br />
+<br />
+<a href="http://1.bp.blogspot.com/-bNKwnSRhvkE/XebcpRHb9nI/AAAAAAAAVc4/-1W6nsnRM7EjIDqHIae1H2OS_IrAH9bxACK4BGAYYCw/s1600/ksnip_20191203-133844.png"><img border="0" src="https://1.bp.blogspot.com/-bNKwnSRhvkE/XebcpRHb9nI/AAAAAAAAVc4/-1W6nsnRM7EjIDqHIae1H2OS_IrAH9bxACK4BGAYYCw/s1600/ksnip_20191203-133844.png" /></a><br />
+<br />
+Clic en <b>Siguiente</b>. Luego aparecerá otra vez la ventana y dele clic en "<b>No quiero crear otro atajo</b>" y <b>Siguiente:</b><br />
+<b><br /></b>
+<b><a href="http://4.bp.blogspot.com/-pSFcY_eVcT4/Xebc-XNigYI/AAAAAAAAVdQ/oe54JCLr6yIte5ZLSX-fginy3OvmHeXTwCK4BGAYYCw/s1600/ksnip_20191203-134045.png"><img border="0" src="https://4.bp.blogspot.com/-pSFcY_eVcT4/Xebc-XNigYI/AAAAAAAAVdQ/oe54JCLr6yIte5ZLSX-fginy3OvmHeXTwCK4BGAYYCw/s1600/ksnip_20191203-134045.png" /></a></b><br />
+<br />
+<br />
+<h4>
+<b><span style="color: red;">5.- INSTALAR COMPONENTES DE PLAYONLINUX</span></b></h4><p>
+<b><span style="color: red;"></span></b>
+Para instalar este tipo de módulos, dar clic en la ventana principal de PlayOnLinux dar clic en el programa "<b>e-Sword</b>" que hemos instalado y de clic en la&nbsp;<b>tuerca(configurar)</b>:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-qnUhUwfO5Yw/XeelNwDU1RI/AAAAAAAAVhc/GM9PeL9ss1kr1SmKfuyK0H6r3juUrap-ACK4BGAYYCw/s1600/ksnip_20191204-072233.png"><img border="0" src="https://1.bp.blogspot.com/-qnUhUwfO5Yw/XeelNwDU1RI/AAAAAAAAVhc/GM9PeL9ss1kr1SmKfuyK0H6r3juUrap-ACK4BGAYYCw/s1600/ksnip_20191204-072233.png" /></a><br />
+<br />
+clic en la pestaña "<b>Instalar componentes</b>":<br />
+<br />
+<a href="http://2.bp.blogspot.com/-VoItZe7Gmcs/XeemFDJMC9I/AAAAAAAAVh0/097Sz-YyuU4cHl9Z6TGTqvdG7YlIfd0ggCK4BGAYYCw/s1600/ksnip_20191204-072641.png"><img border="0" src="https://2.bp.blogspot.com/-VoItZe7Gmcs/XeemFDJMC9I/AAAAAAAAVh0/097Sz-YyuU4cHl9Z6TGTqvdG7YlIfd0ggCK4BGAYYCw/s1600/ksnip_20191204-072641.png" /></a><br />
+<br />
+<b>Nota</b>: Si esta o alguna imagen no se ve con todo su detalle la puede abrir con clic derecho en una nueva pestaña y allí la podrá ver bien.<br />
+</p><p></p><p><b>Lista de componentes a instalar</b><br />
+Busque e instale uno por uno estos componentes (<i>puede ayudarse seleccionando y escribiendo en el teclado</i>):<br />
+<br />
+mfc42<br />
+msls31<br />
+msxml6<br />wsh57</p><p>En la siguiente imagen en la pestaña "<b>Instalar Componentes</b>" voy a buscar a <b>mfc42</b><br />
+<br />
+<a href="http://2.bp.blogspot.com/-jJgwR7gFP1E/XeemmcL3SbI/AAAAAAAAViA/Mbp6jLGoIuIV8XaKzzUWAgXXUvWiXa_tQCK4BGAYYCw/s1600/ksnip_20191204-072852.png"><img border="0" src="https://2.bp.blogspot.com/-jJgwR7gFP1E/XeemmcL3SbI/AAAAAAAAViA/Mbp6jLGoIuIV8XaKzzUWAgXXUvWiXa_tQCK4BGAYYCw/s1600/ksnip_20191204-072852.png" /></a><br />
+<br />
+Cuando de clic en el botón "<b>Instalar</b>" y espere hasta que la ventana que ha aparecido se cierre solita:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-D9rQWcnzE70/Xeem8Fu0OnI/AAAAAAAAViM/EvXFmumWxrUhgreGQg9y87Kwj2nfbpeogCK4BGAYYCw/s1600/ksnip_20191204-073019.png"><img border="0" src="https://2.bp.blogspot.com/-D9rQWcnzE70/Xeem8Fu0OnI/AAAAAAAAViM/EvXFmumWxrUhgreGQg9y87Kwj2nfbpeogCK4BGAYYCw/s1600/ksnip_20191204-073019.png" /></a><br />
+<br />
+<br />
+una vez que se cerró ya se instaló.<br />
+<br />
+En la siguiente imagen voy a buscar a <b>msls31</b>:<br />
+</p><div>
+<br /></div>
+<a href="http://2.bp.blogspot.com/-IgN0FmLPpGE/XeenXZQTUUI/AAAAAAAAViY/3ISJh2wYzz0XuaOocR0jMsjGt6UOI0DJgCK4BGAYYCw/s1600/ksnip_20191204-073216.png"><img border="0" src="https://2.bp.blogspot.com/-IgN0FmLPpGE/XeenXZQTUUI/AAAAAAAAViY/3ISJh2wYzz0XuaOocR0jMsjGt6UOI0DJgCK4BGAYYCw/s1600/ksnip_20191204-073216.png" /></a><br />
+<br />
+<br />
+ahora voy a buscar <b>msxml6</b>:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-nAF6NA_vNvc/XkQ7HYEnNXI/AAAAAAAAYug/vIqdO2QQNwsFpJR7vrfJLFq_A7V7SrTwQCK4BGAYYCw/s1600/ksnip_20200212-125107.png"><img border="0" src="https://3.bp.blogspot.com/-nAF6NA_vNvc/XkQ7HYEnNXI/AAAAAAAAYug/vIqdO2QQNwsFpJR7vrfJLFq_A7V7SrTwQCK4BGAYYCw/s1600/ksnip_20200212-125107.png" /></a><br />
+<h4 style="text-align: left;">
+<span style="color: red;"><span style="font-weight: normal;"><span style="color: black;"><br /></span></span></span></h4><div style="text-align: left;"><span style="color: red; font-size: small;"><span style="font-weight: normal;"><span style="color: black;">y por ultimo voy a buscar a <b>wsh57</b></span></span></span></div><br /><h4><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-0ZaxCb7aABo/X2IvLIkvaRI/AAAAAAAAdgQ/JX9_iRNFKqUFpoK3LscLOO3VgOvXLKY3gCLcBGAsYHQ/s799/20200916-112733.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="474" data-original-width="799" src="https://1.bp.blogspot.com/-0ZaxCb7aABo/X2IvLIkvaRI/AAAAAAAAdgQ/JX9_iRNFKqUFpoK3LscLOO3VgOvXLKY3gCLcBGAsYHQ/s16000/20200916-112733.png" /></a></div><br /><span style="color: red;"></span></h4><h4><span style="color: red;"><br /></span></h4><h4><span style="color: red;">6.- AÑADIR Y CONFIGURAR OLEAUT32 Y RICHED20</span></h4>
+Ahora hay que configurar <b>riched20</b> and <b>oleaut32</b> como "<b>nativa, y luego interna</b>"<br />
+<br />
+De clic en la ventana "<b>PlayOnLinux configuración</b>" en la pestaña "<b>Wine</b>":<br />
+<br />
+<a href="http://4.bp.blogspot.com/-9x1nR4wKZaM/Xeen-SXBgNI/AAAAAAAAVik/nCN5SXJ4rdEMgrB_Ourn3Pav_mnEMuyDgCK4BGAYYCw/s1600/ksnip_20191204-073447.png"><img border="0" src="https://4.bp.blogspot.com/-9x1nR4wKZaM/Xeen-SXBgNI/AAAAAAAAVik/nCN5SXJ4rdEMgrB_Ourn3Pav_mnEMuyDgCK4BGAYYCw/s1600/ksnip_20191204-073447.png" /></a><br />
+<br />
+&nbsp;aparecerá una ventana que se llama "<b>Configuración de Wine</b>", allí de clic en la pestaña "<b>Librerías</b>":<br />
+<br />
+<a href="http://2.bp.blogspot.com/-rvakIaCZsjU/Xeeoh-tJoTI/AAAAAAAAViw/b9SlPTW2nnMzqIvJKRZSiOttvpufZoQ2QCK4BGAYYCw/s1600/ksnip_20191204-073714.png"><img border="0" src="https://2.bp.blogspot.com/-rvakIaCZsjU/Xeeoh-tJoTI/AAAAAAAAViw/b9SlPTW2nnMzqIvJKRZSiOttvpufZoQ2QCK4BGAYYCw/s1600/ksnip_20191204-073714.png" /></a><br />
+<br />
+&nbsp;y allí en "<b>Nueva sustitución de librería</b>" en la casilla escríba "<b>riched20</b>" (sin comillas) y añadala (clic en el botón "Add"):<br />
+<br />
+<a href="http://1.bp.blogspot.com/-2Tge4IgUPt0/XeXdwHMR0vI/AAAAAAAAVTY/evnP_TCRQNYfgWPv7hbMI_LA2SMa2Iy9wCK4BGAYYCw/s1600/ksnip_20191202-225949.png"><img border="0" src="https://1.bp.blogspot.com/-2Tge4IgUPt0/XeXdwHMR0vI/AAAAAAAAVTY/evnP_TCRQNYfgWPv7hbMI_LA2SMa2Iy9wCK4BGAYYCw/s1600/ksnip_20191202-225949.png" /></a><br />
+<br />
+en la imágen de arriba en la flecha 3 esa flechita hacia abajo si le dan clic es para que se cerciore de que la ha elegido correctamente. Luego haga lo mismo busque <b>oleaut32</b> y añadala y clic en "<b>Aplicar</b>" y "<b>Aceptar</b>":<br />
+<br />
+<a href="http://4.bp.blogspot.com/-kRJYHhmOHO4/Xeepk0QrxyI/AAAAAAAAVi8/wL2nhA7cwxQYJE_bNpky5YQPytHdUxMGwCK4BGAYYCw/s1600/ksnip_20191204-074138.png"><img border="0" src="https://4.bp.blogspot.com/-kRJYHhmOHO4/Xeepk0QrxyI/AAAAAAAAVi8/wL2nhA7cwxQYJE_bNpky5YQPytHdUxMGwCK4BGAYYCw/s1600/ksnip_20191204-074138.png" /></a><br />
+<br />
+<br />
+Al hacer esto se añadirán automáticamente como "<b>librería nativa y luego interna</b>" que es lo que se necesita<br />
+<br />
+<span style="color: red;"><br /></span>
+<span style="color: red;"><br /></span>
+<br />
+<h4>
+<span style="color: red;">7.-&nbsp; INSTALAR MÓDULOS DE BIBLIAS, COMENTARIOS, Y OTROS EN EJECUTABLES .EXE</span></h4>
+Para instalar este tipo de módulos en la ventana principal de PlayOnLinux dar clic en el programa "<b>e-Sword . . . . .</b>" que hemos instalado y de clic en la <b>tuerca(Configurar)</b>:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-qnUhUwfO5Yw/XeelNwDU1RI/AAAAAAAAVhc/GM9PeL9ss1kr1SmKfuyK0H6r3juUrap-ACK4BGAYYCw/s1600/ksnip_20191204-072233.png"><img border="0" src="https://1.bp.blogspot.com/-qnUhUwfO5Yw/XeelNwDU1RI/AAAAAAAAVhc/GM9PeL9ss1kr1SmKfuyK0H6r3juUrap-ACK4BGAYYCw/s1600/ksnip_20191204-072233.png" /></a><br />
+<br />
+<br />
+&nbsp;y clic en la pestaña "<b>Miscelanea</b>" y clic en "<b>Ejecutar un archivo .exe en esta unidad virtual</b>"<br />
+<br />
+<a href="http://2.bp.blogspot.com/-UYriK_2iXvQ/XebdUnOLRNI/AAAAAAAAVdo/JsSAysPf5b8um3bflSmstmAT5DwfCY75QCK4BGAYYCw/s1600/ksnip_20191203-134347.png"><img border="0" src="https://2.bp.blogspot.com/-UYriK_2iXvQ/XebdUnOLRNI/AAAAAAAAVdo/JsSAysPf5b8um3bflSmstmAT5DwfCY75QCK4BGAYYCw/s1600/ksnip_20191203-134347.png" /></a><br />
+<br />
+&nbsp;y busque el lugar donde tenga el ejecutable de su instalador de módulo o módulos:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-RWsIQAC0CmA/XebdnesYpOI/AAAAAAAAVd8/h5d7H7CUw9YLxpWFnSyIPGNtsYQDANdZgCK4BGAYYCw/s1600/ksnip_20191203-135126.png"><img border="0" src="https://2.bp.blogspot.com/-RWsIQAC0CmA/XebdnesYpOI/AAAAAAAAVd8/h5d7H7CUw9YLxpWFnSyIPGNtsYQDANdZgCK4BGAYYCw/s1600/ksnip_20191203-135126.png" /></a><br />
+<br />
+instálelo como lo haría en Windows, en este ejemplo la compilación (Pack) mínima de módulos que he compilado con fines didácticos:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-zDaqYIeVI9k/Xebdqiu90eI/AAAAAAAAVeE/LgF2gTVgVp0gtCdr87QguXe23ieDDldggCK4BGAYYCw/s1600/ksnip_20191203-135522.png"><img border="0" src="https://4.bp.blogspot.com/-zDaqYIeVI9k/Xebdqiu90eI/AAAAAAAAVeE/LgF2gTVgVp0gtCdr87QguXe23ieDDldggCK4BGAYYCw/s1600/ksnip_20191203-135522.png" /></a><br />
+<br />
+Siguiente, Salir, listo<br />
+<br />
+<b>Nota</b>: En caso de que PlayOnLinux se cuelgue, cierre todas las ventanas y vuelvanlo a abrir. O reinicie el ordenador.<br />
+<br />
+<br />
+<h4>
+<span style="color: red;">8.-&nbsp; INSTALAR MÓDULOS DE BIBLIAS, COMENTARIOS, Y OTROS EN CMTI, CMTX, DCTI, MAPX, REFX, ETC</span></h4>
+Cuando usted vaya a querer instalar módulos de Biblias, comentarios, diccionarios u otros ejemplo desde:<br />
+<br />
+<b>EQUIPO BIBLIOTECA HISPANA INT</b><br />
+Sitio Nuevo:<br />
+<a href="https://www.bibliotecahispana.com/">https://www.bibliotecahispana.com/</a><br />
+Sitio viejo:<br />
+<a href="https://eswordbibliotecahispana.blogspot.com/">https://eswordbibliotecahispana.blogspot.com/</a><br />
+<br />
+donde últimamente ya no vienen módulos ejecutables .exe sino vienen en formatos .rar y al descomprimirlos aparecen así:<br />
+<br />
+02BE_Macarthur.cmti<br />
+03BE_Macarthur.dcti<br />
+04BE_Macarthur.mapx<br />
+05BE_Macarthur.refx<br />
+<br />
+a estos archivos hay que copiarlos a la carpeta del programa, para hacerlo, en la ventana principal de PlayOnLinux (<i>cierre todas las demás</i>) hay que dar clic derecho encima del programa <b>e-Sword</b> que hemos instalado y clic en "<b>Abrir el directorio de la aplicación</b>":<br />
+<br />
+<br />
+<a href="http://4.bp.blogspot.com/-qCGMT1QRkUE/XeertYY96WI/AAAAAAAAVjI/YXNyucN4HmUXZEdYi0spd2a7svMm-uvlQCK4BGAYYCw/s1600/ksnip_20191204-075035.png"><img border="0" src="https://4.bp.blogspot.com/-qCGMT1QRkUE/XeertYY96WI/AAAAAAAAVjI/YXNyucN4HmUXZEdYi0spd2a7svMm-uvlQCK4BGAYYCw/s1600/ksnip_20191204-075035.png" /></a><br />
+<br />
+&nbsp;y se le abrirá el Administrardor de archivos que esté usando usted en esa ubicación:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-HSnasxfTWxs/XwPfXgWkVcI/AAAAAAAAczY/qTKbGZRLn4swGwEf9Z05F7ynPCJkbiRPwCK4BGAYYCw/s1600/20200706-213409.png"><img border="0" src="https://4.bp.blogspot.com/-HSnasxfTWxs/XwPfXgWkVcI/AAAAAAAAczY/qTKbGZRLn4swGwEf9Z05F7ynPCJkbiRPwCK4BGAYYCw/s1600/20200706-213409.png" /></a><br />
+<br />
+<br />
+y allí debe pegar esos modulos. Yo le aconsejo que aplaste el&nbsp; atajo "<b>Ctrl + T</b>" para que se abra una pestaña al lado:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-kY_bc_0WgeA/XwPgHh6p7xI/AAAAAAAAczk/cUZNxvkP5eUhytHcmcHncRDRIjD1uXMvQCK4BGAYYCw/s1600/20200706-213802.png"><img border="0" src="https://1.bp.blogspot.com/-kY_bc_0WgeA/XwPgHh6p7xI/AAAAAAAAczk/cUZNxvkP5eUhytHcmcHncRDRIjD1uXMvQCK4BGAYYCw/s1600/20200706-213802.png" /></a><br />
+<br />
+esa pestaña será un clon de la otra, desde allí busque los archivos de sus modulos, yo los tengo un la siguiente ruta:<br />
+<br />
+/home/wachin/Ejecutables-Windows/e-Sword modulos/Biblioteca Hispana/<br />
+<br />
+<a href="http://2.bp.blogspot.com/-p_AQuLmUaZ0/XwPhhajn6WI/AAAAAAAAcz8/jaDSgCysiss88zMF_CpGQjadqyLRbgEVwCK4BGAYYCw/s1600/20200706-214008.png"><img border="0" src="https://2.bp.blogspot.com/-p_AQuLmUaZ0/XwPhhajn6WI/AAAAAAAAcz8/jaDSgCysiss88zMF_CpGQjadqyLRbgEVwCK4BGAYYCw/s1600/20200706-214008.png" /></a><br />
+<br />
+doy clic y allí dentro:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-ufNtMV2JY4w/XwPhhuinJKI/AAAAAAAAc0Q/o0x4A6yDiIE7D-wX9FR59SAFwkAfbSJCQCK4BGAYYCw/s1600/20200706-214040.png"><img border="0" src="https://3.bp.blogspot.com/-ufNtMV2JY4w/XwPhhuinJKI/AAAAAAAAc0Q/o0x4A6yDiIE7D-wX9FR59SAFwkAfbSJCQCK4BGAYYCw/s1600/20200706-214040.png" /></a><br />
+<br />
+dentro de esas carpetas hay varias carpetas de módulos, entre una de ellas tengo esta:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-AdLDjRct6HQ/XwPhhYQ4hjI/AAAAAAAAc0I/e0OPOyXq1rMsxV1LNwXYfx4yAXI9h1pPQCK4BGAYYCw/s1600/20200706-214112.png"><img border="0" src="https://3.bp.blogspot.com/-AdLDjRct6HQ/XwPhhYQ4hjI/AAAAAAAAc0I/e0OPOyXq1rMsxV1LNwXYfx4yAXI9h1pPQCK4BGAYYCw/s1600/20200706-214112.png" /></a><br />
+<br />
+todos esos módulos los selecciono y los copio con clic derecho copiar:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-zoTsiXdfpHI/XwPhhdw7UDI/AAAAAAAAc0E/tFRtC_Jiq60xVy91mw-cluNbt526purhwCK4BGAYYCw/s1600/20200706-214136.png"><img border="0" src="https://2.bp.blogspot.com/-zoTsiXdfpHI/XwPhhdw7UDI/AAAAAAAAc0E/tFRtC_Jiq60xVy91mw-cluNbt526purhwCK4BGAYYCw/s1600/20200706-214136.png" /></a><br />
+<br />
+y doy clic en la pestaña anterior y allí los pego<br />
+<br />
+<a href="http://1.bp.blogspot.com/-M04HQRpuzBw/XwPhhXCuRII/AAAAAAAAc0M/MrFnj1oxEDE3TR_DK5WYYBtoKCKkpJXIACK4BGAYYCw/s1600/20200706-214354.png"><img border="0" src="https://1.bp.blogspot.com/-M04HQRpuzBw/XwPhhXCuRII/AAAAAAAAc0M/MrFnj1oxEDE3TR_DK5WYYBtoKCKkpJXIACK4BGAYYCw/s1600/20200706-214354.png" /></a><br />
+<br />
+Cierre e-Sword y vuélvalo a abrir, y después de reiniciado el programa&nbsp;ya se harán visibles en sus respectivas pestañas o boton (<i>depende del tipo de modulo que haya instalado</i>) los nuevos módulos.<br />
+<br />
+Para lanzar la aplicación de clic en lanzar (Play):<br />
+<br />
+<br />
+<a href="http://3.bp.blogspot.com/-7jmP3H1IWXM/XeesSl1jWbI/AAAAAAAAVjU/jhWjarypE9EbXHir2eqbivWZSyEThRt8wCK4BGAYYCw/s1600/ksnip_20191204-075315.png"><img border="0" src="https://3.bp.blogspot.com/-7jmP3H1IWXM/XeesSl1jWbI/AAAAAAAAVjU/jhWjarypE9EbXHir2eqbivWZSyEThRt8wCK4BGAYYCw/s1600/ksnip_20191204-075315.png" /></a><br />
+<br />
+<br />
+<h4>
+<span style="color: red;">9. PONER EN ESPAÑOL A E-SWORD</span></h4>
+Clic en:<br />
+<br />
+"<b>Options/Apps Language</b>"<br />
+<br />
+y allí abajo está el <b>Español</b>:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-yNNqNtjDvPg/Xebf-yeAEPI/AAAAAAAAVfE/P67u-BfK6i0RpJHFdlOnL7ATbYw2c78egCK4BGAYYCw/s1600/ksnip_20191203-172130.png"><img border="0" src="https://4.bp.blogspot.com/-yNNqNtjDvPg/Xebf-yeAEPI/AAAAAAAAVfE/P67u-BfK6i0RpJHFdlOnL7ATbYw2c78egCK4BGAYYCw/s1600/ksnip_20191203-172130.png" /></a><br />
+<br />
+y ahora en español la interfaz:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-M1AWRgVdUTc/XefgW-lf3tI/AAAAAAAAVm0/ID_yoVx46i896Ps4l4Ze5W2P09Mp0UgYQCK4BGAYYCw/s1600/ksnip_20191204-113506.png"><img border="0" src="https://4.bp.blogspot.com/-M1AWRgVdUTc/XefgW-lf3tI/AAAAAAAAVm0/ID_yoVx46i896Ps4l4Ze5W2P09Mp0UgYQCK4BGAYYCw/s1600/ksnip_20191204-113506.png" /></a><br />
+<br />
+<div>
+<b><span style="color: red;"><br /></span></b></div>
+<h4>
+<b><span style="color: red;">10.- CAMBIANDO EL TAMAÑO DE LAS FUENTES DE WINE</span></b></h4>
+Si no le gusta el tamaño de las fuentes, puede cambiarlas así.<br />
+<br />
+En la ventana principal de PlayOnLinux clic en el programa <b>e-Sword . . .</b>&nbsp; que hemos instalado y clic en la <b>tuerca (Configurar)</b>:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-xF6B6ojHjZ8/XeetXpdoIfI/AAAAAAAAVjg/oJA7uzH9MUgZyZTM_6F2aBrIwZRSJjLhgCK4BGAYYCw/s1600/ksnip_20191204-072233.png"><img border="0" src="https://4.bp.blogspot.com/-xF6B6ojHjZ8/XeetXpdoIfI/AAAAAAAAVjg/oJA7uzH9MUgZyZTM_6F2aBrIwZRSJjLhgCK4BGAYYCw/s1600/ksnip_20191204-072233.png" /></a><br />
+<br />
+allí de clic en la pestaña "<b>Wine</b>" y clic en "<b>Configurar Wine</b>":<br />
+<br />
+<a href="http://2.bp.blogspot.com/-Q49dccJuBC4/XeetjJr4HrI/AAAAAAAAVjo/0VpNqfPRjXIErS1eLRdqSucoMra5cFWPACK4BGAYYCw/s1600/ksnip_20191204-073447.png"><img border="0" src="https://2.bp.blogspot.com/-Q49dccJuBC4/XeetjJr4HrI/AAAAAAAAVjo/0VpNqfPRjXIErS1eLRdqSucoMra5cFWPACK4BGAYYCw/s1600/ksnip_20191204-073447.png" /></a><br />
+<br />
+allí en la pestaña "<b>Gráficos</b>" cambie la resolución:<br />
+<br />
+&nbsp;<a href="http://3.bp.blogspot.com/-fA3q4W1Mrp4/XeeuHDSV99I/AAAAAAAAVj4/kbOW0oentzwvcGD77ltNbfBQoCuQAVIHQCK4BGAYYCw/s1600/ksnip_20191204-080046.png"><img border="0" src="https://3.bp.blogspot.com/-fA3q4W1Mrp4/XeeuHDSV99I/AAAAAAAAVj4/kbOW0oentzwvcGD77ltNbfBQoCuQAVIHQCK4BGAYYCw/s1600/ksnip_20191204-080046.png" /></a><br />
+<br />
+y clic en "<b>Aplicar</b>" y "<b>Aceptar</b>". Cierre e-Sword si lo tenía abierto y cuando lo abra otra vez al programa verá que las fuentes tienen otro tamaño.<br />
+<br />
+<br />
+<h4>
+<b><span style="color: red;">11.- ¿QUÉ FUNCIONA?</span></b></h4>
+&nbsp;He probado las siguientes características importantes y funcionan:<br />
+<br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span style="font-size: large;">- <b>Clic en versículos no se salta</b>:</span></span><br />
+<ul>
+</ul>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #000029;"><span style="font-size: 15px; white-space: pre-wrap;"><a href="http://4.bp.blogspot.com/-GOe3AByc8Cg/XeewhGk2UUI/AAAAAAAAVkw/0PvtkEpvdZoziTDWM8sOjsjY_lz2Xm5dQCK4BGAYYCw/s1600/ksnip_20191204-081116.png"><img border="0" src="https://4.bp.blogspot.com/-GOe3AByc8Cg/XeewhGk2UUI/AAAAAAAAVkw/0PvtkEpvdZoziTDWM8sOjsjY_lz2Xm5dQCK4BGAYYCw/s1600/ksnip_20191204-081116.png" /></a></span></span><br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #000029;"><br /></span></div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"></span><br />
+<div style="font-size: 15px;">
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></span></div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span color="rgba(0 , 0 , 0 , 0.870588235294118)">
+</span><span style="font-size: large;">- <b>Busqueda de palabras</b>.<span color="rgba(0 , 0 , 0 , 0.870588235294118)"> </span></span></span><span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;">Clic en el binocular y elegir la Biblia en el idioma que uno va a buscar una palabra y así mismo la versión, y clic en el binocular a la derecha funciona:</span><br />
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #000029;"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #000029;"><span style="font-size: 15px; white-space: pre-wrap;"><a href="http://1.bp.blogspot.com/-8maeU3_eL88/Xee4GUJq5OI/AAAAAAAAVk8/gCDI-RtcvIo8pySvcIaLz5GEmk9e5fhzwCK4BGAYYCw/s1600/ksnip_20191204-084331.png"><img border="0" src="https://1.bp.blogspot.com/-8maeU3_eL88/Xee4GUJq5OI/AAAAAAAAVk8/gCDI-RtcvIo8pySvcIaLz5GEmk9e5fhzwCK4BGAYYCw/s1600/ksnip_20191204-084331.png" /></a></span></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #000029;"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span></div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"></span><br />
+<div style="font-size: 15px;">
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></span></div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span color="rgba(0 , 0 , 0 , 0.870588235294118)">
+</span><span color="rgba(0 , 0 , 0 , 0.87)" style="font-size: 15px;">- </span><b style="color: rgba(0, 0, 0, 0.87);"><span style="font-size: large;">Búsqueda extendida en Diccionarios</span></b><span style="font-size: 15px;"><span color="rgba(0 , 0 , 0 , 0.870588235294118)">, </span>clic en "Diccionario/Búsqueda Extendida":</span></span><br />
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #000029;"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #000029;"><span style="font-size: 15px; white-space: pre-wrap;"><a href="http://2.bp.blogspot.com/-lKuwgUch2Qk/Xee4YzcFfAI/AAAAAAAAVlI/giEeVgYR2ysJGwmu5S48YMRIVFOjtnLBACK4BGAYYCw/s1600/ksnip_20191204-084442.png"><img border="0" src="https://2.bp.blogspot.com/-lKuwgUch2Qk/Xee4YzcFfAI/AAAAAAAAVlI/giEeVgYR2ysJGwmu5S48YMRIVFOjtnLBACK4BGAYYCw/s1600/ksnip_20191204-084442.png" /></a></span></span><br />
+<br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #000029;">al seleccionar todos los diccionarios:</span><br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #000029;"></span><br />
+<br /></div>
+<a href="http://4.bp.blogspot.com/-CNokQC57PDQ/Xee5Cf216CI/AAAAAAAAVlU/elTEOlLkTcYI89nC2yqSffZ3ebM0bDJagCK4BGAYYCw/s1600/ksnip_20191204-084730.png" style="font-family: &quot;roboto&quot;, &quot;noto&quot;, sans-serif; font-size: 15px; white-space: pre-wrap;"><img border="0" src="https://4.bp.blogspot.com/-CNokQC57PDQ/Xee5Cf216CI/AAAAAAAAVlU/elTEOlLkTcYI89nC2yqSffZ3ebM0bDJagCK4BGAYYCw/s1600/ksnip_20191204-084730.png" /></a><br />
+<div>
+<span color="rgba(0 , 0 , 0 , 0.870588235294118)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span><span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"> y poner una palabra a buscar (ejemplos: pan, aceite, pescado) y dar clic en el binocular:</span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><a href="http://3.bp.blogspot.com/-Q3JzxUbsBUU/Xee5n0Yi7iI/AAAAAAAAVlg/xoKtvRykziw4_nO2MtuEE6wbyXVoaX7fQCK4BGAYYCw/s1600/ksnip_20191204-085005.png"><img border="0" src="https://3.bp.blogspot.com/-Q3JzxUbsBUU/Xee5n0Yi7iI/AAAAAAAAVlg/xoKtvRykziw4_nO2MtuEE6wbyXVoaX7fQCK4BGAYYCw/s1600/ksnip_20191204-085005.png" /></a></span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;">si aparecen todos los diccionarios que uno ha seleccionado (en este caso todos), como se ven en la imágen de arriba se ven los diccionarios PDT y Certeza (los demás están más abajo)</span></div>
+<div>
+<br /></div>
+<div>
+<br /></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span style="font-size: large;"><b>- Busqueda en libros Hebreo y Griego</b></span></span><span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><b>.-</b> Elejir una Biblia que use números Strong como la LXX+ (Strong's Hebrew and Greek Dictionaries</span></span><span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;">):</span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><a href="http://2.bp.blogspot.com/-CNQbheLL0A4/Xee6xmFCPNI/AAAAAAAAVls/uXP6u1ooWX8uqz2fR_WHdShT6EAt1SMQgCK4BGAYYCw/s1600/ksnip_20191204-085501.png"><img border="0" src="https://2.bp.blogspot.com/-CNQbheLL0A4/Xee6xmFCPNI/AAAAAAAAVls/uXP6u1ooWX8uqz2fR_WHdShT6EAt1SMQgCK4BGAYYCw/s1600/ksnip_20191204-085501.png" /></a></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"> y clic en "Biblia/Búsqueda" al</span><span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"> escribir por ejemplo G2316 y dar clic en el binocular funciona:</span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><a href="http://1.bp.blogspot.com/-bcDaqcY4cK8/Xee7auKh54I/AAAAAAAAVl4/u_0V3hpnP2kU6sWrbF25j5FpQSxJivn_wCK4BGAYYCw/s1600/ksnip_20191204-085749.png"><img border="0" src="https://1.bp.blogspot.com/-bcDaqcY4cK8/Xee7auKh54I/AAAAAAAAVl4/u_0V3hpnP2kU6sWrbF25j5FpQSxJivn_wCK4BGAYYCw/s1600/ksnip_20191204-085749.png" /></a></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="white-space: pre-wrap;"><b><span style="font-size: large;"><br /></span></b></span></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="white-space: pre-wrap;"><b><span style="font-size: large;">- Búsqueda de palabras de las Biblias en los Diccionarios.-</span><span style="font-size: 15px;"> </span></b><span style="font-size: 15px;">Esto es </span></span></span><span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;">dándole</span></span><span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"> doble clic a alguna palabra importante en el visor de las Biblias y debe aparecer abajo en Diccionarios unas "i" de información, allí uno le da clic a la pestaña que tenga para ver que dice funciona:</span></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><a href="http://1.bp.blogspot.com/-ITDUqXiHH5A/Xee8jryN8KI/AAAAAAAAVmE/vdXF5JuexL4guVOo8iUR1Ob3nb6VBFPfwCK4BGAYYCw/s1600/ksnip_20191204-090242.png"><img border="0" height="600" src="https://1.bp.blogspot.com/-ITDUqXiHH5A/Xee8jryN8KI/AAAAAAAAVmE/vdXF5JuexL4guVOo8iUR1Ob3nb6VBFPfwCK4BGAYYCw/s640/ksnip_20191204-090242.png" width="640" /></a></span></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span><span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span style="font-size: large;"><b><br /></b></span></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span style="font-size: large;"><b>- Reference Library.-</b> </span></span><span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;">Clic en "Herramientas/Reference Library..." funciona:</span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><a href="http://1.bp.blogspot.com/-7aIT_i12BQA/Xee9N47E_6I/AAAAAAAAVmQ/O9KkbYzoLBokX2187GWEskyQY3QctgBjgCK4BGAYYCw/s1600/ksnip_20191204-090525.png"><img border="0" src="https://1.bp.blogspot.com/-7aIT_i12BQA/Xee9N47E_6I/AAAAAAAAVmQ/O9KkbYzoLBokX2187GWEskyQY3QctgBjgCK4BGAYYCw/s1600/ksnip_20191204-090525.png" /></a></span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.870588235294118)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span><span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span style="font-size: large;"><b><br /></b></span></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span style="font-size: large;"><b>- Devocionales Diarios.-</b></span></span><span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"> Clic en "Herramientas/Devocionales Diarios..." funciona:</span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><a href="http://1.bp.blogspot.com/-RTCGCjQ8XLw/Xee-grz5XqI/AAAAAAAAVmo/QT-HXT-MBhsx89OwgmrmnrT2BbddrAxcgCK4BGAYYCw/s1600/ksnip_20191204-091059.png"><img border="0" src="https://1.bp.blogspot.com/-RTCGCjQ8XLw/Xee-grz5XqI/AAAAAAAAVmo/QT-HXT-MBhsx89OwgmrmnrT2BbddrAxcgCK4BGAYYCw/s1600/ksnip_20191204-091059.png" /></a></span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.870588235294118)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span><span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span style="font-size: large;"><b><br /></b></span></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><span style="font-size: large;"><b>- Visor de Gráficas.-</b></span></span><span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"> Clic en "Herramientas/Visor de Gráficas"... funciona:</span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><br /></span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;"><a href="http://1.bp.blogspot.com/-EP-Uhjfr-Eo/Xee9gGBrVTI/AAAAAAAAVmc/kutnIW3RFmgrWXlNVF8AY7MA6P58i758ACK4BGAYYCw/s1600/ksnip_20191204-090638.png"><img border="0" src="https://1.bp.blogspot.com/-EP-Uhjfr-Eo/Xee9gGBrVTI/AAAAAAAAVmc/kutnIW3RFmgrWXlNVF8AY7MA6P58i758ACK4BGAYYCw/s1600/ksnip_20191204-090638.png" /></a></span></div>
+<div>
+<span color="rgba(0 , 0 , 0 , 0.870588235294118)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span><span color="rgba(0 , 0 , 0 , 0.87)" face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><b><span style="font-size: large;"><br /></span></b></span></div>
+<div>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="white-space: pre-wrap;"><b><span style="font-size: large;">- Descargar módulos de Biblias.-</span></b><span style="font-size: 15px;"> Desde el mismo programa:</span></span><br />
+<ul>
+</ul>
+<div>
+<a href="http://2.bp.blogspot.com/-fBcBNUS8slk/XeewAaWDZYI/AAAAAAAAVkk/5tLMyH4yfC8tY4K-ox3xJodVPNYbdBfJACK4BGAYYCw/s1600/ksnip_20191204-080502.gif" style="font-family: &quot;roboto&quot;, &quot;noto&quot;, sans-serif; font-size: 15px; white-space: pre-wrap;"><img border="0" src="https://2.bp.blogspot.com/-fBcBNUS8slk/XeewAaWDZYI/AAAAAAAAVkk/5tLMyH4yfC8tY4K-ox3xJodVPNYbdBfJACK4BGAYYCw/s1600/ksnip_20191204-080502.gif" /></a></div>
+<br />
+<br />
+<h4>
+<b><span style="color: red;">12.- ¿QUÉ NO FUNCIONA?</span></b></h4>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;">No funciona el cambio de temas de la aplicación, por defecto está en Azúl (<b>Blue</b>):</span><br />
+<br />
+<a href="http://1.bp.blogspot.com/-mZ3YO7uFPAs/XrtrmxlwmJI/AAAAAAAAbro/0HGFEToGYaonovl8Tzn1fkUkXHzch00jwCK4BGAYYCw/s1600/20200512-223731.png"><img border="0" src="https://1.bp.blogspot.com/-mZ3YO7uFPAs/XrtrmxlwmJI/AAAAAAAAbro/0HGFEToGYaonovl8Tzn1fkUkXHzch00jwCK4BGAYYCw/s1600/20200512-223731.png" /></a><br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #a00029; font-size: 15px; white-space: pre-wrap;"><br /></span>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #a00029; font-size: 15px; white-space: pre-wrap;"><span style="color: black;">Si usted intenta cambiar a <b>Silver</b> o <b>Black</b> para aplicación se cuelga.</span></span><br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: #a00029; font-size: 15px; white-space: pre-wrap;"><span style="color: black;">&nbsp;</span></span>
+<br />
+<h4>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="color: red;"><span style="font-size: 15px; white-space: pre-wrap;">13.- PREGUNTAS FRECUENTES</span></span></h4>
+<b style="font-family: &quot;roboto&quot;, &quot;noto&quot;, sans-serif; font-size: 15px; white-space: pre-wrap;">¿Si uso Ubuntu 16.04 puedo instalar Wine 1.7 en PlayOnLinux e instalar e-Sword 12.1.0?</b><br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif" style="font-size: 15px; white-space: pre-wrap;">Teóricamente si se puede, pero no lo he testeado, pero si puede hágalo y nos avisa</span><br />
+<b style="font-family: &quot;roboto&quot;, &quot;noto&quot;, sans-serif; font-size: 15px; white-space: pre-wrap;"><br /></b>
+<b style="font-family: &quot;roboto&quot;, &quot;noto&quot;, sans-serif; font-size: 15px; white-space: pre-wrap;">¿Puedo instalar e-Sword en Wine sin necesidad de usar PlayOnLinux?</b><br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;">Si, si se puede y usar winetricks para instalar los componentes(librerías), el problema es que si después usted instala más programas es muy posible que el registro se mezcle y luego ya no le funcione e-Sword. Por tal motivo es que hicieron PlayOnLinux para evitar ese problema ya que uno puede instalar cada aplicación en una diferente unidad virtual e incluso con una versión de Wine específica así no se mezclan los registros y no se le dañará la aplicación</span></span><br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span>
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><b>¿En el punto "5" puedo mejor instalar los componentes en el punto 4 ya que allí también está la opción para instalar componentes?</b></span></span><br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;">No puede hacer esto debido a que e-Sword registra sus propios componentes primero y si los componentes los instala antes que e-Sword registre sus componentes al luego instalar los componentes indicados aquí en este tutorial no le funcionará bien la e-Sword, mejor siga las instrucciones </span></span><br />
+<span face="&quot;roboto&quot; , &quot;noto&quot; , sans-serif"><span style="font-size: 15px; white-space: pre-wrap;"><br /></span></span>
+<b>¿Qué hago si ya tenía instalada una aplicación con Wine 3.0.1?</b><br />
+Desinstale esa aplicación e instale e-Sword pues la versión de Wine 3.0.1 es la mejor que he encontrado para que funcione. Pero si quiere experimentar puede hacerlo<br />
+<br />
+<b>¿e-Sword es Software Libre?</b><br />
+Si, si lo es. Si usted da clic en "<b>Ayuda/Acerca de e-Sword . . . </b>":<br />
+<br />
+<a href="http://4.bp.blogspot.com/-q76ZT5JiXGU/Xef73MGyMzI/AAAAAAAAVnM/oWKODJw0WuwAVmTtDaOpFxcacEqhr87-ACK4BGAYYCw/s1600/ksnip_20191204-133206.png"><img border="0" src="https://4.bp.blogspot.com/-q76ZT5JiXGU/Xef73MGyMzI/AAAAAAAAVnM/oWKODJw0WuwAVmTtDaOpFxcacEqhr87-ACK4BGAYYCw/s1600/ksnip_20191204-133206.png" /></a><br />
+<br />
+allí dice:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-19JUDoOeL0Q/Xef74ytEdfI/AAAAAAAAVnU/lGUH5loeG3YgwOu1xH4uuBp12Ae7HbMtgCK4BGAYYCw/s1600/ksnip_20191204-133136.png"><img border="0" src="https://1.bp.blogspot.com/-19JUDoOeL0Q/Xef74ytEdfI/AAAAAAAAVnU/lGUH5loeG3YgwOu1xH4uuBp12Ae7HbMtgCK4BGAYYCw/s1600/ksnip_20191204-133136.png" /></a><br />
+<br />
+la traducción de esa sección es:<br />
+<br />
+<span face="&quot;arial&quot; , &quot;helvetica&quot; , sans-serif">"e-Sword es software libre. Esta licencia está diseñada para no restringir su libertad, excepto en la medida en que sea necesario para garantizar que el programa siga siendo gratuito para todos. Si quiere hacer algo que esté en contra de esta licencia, pero dentro del espíritu del software libre, hablemos de ello.</span><br />
+<span face="&quot;arial&quot; , &quot;helvetica&quot; , sans-serif">1. El programa puede ser utilizado de forma gratuita por cualquier persona u organización a la que esté disponible, siempre que esa persona acepte las condiciones de esta licencia.</span><br />
+<span face="&quot;arial&quot; , &quot;helvetica&quot; , sans-serif">2. Puede hacer copias para usted y sus amigos, siempre que cualquier distribución también sea gratuita. No puede cobrar por el programa en sí, ni puede cobrar por ningún tipo de costos de duplicación, franqueo, etc. No debe hacer nada para sugerirle a la persona a la que se distribuye que e-Sword no es software libre.</span><br />
+<span face="&quot;arial&quot; , &quot;helvetica&quot; , sans-serif">3. Ni el programa e-Sword, ni los módulos asociados, pueden venderse o revenderse, distribuirse como parte de un paquete comercial, o usarse o distribuirse para respaldar cualquier tipo de actividad generadora de ganancias, incluso si se distribuye libremente.</span><br />
+<span face="&quot;arial&quot; , &quot;helvetica&quot; , sans-serif">4. No puede vender ni alojar archivos de e-Sword, ni el programa en sí ni los módulos asociados, en ningún sitio web o servidor en Internet.</span><br />
+<span face="&quot;arial&quot; , &quot;helvetica&quot; , sans-serif">5. No puede desmontar ni realizar ingeniería inversa a e-Sword, ni a ninguno de sus módulos asociados.</span><br />
+<span face="&quot;arial&quot; , &quot;helvetica&quot; , sans-serif">6. No se ofrece ninguna garantía de ningún tipo, expresa o implícita, en relación con el programa, incluidas, entre otras, las garantías implícitas de comerciabilidad o idoneidad para un propósito particular. Cualquier costo, pérdida o daño de cualquier tipo incurrido debido al mal funcionamiento o mal uso del programa o la inexactitud de la documentación o relacionado con el programa de cualquier otra manera es responsabilidad exclusiva de la persona que incurrió en el costo, pérdida o daño . Además, cualquier uso ilegal del programa es responsabilidad exclusiva de la persona que comete el acto ilegal. Al usar este programa, usted acepta estas responsabilidades y renuncia a cualquier derecho de reclamar daños y perjuicios contra Rick Meyers en relación con este programa.</span><br />
+<span face="&quot;arial&quot; , &quot;helvetica&quot; , sans-serif">7. Yo, Rick Meyers, me reservo el derecho de hacer excepciones a cualquiera de estas condiciones, o alterar estas condiciones, en cualquier momento."</span><br />
+<br />
+<br />
+<h4>
+<span style="color: red;">14.- Agradecimientos</span></h4>
+A Dios por haberme guiado a aprender todas las cosas necesarias para poder hacerlo funcionar a e-Sword y también para poder enseñar a otras personas cómo instalarlo en Linux.<br />
+Agradezco también a Arthur Goicochea Admin de Biblioteca Hispana Int. &nbsp;<a href="https://www.bibliotecahispana.com/">https://www.bibliotecahispana.com/</a>&nbsp;o&nbsp;<a href="https://eswordbibliotecahispana.blogspot.com/" target="_blank">https://eswordbibliotecahispana.blogspot.com</a>/ (donde soy colaborador) porque me ha motivado a tener al día el tutorial para Linux</div><div></div><div></div><div></div><div><span style="color: red;"><b><br />15.- Consultas</b></span></div><div>&nbsp;</div><div>e-Sword<br /><a href="https://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31351">https://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31351</a><br />
+</div><div><br />
+<br />
+<h4>
+<span style="color: red;">16.- Herramientas usadas</span></h4>
+Este tutorial ha sido hecho usando las siguientes herramientas:<br />
+<br />
+<a href="https://github.com/DamirPorobic/ksnip" target="_blank">Ksnip</a> 1.5.0 de <a href="https://github.com/wachin/ksnip/releases/tag/v1.5.0" target="_blank">32 bits</a>.- Captura de pantalla<br />
+<a href="https://www.maartenbaert.be/simplescreenrecorder/" target="_blank">SimpleScreenRecorder</a>.- Grabador de escritorio<br />
+<a href="http://ezgif.com/">ezgif.com</a>.- Convertidor de video a Gif online<br />
+<a href="https://antixlinux.com/" target="_blank">antiX 9</a>.- Sistema Operativo basado en Debian 10 Buster (la versión de 32 bits)<br />
+<a href="http://florence.sourceforge.net/english.html" target="_blank">Florence</a>.- Teclado Virtual<br />
+<br />
+Por: Washington Indacochea Delgado (Wachín)<br />
+wachin.id@gmail.com<br />
+2019-12-05</div>
+ 
