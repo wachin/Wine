@@ -4,6 +4,10 @@ Título:
 
 LINUX: Instalar e-Sword 12 con PlayOnLinux
 
-    Con este tutorial podrás instalar e-Sword en cualquier Linux
+    Con este tutorial podrás instalar e-Sword en Linux
 
 e-Sword,números strong,español,Biblias,Hebreo,Griego,búsqueda,versículos,citas biblicas,diccionarios,devocionales,comentarios biblicos,mapas,cristiano,predicas,estudio,herramienta,Biblioteca Digital,Logos,Linux,Ubuntu,Fedora,Linux Mint,Mageia,Debian,Elementary OS,openSUSE,deepin,Zorin,Solus,CentOS,PCLinuxOS,Arch,TrueOS,Kali Linux,LXDE,Kubuntu,UbuntuStudio,XFCE,GNOME,KNOPPIX,harmonías,Instalar,install,Wine,PlayOnLinux,Compu Biblia 
+
+
+~ Proyecto Facilitar el Software Libre en el Ecuador
+https://facilitarelsoftwarelibre.blogspot.com/2019/12/instalar-e-sword-en-linux-con-playonlinux.html

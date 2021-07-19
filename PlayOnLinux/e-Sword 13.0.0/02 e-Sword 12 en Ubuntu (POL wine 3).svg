@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="02 e-Sword 12 en Ubuntu (POL wine 3).svg"
-   inkscape:export-filename="/home/wachin/github-2/WINE-make-work-windows-apps-on-linux/PlayOnLinux/e-Sword 12.1.0/Portada e-Sword + Tux + POL/01 e-Sword 11 en Ubuntu (POL wine 3) 1333x750px.png"
+   inkscape:export-filename="/home/wachin/Accesos Directos/github-2-wid/Wine/PlayOnLinux/e-Sword 13.0.0/02 e-Sword 12 en Ubuntu (POL wine 3).png"
    inkscape:export-xdpi="99.974998"
    inkscape:export-ydpi="99.974998">
   <defs
@@ -1698,7 +1698,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

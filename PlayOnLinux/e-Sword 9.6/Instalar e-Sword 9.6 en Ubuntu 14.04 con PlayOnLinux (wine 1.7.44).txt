@@ -8,7 +8,7 @@ Como instalar e-Sword 9.6 en Ubuntu 14.04 con PlayOnLinux (wine 1.7.44)
 msls31
 mfc42
   
-3.- Copiar riched20.dll de ~/.wine_(el de playonlinux)/drive_c/Program Files/e-Sword a ~/.wine_(el de playonlinux)/drive_c/windows/system32  
+3.- Copiar riched20.dll de ~/.wine_(el de playonlinux)/drive_c/windows/system32 a ~/.wine_(el de playonlinux)/drive_c/Program Files/e-Sword
   
 4.- En winecfg (el de PlayOnLinux) poner riched20.dll and oleaut32.dll como "nativa, y luego interna"
 
