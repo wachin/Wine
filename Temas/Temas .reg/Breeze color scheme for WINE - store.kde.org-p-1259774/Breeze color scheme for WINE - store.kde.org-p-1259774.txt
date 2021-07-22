@@ -1,0 +1,8 @@
+
+
+Breeze color scheme for WINE - store.kde.org-p-1259774
+
+https://store.kde.org/p/1259774/
+
+Description:
+This is Breeze-inspired color scheme for WINE. Just import reg file using regedit and reload wine apps. Window decoration and window management should be done via window manager to get proper Plasma decorations. Doesn't require any msstyle and as this is only color scheme you won't get any button/control decorations.

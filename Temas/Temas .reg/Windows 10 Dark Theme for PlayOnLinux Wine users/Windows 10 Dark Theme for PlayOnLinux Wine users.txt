@@ -1,0 +1,15 @@
+
+Windows 10 Dark Theme for PlayOnLinux Wine users
+https://ubuntuforums.org/showthread.php?t=2395368
+
+
+My system is Lubuntu and my system theme is Windows 10 Dark, which you can download here: https://b00merang.weebly.com/windows-10.html
+
+
+
+Now because "Enable GTK3 Theming" is unavailable in PlayOnLinux, I've created this theme so my PlayOnLinux applications matches my system's Windows 10 Dark theme.
+
+Instructions:
+
+Open user.reg in a text editor and find the line that says [Control Panel\\Colors] and add these values:
+Code:

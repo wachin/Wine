@@ -1,0 +1,39 @@
+
+
+Instalar VSDC Free Video Editor XP en Linux con PlayOnLinux (Wine 3)
+Instrucciones
+
+Descargué la versión 5.8.9
+
+Download VSDC Free Video Editor. It is best software for creating and editing video files.
+http://www.videosoftdev.com/free-video-editor/download
+
+Instalé el programa en POL con wine 3.4 (con las configuraciones por defecto está Win 7)
+
+Instalé estas cosas en componentes de POL:
+
+msxml3
+vcrun2013
+riched30 (este se demoró mucho en descargar, son 300MB)
+gdiplus
+
+
+Descargué estas:
+
+http://manualinux.eu/config/wine/VSDC.reg
+http://manualinux.eu/archivos/dll/ole32.7z
+http://manualinux.eu/archivos/dll/oleaut32.7z
+
+Descomprimí los ole y los pegué manualmente en windows/system32 en POL
+
+lueg importé el registro .reg en la pestaña de POL para hacer eso
+
+En la pestaña: "Mostrar" en "Renderizador Direct Draw" elegí "gdi"
+
+y lo lancé y funcionó
+
+Nota: No se si no es necesario instalar riched30 para que funcione
+
+Estos son los pasos que seguí.
+
+

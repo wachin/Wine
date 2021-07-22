@@ -1,0 +1,9 @@
+
+https://store.kde.org/p/1391907/
+
+Description:
+Dark theme for Wine.
+
+Installation instructions:
+- in the "wine" app run "regedit" window,
+- import the downloaded file with the .reg extension, then restart the wine app.
