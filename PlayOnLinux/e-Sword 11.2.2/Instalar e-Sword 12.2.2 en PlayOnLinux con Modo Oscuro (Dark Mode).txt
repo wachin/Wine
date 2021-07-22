@@ -1,0 +1,74 @@
+
+
+
+Requisitos
+- Instalar a e-Sword 12.2.0 en PlayOnLinux con la versión de Wine 3.0.1-Stating
+
+- Necesitas el tema negro para Wine. Antes de hacer esto le recomiendo que saque un respaldo del archivo user.reg, ejemplo:
+
+/PlayOnLinux's virtual drives/esword1222wine301staging/user.reg
+
+debe quedarle así:
+
+/PlayOnLinux's virtual drives/esword1222wine301staging/user.reg.back
+
+ahora si descargue el sig archivo desde:
+
+Breeze Dark theme for Wine
+https://gist.github.com/mihawk90/550fd8c083fca9f1f7436b10ef589879#gistcomment-3817067
+
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"ActiveBorder"="49 54 58"
+"ActiveTitle"="49 54 58"
+"AppWorkSpace"="60 64 72"
+"Background"="49 54 58"
+"ButtonAlternativeFace"="200 0 0"
+"ButtonDkShadow"="154 154 154"
+"ButtonFace"="49 54 58"
+"ButtonHilight"="119 126 140"
+"ButtonLight"="60 64 72"
+"ButtonShadow"="60 64 72"
+"ButtonText"="219 220 222"
+"GradientActiveTitle"="49 54 58"
+"GradientInactiveTitle"="49 54 58"
+"GrayText"="155 155 155"
+"Hilight"="119 126 140"
+"HilightText"="255 255 255"
+"InactiveBorder"="49 54 58"
+"InactiveTitle"="49 54 58"
+"InactiveTitleText"="219 220 222"
+"InfoText"="159 167 180"
+"InfoWindow"="49 54 58"
+"Menu"="49 54 58"
+"MenuBar"="49 54 58"
+"MenuHilight"="119 126 140"
+"MenuText"="219 220 222"
+"Scrollbar"="73 78 88"
+"TitleText"="219 220 222"
+"Window"="35 38 41"
+"WindowFrame"="49 54 58"
+"WindowText"="219 220 222"
+
+
+Guardelo con un nombre como:
+
+Dark Breeze.reg
+
+luego en PlayOnLinux en el Editor de Registro importelo
+
+
+- Al momento de Abrir e-Sword estará la mayor para de color oscuro. De clic en: 
+
+Options / Display settings
+
+pongale:
+
+lowlight
+
+ahora si todo estará en modo oscuro
+
+
+
